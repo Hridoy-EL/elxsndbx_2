@@ -1,0 +1,36 @@
+<style>
+    .add-to-cart-button {
+        background-color: #1F47FF;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 16px;
+    }
+</style>
+
+{% form 'product', product, id: "product-form" %}
+  <input 
+    type="hidden" 
+    name="id" 
+    value="{{ product.selected_or_first_available_variant.id }}"
+  >
+  <input 
+    type="number" 
+    name="quantity" 
+    value="1" 
+    min="1"
+    hidden
+  >
+  <button 
+    type="submit" 
+    name="add" 
+    class="add-to-cart-button"
+  >
+    In den Einkaufswagen
+  </button>
+{% endform %}
