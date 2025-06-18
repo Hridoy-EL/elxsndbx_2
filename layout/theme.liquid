@@ -308,6 +308,7 @@
     {%- endif -%}
 
     {% if template.name == 'product' %}
+      {% section 'notice-bar' %}
       {% section 'header2' %}
     {% else %}
       {% sections 'header-group' %}

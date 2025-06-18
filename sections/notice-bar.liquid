@@ -1,0 +1,54 @@
+<style>
+    .notice-bar {
+        padding: 10px 20px;
+        background-color: {{ settings.background-color | default: '#777' }};
+    }
+
+    .notice-bar__message {
+        margin: 0;
+        text-align: center;
+        font-size: {{ settings.font-size | default: 14 }}px;
+        color: {{ settings.text-color | default: '#FFF' }};
+        font-weight: bold;
+    }
+</style>
+<div>
+    <div class="notice-bar">
+        <p class="notice-bar__message h5">
+            {{ settings.notice-text | escape }}
+            {% comment %} HEUTE VERSANDKOSTENFREI {% endcomment %}
+        </p>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Notice Bar",
+    "settings": [
+        {
+            "type": "text",
+            "id": "notice-text",
+            "default": "Noticebar Text",
+            "label": "Display Test"
+        },
+        {
+            "type": "number",
+            "id": "font-size",
+            "default": 14,
+            "label": "Font Size"
+        },
+        {
+            "type": "color",
+            "id": "background-color",
+            "default": "#777",
+            "label": "Background Color"
+        },
+        {
+            "type": "color",
+            "id": "text-color",
+            "default": "#fff",
+            "label": "Text Color"
+        }
+    ]
+}
+{% endschema %}
