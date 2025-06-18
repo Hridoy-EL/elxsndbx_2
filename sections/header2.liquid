@@ -1,0 +1,79 @@
+<style>
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px 50px;
+    }
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+</style>
+<header>
+    <div class="header-container">
+        <div class="header-logo">
+            <a href="{{ routes.root_url }}">
+                <img src="{{ settings.logo | image_url }}" alt="Logo" width="" height="50">
+            </a>
+        </div>
+        <div class="header-menu">
+            <nav>
+                <ul>
+                    {%- for link in section.settings.menu.links -%}
+                    <li>
+                        {%- if link.links != blank -%}
+                            <a href="{{ link.url }}">
+                                {% comment %} {{ link.title | escape }} {% endcomment %}
+                                  Test
+                            </a>
+                        {%- endif -%}
+                    </li>
+                    {%- endfor -%}
+                </ul>
+            </nav>
+        </div>
+        <div class="header-icons">
+            <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+                {% if cart == empty %}
+                    <span class="svg-wrapper">{{'icon-cart-empty.svg' | inline_asset_content }}</span>
+                {% else %}
+                    <span class="svg-wrapper">{{'icon-cart.svg' | inline_asset_content }}</span>
+                {% endif %}
+                <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+                {%- if cart != empty -%}
+                <div class="cart-count-bubble">
+                    {%- if cart.item_count < 100 -%}
+                    <span aria-hidden="true">{{ cart.item_count }}</span>
+                    {%- endif -%}
+                    <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+                </div>
+                {%- endif -%}
+            </a>
+        </div>
+    </div>
+</header>
+
+{% schema %}
+{
+    "name": "Header 2",
+    "settings": [
+        {
+        "type": "link_list",
+        "id": "menu",
+        "default": "main-menu",
+        "label": "Select Menu"
+        }
+    ]
+}
+{% endschema %}
