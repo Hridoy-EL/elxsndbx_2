@@ -1,0 +1,249 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <style>
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .product-swiper-container {
+            width: 100%;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .product-swiper {
+            display: flex;
+            gap: 20px;
+            height: 500px;
+        }
+        
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .swiper-slide:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .mySwiper2 {
+            height: 100%;
+            width: 80%;
+            border-radius: 5px;
+            overflow: hidden;
+            order: 2;
+        }
+        
+        .mySwiper {
+            height: 100%;
+            width: 18%;
+            box-sizing: border-box;
+        }
+        
+        .mySwiper .swiper-slide {
+            width: 100%;
+            height: 23.5% !important; /* 4 items with gap */
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+        
+        .swiper-button-next, 
+        .swiper-button-prev {
+            display: block !important;
+            color: #000 !important;
+            transition: all 0.3s ease;
+            align-content: center;
+            top: 105%;
+        }
+
+        .swiper-button-next {
+            right: calc(((100% - 100px)/2) - 35px);
+        }
+
+        .swiper-button-prev {
+            left: calc(((100% + 100px)/2) - 35px);
+        }
+        
+        .swiper-button-next:after, 
+        .swiper-button-prev:after {
+            font-size: 12px !important;
+            font-weight: bold;
+        }
+        
+        .swiper-button-next:hover, 
+        .swiper-button-prev:hover {
+            transform: scale(1.1);
+        }
+        
+        .info-panel {
+            background: rgba(30, 30, 50, 0.8);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        .info-panel h2 {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .info-content {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .fix-details, .features {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .fix-details h3, .features h3 {
+            color: #4dabf7;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .features ul li:before {
+            content: "✓";
+            color: #51cf66;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .product-swiper {
+                flex-direction: column;
+                height: 700px;
+            }
+            
+            .mySwiper2, .mySwiper {
+                width: 100%;
+            }
+            
+            .mySwiper {
+                height: 20%;
+            }
+            
+            .mySwiper .swiper-slide {
+                height: 100% !important;
+                width: 23.5% !important;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="product-swiper-container">
+            <div class="product-swiper">
+                <!-- Main Swiper -->
+                <div style="--swiper-navigation-color: #ffd700;" class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        {% for media in product.media %}
+                        <div class="swiper-slide">
+                            <img src="{{ media.preview_image | image_url: width: 800 }}" alt="{{ media.alt }}" height="" width="">
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <!-- Thumbnail Swiper -->
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        {% for media in product.media %}
+                        <div class="swiper-slide">
+                            <img src="{{ media.preview_image | image_url: width: 100 }}" alt="{{ media.alt }}" height="" width="">
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer="defer"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize thumbnail swiper
+            var thumbSwiper = new Swiper(".mySwiper", {
+                direction: "vertical",
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+                breakpoints: {
+                    768: {
+                        direction: "vertical",
+                        slidesPerView: 4
+                    },
+                    320: {
+                        direction: "horizontal",
+                        slidesPerView: 4
+                    }
+                }
+            });
+            
+            // Initialize main swiper with thumbs control
+            var mainSwiper = new Swiper(".mySwiper2", {
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                    swiper: thumbSwiper,
+                },
+                keyboard: {
+                    enabled: true,
+                },
+            });
+        });
+    </script>

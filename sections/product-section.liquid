@@ -1,9 +1,30 @@
 <style>
-
+    .product-section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .product-container {
+        display: flex;
+        justify-content: center;
+    }
+    .product-image {
+        width: 50%;
+        margin-top: 50px;
+    }
+    .product-description {
+        width: 50%;
+    }
 </style>
 
-<div>
-    <h1>{{ product.title | escape }}</h1>
+<div class="product-section">
+    <div class="product-container">
+        <div class="product-image">
+            {% render 'product-image-swiper', product: product %}
+        </div>
+        <div class="product-description">
+            {% render 'product-description-card', product: product %}
+        </div>
+    </div>
 </div>
 
 {% schema %}
@@ -13,4 +34,4 @@
         
         ]
 }
-{% endschema %}
+{% endschema %} 
