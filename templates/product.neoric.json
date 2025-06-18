@@ -25,10 +25,28 @@
             "primary_text": "100% Qualität",
             "secondary_text": "Dank weichem Silikon"
           }
+        },
+        "usp_badge_9ReUUp": {
+          "type": "usp-badge",
+          "settings": {
+            "icon": "shopify://shop_images/badge.png",
+            "primary_text": "100% Qualität",
+            "secondary_text": "Dank weichem Silikon"
+          }
+        },
+        "usp_badge_NHrtN6": {
+          "type": "usp-badge",
+          "settings": {
+            "icon": "shopify://shop_images/badge.png",
+            "primary_text": "100% Qualität",
+            "secondary_text": "Dank weichem Silikon"
+          }
         }
       },
       "block_order": [
-        "usp_badge_c9GUNj"
+        "usp_badge_c9GUNj",
+        "usp_badge_9ReUUp",
+        "usp_badge_NHrtN6"
       ],
       "settings": {
         "usp_badges_enabled": true
