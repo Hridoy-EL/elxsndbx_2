@@ -145,6 +145,15 @@
         "settings": {
           "menu": "neoric-menu"
         }
+      },
+      "notice-bar": {
+        "type": "notice-bar",
+        "settings": {
+          "notice-text": "HEUTE VERSANDKOSTENFREI",
+          "font-size": 15,
+          "background-color": "#777777",
+          "text-color": "#ffffff"
+        }
       }
     },
     "content_for_index": [],
