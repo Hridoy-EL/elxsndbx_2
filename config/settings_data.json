@@ -139,6 +139,12 @@
         "settings": {
           "color_scheme": "scheme-1"
         }
+      },
+      "header2": {
+        "type": "header2",
+        "settings": {
+          "menu": "neoric-menu"
+        }
       }
     },
     "content_for_index": [],
