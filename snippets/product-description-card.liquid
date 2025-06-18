@@ -75,10 +75,12 @@
             <span class="price">{{ product.price | money }}</span>
             <span class="price-info">inkl. MwSt.</span>
         </p>
-        <p class="product-extra-info">
-            <span class="gdot"></span>
-            {{ product.metafields.custom.extra_info }}
-        </p>
+        {% if section.settings.extra_info_enabled == true %}
+            <p class="product-extra-info">
+                <span class="gdot"></span>
+                {{ product.metafields.custom.extra_info }}
+            </p>
+        {% endif %}
     </div>
 </div>
 

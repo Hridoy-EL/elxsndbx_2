@@ -16,7 +16,7 @@
         .product-swiper {
             display: flex;
             gap: 20px;
-            height: 500px;
+            height: 480px;
         }
         
         .swiper {
@@ -62,8 +62,8 @@
         }
         
         .mySwiper .swiper-slide {
-            width: 100%;
-            height: 23.5% !important; /* 4 items with gap */
+            width: 100px;
+            height: 100px !important; /* 4 items with gap */
             opacity: 0.5;
             cursor: pointer;
         }
@@ -257,7 +257,7 @@
             // Initialize thumbnail swiper
             var thumbSwiper = new Swiper(".mySwiper", {
                 direction: "vertical",
-                spaceBetween: 10,
+                spaceBetween: 15,
                 slidesPerView: 4,
                 freeMode: true,
                 watchSlidesProgress: true,
