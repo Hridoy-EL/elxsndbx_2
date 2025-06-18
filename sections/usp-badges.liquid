@@ -13,6 +13,22 @@
             display: flex;
             align-items: center;
             gap: 10px;
+
+            .usp-badge__icon {
+                height: 50px;
+                width: 50px;
+            }
+
+            .usp-badge__text p {
+                font-size: 18px;
+                font-weight: 400;
+                color: #000;
+                margin: 0;
+            }
+
+            .usp-badge__text .usp-badge__secondary-text {
+                color: #383838;
+            }
         }
     }
 
@@ -57,7 +73,7 @@
             <div class="usp-badge">
                 <div class="usp-badge__icon">
                     {% if block.settings.icon %}
-                        {{ block.settings.icon | image_url }}
+                        <img src="{{ block.settings.icon | image_url }}" alt="Icon" height="50" width="50">
                     {% endif %}
                 </div>
                 <div class="usp-badge__text">
