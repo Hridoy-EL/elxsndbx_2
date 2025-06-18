@@ -151,7 +151,7 @@
         "settings": {
           "notice-text": "HEUTE VERSANDKOSTENFREI",
           "font-size": 15,
-          "background-color": "#777777",
+          "background-color": "#5f5f5f",
           "text-color": "#ffffff"
         }
       }
