@@ -1,0 +1,111 @@
+<style>
+    .usp-badges-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .usp-badges {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .usp-badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .usp-badges-container {
+            max-width: 960px;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .usp-badges-container {
+            max-width: 800px;
+        }
+    }
+
+    @media only screen and (max-width: 991px) {
+        .usp-badges-container {
+            max-width: 700px;
+        }
+
+        .usp-badges {
+            flex-direction: column;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .usp-badges-container {
+            max-width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .usp-badges-container {
+            max-width: 90%;
+        }
+    }
+</style>
+
+<div class="usp-badges-container">
+    <div class="usp-badges">
+        {% for block in section.blocks %}
+            <div class="usp-badge">
+                <div class="usp-badge__icon">
+                    {% if block.settings.icon %}
+                        {{ block.settings.icon | image_url }}
+                    {% endif %}
+                </div>
+                <div class="usp-badge__text">
+                    <p class="usp-badge__primary-text">
+                        {{ block.settings.primary_text }}
+                    </p>
+                    <p class="usp-badge__secondary-text">
+                        {{ block.settings.secondary_text }}
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "USP Badges",
+    "max_blocks": 4,
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "usp_badges_enabled",
+            "label": "Show USP Badges"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "usp-badge",
+            "name": "USP Badge",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "icon",
+                    "label": "Icon (png)"
+                },
+                {
+                    "type": "text",
+                    "id": "primary_text",
+                    "label": "Primary Text"
+                },
+                {
+                    "type": "text",
+                    "id": "secondary_text",
+                    "label": "Secondary Text"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

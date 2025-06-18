@@ -10,13 +10,18 @@
 {
   "sections": {
     "main": {
-      "type": "product-section",
-      "settings": {
-        "extra_info_enabled": true
-      }
+        "type": "product-section",
+        "settings": {
+            "extra_info_enabled": true
+        }
+    },
+    "usp-badges": {
+        "type": "usp-badges",
+        "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "usp-badges"
   ]
 }
