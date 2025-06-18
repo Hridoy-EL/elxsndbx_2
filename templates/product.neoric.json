@@ -10,14 +10,29 @@
 {
   "sections": {
     "main": {
-        "type": "product-section",
-        "settings": {
-            "extra_info_enabled": true
-        }
+      "type": "product-section",
+      "settings": {
+        "extra_info_enabled": true
+      }
     },
     "usp-badges": {
-        "type": "usp-badges",
-        "settings": {}
+      "type": "usp-badges",
+      "blocks": {
+        "usp_badge_c9GUNj": {
+          "type": "usp-badge",
+          "settings": {
+            "icon": "shopify://shop_images/badge.png",
+            "primary_text": "100% Qualität",
+            "secondary_text": "Dank weichem Silikon"
+          }
+        }
+      },
+      "block_order": [
+        "usp_badge_c9GUNj"
+      ],
+      "settings": {
+        "usp_badges_enabled": true
+      }
     }
   },
   "order": [
