@@ -38,6 +38,7 @@
     "header": {
       "type": "header",
       "settings": {
+        "header_container": "full-width",
         "logo_position": "middle-left",
         "menu": "neoric-menu",
         "menu_type_desktop": "dropdown",
