@@ -1,21 +1,21 @@
 <style>
     .notice-bar {
         padding: 10px 20px;
-        background-color: {{ settings.background-color | default: '#777' }};
+        background-color: {{ section.settings.background-color }};
     }
 
     .notice-bar__message {
         margin: 0;
         text-align: center;
-        font-size: {{ settings.font-size | default: 14 }}px;
-        color: {{ settings.text-color | default: '#FFF' }};
+        font-size: {{ section.settings.font-size }}px;
+        color: {{ section.settings.text-color }};
         font-weight: bold;
     }
 </style>
 <div>
     <div class="notice-bar">
         <p class="notice-bar__message h5">
-            {{ settings.notice-text | escape }}
+            {{ section.settings.notice-text | escape }}
             {% comment %} HEUTE VERSANDKOSTENFREI {% endcomment %}
         </p>
     </div>
