@@ -1,0 +1,24 @@
+<style>
+
+</style>
+
+<div class="product-description-container">
+    <div class="product-description">
+        {% if section.settings.description_enabled == true %}
+            {{ product.description }}
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Product Description",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "description_enabled",
+            "label": "Show Product Description"
+        }
+    ]
+}
+{% endschema %}
