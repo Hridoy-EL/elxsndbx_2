@@ -93,9 +93,145 @@
     "name": "Product Section",
     "settings": [
         {
+            "type": "header",
+            "content": "Text Settings"
+        },
+        {
+            "type": "number",
+            "id": "title_font_size",
+            "label": "Title Font Size",
+            "default": 25
+        },
+        {
+            "type": "color",
+            "id": "title_color",
+            "label": "Title Color",
+            "default": "#000"
+        },
+        {
+            "type": "header",
+            "content": "."
+        },
+        {
+            "type": "checkbox",
+            "id": "collection_name_enabled",
+            "label": "Show Collection Name"
+        },
+        {
+            "type": "number",
+            "id": "collection_font_size",
+            "label": "Collection Name Font Size",
+            "default": 18
+        },
+        {
+            "type": "header",
+            "content": "."
+        },
+        {
+            "type": "checkbox",
+            "id": "compare_at_enabled",
+            "label": "Show Compare At Price"
+        },
+        {
+            "type": "number",
+            "id": "compare_at_font_size",
+            "label": "Compare At Price Font Size",
+            "default": 18
+        },
+        {
+            "type": "select",
+            "id": "compare_at_font_weight",
+            "label": "Compare At Price Font Weight",
+            "options": [
+                {
+                    "value": "400",
+                    "label": "Normal"
+                },
+                {
+                    "value": "600",
+                    "label": "Bold"
+                }
+            ],
+            "default": "600"
+        },
+        {
+            "type": "color",
+            "id": "compare_at_color",
+            "label": "Compare At Price Color",
+            "default": "#000"
+        },
+        {
+            "type": "header",
+            "content": "."
+        },
+        {
+            "type": "number",
+            "id": "price_font_size",
+            "label": "Price Font Size",
+            "default": 18
+        },
+        {
+            "type": "select",
+            "id": "price_font_weight",
+            "label": "Price Font Weight",
+            "options": [
+                {
+                    "value": "400",
+                    "label": "Normal"
+                },
+                {
+                    "value": "600",
+                    "label": "Bold"
+                }
+            ],
+            "default": "600"
+        },
+        {
+            "type": "color",
+            "id": "price_color",
+            "label": "Price Color",
+            "default": "#1F47FF"
+        },
+        {
+            "type": "header",
+            "content": "Other Settings"
+        },
+        {
+            "type": "checkbox",
+            "id": "vat_info_enabled",
+            "label": "Show Vat Text"
+        },
+        {
             "type": "checkbox",
             "id": "extra_info_enabled",
             "label": "Show Extra Info"
+        },
+        {
+            "type": "header",
+            "content": "Button Settings"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "In den Einkaufswagen"
+        },
+        {
+            "type": "color",
+            "id": "button_background",
+            "label": "Button Background",
+            "default": "#1F47FF"
+        },
+        {
+            "type": "color",
+            "id": "button_label",
+            "label": "Button Label Color",
+            "default": "#FFFFFF"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Product Section"
         }
     ]
 }
