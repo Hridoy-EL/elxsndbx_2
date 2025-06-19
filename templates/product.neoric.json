@@ -12,6 +12,21 @@
     "main": {
       "type": "product-section",
       "settings": {
+        "title_font_size": 25,
+        "title_color": "#000000",
+        "collection_name_enabled": false,
+        "collection_font_size": 18,
+        "compare_at_enabled": true,
+        "compare_at_font_size": 18,
+        "compare_at_font_weight": "600",
+        "compare_at_color": "#000000",
+        "price_font_size": 18,
+        "price_font_weight": "600",
+        "price_color": "#1f47ff",
+        "button_text": "In den Einkaufswagen",
+        "button_background": "#1f47ff",
+        "button_label": "#ffffff",
+        "vat_info_enabled": true,
         "extra_info_enabled": true
       }
     },
