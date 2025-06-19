@@ -14,7 +14,7 @@
       "settings": {
         "title_font_size": 25,
         "title_color": "#000000",
-        "collection_name_enabled": false,
+        "collection_name_enabled": true,
         "collection_font_size": 18,
         "compare_at_enabled": true,
         "compare_at_font_size": 18,
@@ -26,8 +26,14 @@
         "button_text": "In den Einkaufswagen",
         "button_background": "#1f47ff",
         "button_label": "#ffffff",
+        "button_font_size": 18,
+        "button_font_weight": "600",
         "vat_info_enabled": true,
-        "extra_info_enabled": true
+        "vat_info_font_size": 10,
+        "extra_info_enabled": true,
+        "extra_info_color": "#25a525",
+        "extra_info_font_size": 15,
+        "extra_info_font_weight": "400"
       }
     },
     "usp-badges": {
