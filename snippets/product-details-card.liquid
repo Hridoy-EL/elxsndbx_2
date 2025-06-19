@@ -77,11 +77,17 @@
         <h1 class="product-title">{{ product.title }}</h1>
         <p class="product-collection">{{ product.collections[0].title }}</p>
         <p class="product-prices">
-            <span class="compare-at-price"> {{ product.compare_at_price | money_without_currency }}{{ cart.currency.symbol }}</span>
-            <span class="price">{{ product.price | money_without_currency }}{{ cart.currency.symbol }}</span>
+            {% if product.compare_at_price != blank %}
+                <span class="compare-at-price">
+                    {{ product.compare_at_price | money_without_currency }}{{ cart.currency.symbol }}
+                </span>
+            {% endif %}
+            <span class="price">
+                {{ product.price | money_without_currency }}{{ cart.currency.symbol }}
+            </span>
             <span class="price-info">inkl. MwSt.</span>
         </p>
-        {% if section.settings.extra_info_enabled == true %}
+        {% if section.settings.extra_info_enabled == true and product.metafields.custom.extra_info != blank %}
             <p class="product-extra-info">
                 <span class="gdot"></span>
                 {{ product.metafields.custom.extra_info }}
