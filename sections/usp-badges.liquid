@@ -43,27 +43,29 @@
     }
 </style>
 
-<div class="n-container">
-    <div class="usp-badges">
-        {% for block in section.blocks %}
-            <div class="usp-badge">
-                <div class="usp-badge__icon">
-                    {% if block.settings.icon %}
-                        <img src="{{ block.settings.icon | image_url }}" alt="Icon" height="50" width="50">
-                    {% endif %}
+{% if section.settings.usp_badges_enabled == true %}
+    <div class="n-container">
+        <div class="usp-badges">
+            {% for block in section.blocks %}
+                <div class="usp-badge">
+                    <div class="usp-badge__icon">
+                        {% if block.settings.icon %}
+                            <img src="{{ block.settings.icon | image_url }}" alt="Icon" height="50" width="50">
+                        {% endif %}
+                    </div>
+                    <div class="usp-badge__text">
+                        <p class="usp-badge__primary-text">
+                            {{ block.settings.primary_text }}
+                        </p>
+                        <p class="usp-badge__secondary-text">
+                            {{ block.settings.secondary_text }}
+                        </p>
+                    </div>
                 </div>
-                <div class="usp-badge__text">
-                    <p class="usp-badge__primary-text">
-                        {{ block.settings.primary_text }}
-                    </p>
-                    <p class="usp-badge__secondary-text">
-                        {{ block.settings.secondary_text }}
-                    </p>
-                </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
-</div>
+{% endif %}
 
 {% schema %}
 {
