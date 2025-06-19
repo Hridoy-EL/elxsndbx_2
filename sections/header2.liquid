@@ -52,6 +52,7 @@
     header-drawer {
         justify-self: start;
         margin-left: -1.2rem;
+        display: none;
     }
 
     .menu-drawer-container {
@@ -118,6 +119,12 @@
 
     .menu-drawer {
         width: 33%;
+    }
+
+    @media only screen and (max-width: 991px) {
+        header-drawer {
+            display: block;
+        }
     }
 
     @media only screen and (max-width: 840px) {
