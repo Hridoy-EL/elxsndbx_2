@@ -214,7 +214,29 @@
             "label": "Button Label Color",
             "default": "#FFFFFF"
         },
+        {
+            "type": "number",
+            "id": "button_font_size",
+            "label": "Button Font Size",
+            "default": 18
+        },
+        {
+            "type": "select",
+            "id": "button_font_weight",
+            "label": "Button Font Weight",
+            "options": [
                 {
+                    "value": "400",
+                    "label": "Normal"
+                },
+                {
+                    "value": "600",
+                    "label": "Bold"
+                }
+            ],
+            "default": "600"
+        },
+        {
             "type": "header",
             "content": "Other Settings"
         },
@@ -224,9 +246,43 @@
             "label": "Show Vat Text"
         },
         {
+            "type": "number",
+            "id": "vat_info_font_size",
+            "label": "Vat Text Font Size",
+            "default": 10
+        },
+        {
             "type": "checkbox",
             "id": "extra_info_enabled",
             "label": "Show Extra Info"
+        },
+        {
+            "type": "color",
+            "id": "extra_info_color",
+            "label": "Extra Info Color",
+            "default": "#25A525"
+        },
+        {
+            "type": "number",
+            "id": "extra_info_font_size",
+            "label": "Extra Info Font Size",
+            "default": 15
+        },
+        {
+            "type": "select",
+            "id": "extra_info_font_weight",
+            "label": "Extra Info Font Weight",
+            "options": [
+                {
+                    "value": "400",
+                    "label": "Normal"
+                },
+                {
+                    "value": "600",
+                    "label": "Bold"
+                }
+            ],
+            "default": "400"
         }
     ],
     "presets": [
