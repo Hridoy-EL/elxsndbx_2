@@ -7,17 +7,18 @@
         box-shadow: 0px 3px 20px #00000029;
         font-family: Montserrat;
         
-        h1 {
+        h1.product-title {
             font-family: inherit;
-            font-size: 25px;
+            font-size: {{ section.settings.title_font_size }}px;
             font-weight: 600;
             margin: 0;
             margin-bottom: 12px;
+            color: {{ section.settings.title_color }};
         }
 
         p {
             font-family: inherit;
-            font-size: 18px;
+            font-size: {{ section.settings.collection_font_size }}px;
             font-weight: 400;
             color: #000;
             margin: 0;
@@ -27,16 +28,18 @@
                 display: flex;
                 align-items: end;
                 gap: 1rem;
-                font-size: 18px;
-                font-weight: 600;
-
+                
                 .compare-at-price {
                     text-decoration: line-through;
-                    color: #000;
+                    color: {{ section.settings.compare_at_color }};
+                    font-size: {{ section.settings.compare_at_font_size }}px;
+                    font-weight: {{ section.settings.compare_at_font_weight }};
                 }
 
                 .price {
-                    color: #1F47FF;
+                    color: {{ section.settings.price_color }};
+                    font-size: {{ section.settings.price_font_size }}px;
+                    font-weight: {{ section.settings.price_font_weight }};
                 }
 
                 .price-info {
@@ -77,7 +80,7 @@
         <h1 class="product-title">{{ product.title }}</h1>
         <p class="product-collection">{{ product.collections[0].title }}</p>
         <p class="product-prices">
-            {% if product.compare_at_price != blank %}
+            {% if section.settings.compare_at_enabled == true and product.compare_at_price != blank %}
                 <span class="compare-at-price">
                     {{ product.compare_at_price | money_without_currency }}{{ cart.currency.symbol }}
                 </span>
@@ -85,7 +88,9 @@
             <span class="price">
                 {{ product.price | money_without_currency }}{{ cart.currency.symbol }}
             </span>
-            <span class="price-info">inkl. MwSt.</span>
+            {% if section.settings.vat_info_enabled == true %}
+                <span class="price-info">inkl. MwSt.</span>
+            {% endif %}
         </p>
         {% if section.settings.extra_info_enabled == true and product.metafields.custom.extra_info != blank %}
             <p class="product-extra-info">
