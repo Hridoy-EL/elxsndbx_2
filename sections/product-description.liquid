@@ -1,13 +1,19 @@
 <style>
-
+    .product-description {
+        color: {{ section.settings.font_color }};
+        font-size: {{ section.settings.font_size }}px;
+        text-align: {{ section.settings.text-align }};
+        font-weight: 400;
+        margin-top: 60px;
+    }
 </style>
 
 <div class="n-container">
-    <div class="product-description">
-        {% if section.settings.description_enabled == true %}
+    {% if section.settings.description_enabled == true %}
+        <div class="product-description">
             {{ product.description }}
-        {% endif %}
-    </div>
+        </div>
+    {% endif %}
 </div>
 
 {% schema %}
