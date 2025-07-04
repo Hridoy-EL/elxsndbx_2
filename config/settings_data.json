@@ -142,11 +142,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "15793722029700688858": {
-        "type": "shopify://apps/elx-cbc-test/blocks/elx_chatbot_script/0c183ccd-888b-4593-89b6-f50ac0057003",
-        "disabled": false,
-        "settings": {}
-      },
       "1530068250781986104": {
         "type": "shopify://apps/fbp-fast-bundle/blocks/fast_bundle/9e87fbe2-9041-4c23-acf5-322413994cef",
         "disabled": false,
@@ -156,6 +151,16 @@
       },
       "15557474716127144420": {
         "type": "shopify://apps/kaching-bundles/blocks/app-embed-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+        "disabled": false,
+        "settings": {}
+      },
+      "15793722029700688858": {
+        "type": "shopify://apps/elx-cbc-test/blocks/elx_chatbot_script/0c183ccd-888b-4593-89b6-f50ac0057003",
+        "disabled": true,
+        "settings": {}
+      },
+      "10969126820523750069": {
+        "type": "shopify://apps/elx-chatbot/blocks/elx_chatbot_script/9c8b8a5a-afbd-41ba-ac8a-6111fbd35423",
         "disabled": false,
         "settings": {}
       }
