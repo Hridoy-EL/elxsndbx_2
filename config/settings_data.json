@@ -159,13 +159,13 @@
         "disabled": true,
         "settings": {}
       },
-      "10969126820523750069": {
-        "type": "shopify://apps/elx-chatbot/blocks/elx_chatbot_script/9c8b8a5a-afbd-41ba-ac8a-6111fbd35423",
+      "pagefly-page-builder": {
+        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
         "settings": {}
       },
-      "pagefly-page-builder": {
-        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
+      "10969126820523750069": {
+        "type": "shopify://apps/elx-chatbot/blocks/elx_chatbot_script/9c8b8a5a-afbd-41ba-ac8a-6111fbd35423",
         "disabled": false,
         "settings": {}
       }
