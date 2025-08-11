@@ -166,7 +166,7 @@
       },
       "10969126820523750069": {
         "type": "shopify://apps/elx-chatbot/blocks/elx_chatbot_script/9c8b8a5a-afbd-41ba-ac8a-6111fbd35423",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     },
