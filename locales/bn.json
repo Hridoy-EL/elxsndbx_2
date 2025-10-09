@@ -768,7 +768,15 @@
           "shipping_credential_es": "ডিএনআই/এনআইএফ",
           "shipping_credential_tw": "জাতীয় পরিচয়পত্র নম্বর/ভ্যাট",
           "tax_credential_tr": "তুর্কিয়ে কুমহুরিয়েতি কিমলিক নুমারাসি/কেডিভি",
-          "shipping_credential_tr": "তুর্কিয়ে কুমহুরিয়েতি কিমলিক নুমারাসি/কেডিভি"
+          "shipping_credential_tr": "তুর্কিয়ে কুমহুরিয়েতি কিমলিক নুমারাসি/কেডিভি",
+          "title": "অতিরিক্ত তথ্য",
+          "tax_credential_br": "সিপিএফ/সিএনপিজে",
+          "shipping_credential_br": "সিপিএফ/সিএনপিজে",
+          "shipping_credential_kr": "ব্যক্তিগত কাস্টমস কোড",
+          "shipping_credential_cn": "আবাসিক আইডি নম্বর",
+          "tax_credential_it": "ফিসকাল কোড (ঐচ্ছিক)",
+          "tax_email_it": "পিইসি (ঐচ্ছিক)",
+          "tax_credential_cl": "রুট"
         }
       },
       "thank_you": {
@@ -1104,9 +1112,279 @@
           "prepaid_order_one_cycle_delivery_not_included": {
             "one": "%{count} ডেলিভারির জন্য %{shipping_price}",
             "other": "%{count} ডেলিভারির জন্য %{শিপিং_প্রাইস} (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "%{count}টি ডেলিভারির জন্য %{shipping_price}, তারপর %{recurring_order_shipping_price}",
+            "other": "%{count}টি ডেলিভারির জন্য %{shipping_price} (%{per_delivery_cost}), তারপরে %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{count} ডেলিভারির জন্য %{shipping_price}, তারপর %{recurring_order_shipping_price}",
+            "other": "%{count} ডেলিভারির জন্য %{shipping_price} (%{per_delivery_cost}), তারপরে %{recurring_order_shipping_price}"
+          },
+          "subscription_free_with_frequency_label": "বিনামূল্যে শিপিং %{delivery_frequency}",
+          "prepaid_delivery_frequency": {
+            "one": "%{count} ডেলিভারির জন্য",
+            "other": "%{count} ডেলিভারির জন্য"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "প্রতিদিন",
+              "other": "প্রতি %{count} দিনে"
+            },
+            "week": {
+              "one": "প্রতি সপ্তাহে",
+              "other": "প্রতি %{count} সপ্তাহে"
+            },
+            "month": {
+              "one": "প্রতি মাসে",
+              "other": "প্রতি %{count} মাসে"
+            },
+            "year": {
+              "one": "প্রতি বছর",
+              "other": "প্রতি %{count} বছর অন্তর"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "প্রতি ডেলিভারিতে %{shipping_price}",
+          "prepaid_shipping_price_label": "প্রতি ডেলিভারিতে %{শিপিং_প্রাইস} x %{ডেলিভারি_ইন্টারভাল_কাউন্ট}",
+          "initial_order_discounted": "প্রথমে শিপিং খরচ %{discounted_shipping_cost}, তারপর %{frequency_description}",
+          "prepaid_initial_order_discounted": "প্রথম শিপিং খরচ %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "প্রথম শিপিং খরচ %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "প্রথম শিপিং খরচ %{discounted_shipping_price} %{prepaid_delivery_frequency}, তারপর %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "প্রথম শিপিং খরচ %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), তারপর %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "অন্তর্ভুক্ত",
+          "recurring_order_shipping_price": "এরপর %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "প্রথম অর্ডার অন্তর্ভুক্ত, তারপরে %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (প্রতি ডেলিভারিতে %{per_delivery_price}), তারপরে %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "প্রথম অর্ডার বিনামূল্যে",
+            "other": "প্রথম %{count}টি অর্ডার বিনামূল্যে"
+          },
+          "free_for_first_n_order": {
+            "one": "প্রথম অর্ডারের জন্য",
+            "other": "প্রথম %{count} অর্ডারের জন্য"
+          }
+        },
+        "one_time_purchase_shipping": "এককালীন শিপিং",
+        "duties_and_taxes_title": "কর্তব্য এবং কর",
+        "shipping_information_required_notice": "শিপিং তথ্য প্রয়োজন। {{link}} .",
+        "shipping_information_redirect_link": "এখানে আপনার তথ্য লিখুন",
+        "loading_progressive_rates": "আরও রেট খুঁজছি…",
+        "no_other_methods_available": "অন্য কোনও পদ্ধতি উপলব্ধ নেই",
+        "duties_and_taxes_options": {
+          "ddu_title": "ডেলিভারির সময় পেমেন্ট করুন",
+          "ddu_caption": "অতিরিক্ত ফি প্রযোজ্য হতে পারে",
+          "ddp_title": "এখনই পেমেন্ট করুন",
+          "ddp_caption": "ডেলিভারিতে কোনও অতিরিক্ত ফি নেই"
+        },
+        "shipping_method_combinations": {
+          "without_separator": "%{প্রথম পদ্ধতি}, %{দ্বিতীয় পদ্ধতি}",
+          "with_separator": "%{বিশ্রাম}, %{বর্তমান},",
+          "combination": "%{বিশ্রাম} এবং %{বর্তমান}"
+        },
+        "shipping_used_as_billing_notice": "এই অর্ডারের জন্য এটি আপনার বিলিং ঠিকানা হিসেবেও ব্যবহার করা হবে।",
+        "address_update": "ঠিকানা আপডেট করুন",
+        "shipping_address_title": "পাঠান",
+        "shipping_address_rollup_accessibility_label": "ঠিকানায় পাঠানোর বিকল্প",
+        "add_address": "একটি ভিন্ন ঠিকানা ব্যবহার করুন",
+        "add_delivery_instructions": "ডেলিভারি নির্দেশাবলী যোগ করুন",
+        "edit": "সম্পাদনা",
+        "delete": "মুছে ফেলুন",
+        "address_more": "এই ঠিকানার জন্য আরও পদক্ষেপ",
+        "address_edit": "ঠিকানা সম্পাদনা করুন",
+        "address_delete": "ঠিকানা মুছুন",
+        "address_confirm": "আপনি কি নিশ্চিত যে আপনি আপনার অ্যাকাউন্ট থেকে এই ঠিকানাটি মুছে ফেলতে চান?",
+        "address_default": "ডিফল্ট হিসেবে সেট করুন",
+        "address_form": {
+          "add_address": "ঠিকানা যোগ করুন",
+          "save": "সংরক্ষণ করুন",
+          "cancel": "বাতিল করুন",
+          "generic_error": "আপনার ঠিকানা সংরক্ষণ করতে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।",
+          "one_time_address_subtitle": "এই অর্ডারের জন্য একটি এককালীন ঠিকানা ব্যবহার করুন"
+        },
+        "different_shipping_method_summary": "উপলব্ধ শিপিং পদ্ধতিগুলি দেখতে একটি ভিন্ন শিপিং ঠিকানা লিখুন",
+        "invalid_shipping_method_summary": "উপলব্ধ শিপিং পদ্ধতিগুলি দেখতে একটি বৈধ শিপিং ঠিকানা লিখুন",
+        "method_summary": {
+          "incomplete_address_entered": "উপলব্ধ শিপিং পদ্ধতিগুলি দেখতে একটি সম্পূর্ণ শিপিং ঠিকানা লিখুন",
+          "incomplete_address_selected": "উপলব্ধ শিপিং পদ্ধতিগুলি দেখতে একটি সম্পূর্ণ শিপিং ঠিকানা নির্বাচন করুন"
+        },
+        "local_pickup": {
+          "search_address": "ঠিকানা খুঁজুন",
+          "rollup_title": "পিকআপের অবস্থান",
+          "rollup_accessibility_label": "পিকআপ লোকেশনের বিকল্প"
+        },
+        "missing_shipping_address": "শিপিং ঠিকানাটি অনুপস্থিত।",
+        "split_shipping_merchandise_quantity_label_standard": "%{পরিমাণ}টি আইটেম",
+        "split_shipping_merchandise_quantity_label_additional": "+%{পরিমাণ} বেশি",
+        "split_shipping_merchandise_shipment_number": "মোট %{এর মধ্যে %{সংখ্যা} চালান",
+        "pre_order_ships_now": "এখন পাঠানো হচ্ছে",
+        "pre_order_ships_later": "পরে পাঠানো হবে",
+        "pre_order_ships_date": "%{date} পাঠানো হয়েছে",
+        "split_shipping_shipped_by_shop": "%{shop_name} দ্বারা পাঠানো হয়েছে",
+        "split_shipping_multiple_shipment_label": "একাধিক চালান",
+        "split_shipping_shipping_label": "পদ্ধতি",
+        "split_shipping_shipment_notice": "আপনার অর্ডার %{quantity_shipments} এর মধ্যে পৌঁছে যাবে।",
+        "split_shipping_first_shipment_notice": "আপনার প্রথম অর্ডার %{quantity_shipments} এ পৌঁছে যাবে।",
+        "split_shipping_multiple_shipment_quantity_label": "%{পরিমাণ} চালান",
+        "split_shipping_multiple_shipment_notice": "আপনার অর্ডার একাধিক চালানে পৌঁছাবে।",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "আপনার অর্ডার %{quantity} শিপমেন্টে পৌঁছে যাবে",
+        "split_shipping_more_shipping_options": "আরও শিপিং বিকল্প",
+        "split_shipping_shipment_number": "চালান %{সংখ্যা}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "পরিমাণ: %{পরিমাণ}",
+        "split_shipping_merchandise_quantity_label_inline": "%{পণ্যের_শিরোনাম} ×%{পরিমাণ}",
+        "split_shipping_option_free": "বিনামূল্যে পরিবহন",
+        "split_shipping_option_lowest_price": "সর্বনিম্ন দাম",
+        "split_shipping_option_fastest": "দ্রুততম",
+        "split_shipping_option_recommended": "প্রস্তাবিত",
+        "split_shipping_option_custom": "কাস্টম"
+      },
+      "wallets": {
+        "errors": {
+          "missing": {
+            "city": "একটি শহর লিখুন",
+            "billing_city": "একটি বিলিং ঠিকানা শহর লিখুন",
+            "province": "একটি রাজ্য / প্রদেশ নির্বাচন করুন",
+            "billing_province": "একটি বিলিং ঠিকানা রাজ্য / প্রদেশ নির্বাচন করুন",
+            "country": "একটি দেশ/অঞ্চল নির্বাচন করুন",
+            "zip": "একটি জিপ / পোস্টাল কোড লিখুন",
+            "billing_zip": "একটি বিলিং ঠিকানা লিখুন জিপ / পোস্টাল কোড",
+            "phone": "একটি ফোন নম্বর লিখুন",
+            "contact_info": "যোগাযোগের তথ্য লিখুন"
+          },
+          "formatting": {
+            "name_contains_emojis": "তোমার নাম থেকে ইমোজি মুছে ফেলো",
+            "postal_code_contains_emoji": "আপনার পোস্টাল কোড থেকে ইমোজি মুছে ফেলুন",
+            "first_name_too_long": "নামের প্রথম অংশে অনেক বেশি অক্ষর আছে",
+            "last_name_too_long": "নামের শেষাংশে অনেক বেশি অক্ষর আছে",
+            "address_too_long": "ঠিকানার লাইনটি খুব দীর্ঘ।"
+          },
+          "select_different_shipping_address_to_resolve_errors": "আপনার শিপিং ঠিকানাটি অবৈধ। একটি ভিন্ন ঠিকানা নির্বাচন করুন অথবা একটি নতুন ঠিকানা ব্যবহার করুন।"
+        },
+        "scrim": {
+          "continue_purchase_in_window": "{{walletName}} উইন্ডোতে আপনার কেনাকাটা চালিয়ে যান।",
+          "and_return_to_checkout": "এবং চেকআউটে ফিরে যান",
+          "cancel": "বাতিল করুন"
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "নোটের আকার ৫০০০ বা তার কম অক্ষরে কমিয়ে আনুন।"
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "উপহার কার্ডের মূল্য অবশ্যই ০ এর বেশি হতে হবে।",
+            "gift_card_price_must_not_exceed_limit": "উপহার কার্ডের দাম %{gift_card_limit} এর বেশি হওয়া উচিত নয়।",
+            "subtotal_limit_reached": "লাইন আইটেমের সর্বোচ্চ মান পৌঁছে গেছে।",
+            "signature_mismatch": "%{stable_id} লাইনের জন্য পণ্যদ্রব্যের স্বাক্ষরের মিল নেই।"
           }
         }
+      },
+      "remote": {
+        "errors": {
+          "only_remote_merchandise_lines": "চেকআউটে কেবল দূরবর্তী পণ্যদ্রব্য থাকে। চেকআউট সম্পূর্ণ করার জন্য দূরবর্তী দোকানে পুনঃনির্দেশনা প্রয়োজন।",
+          "currency_mismatch": "এই আইটেমটি আপনার কার্টে যোগ করা যাবে না কারণ এটি এমন একটি দোকান থেকে এসেছে যেখানে ভিন্ন মুদ্রা ব্যবহার করা হয়।",
+          "max_remote_shops_exceeded": "এই পণ্যটি যোগ করা যাবে না কারণ আপনার কার্টে ইতিমধ্যেই অন্যান্য দোকান থেকে সর্বাধিক পণ্য রয়েছে।"
+        }
+      },
+      "units": {
+        "milligram": "মিলিগ্রাম",
+        "kilogram": "কেজি",
+        "milliliter": "মিলি",
+        "centiliter": "ক্ল",
+        "cubic_meter": "মি³",
+        "millimeter": "মিমি",
+        "centimeter": "সেমি",
+        "square_meter": "বর্গমিটার",
+        "ounce": "ওজ",
+        "pound": "পাউন্ড",
+        "fluid_ounce": "ফ্লু আউন্স",
+        "pint": "পয়েন্ট",
+        "quart": "কিউটি",
+        "gallon": "মেয়ে",
+        "inch": "ভিতরে",
+        "foot": "ফুট",
+        "yard": "গজ",
+        "square_foot": "ফুট²",
+        "item": "আইটেম"
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "বর্তমান সদস্যপদে ঠিকানাটি সমর্থিত নয়।",
+        "items_split_across_locations_unsupported": "আপনার অর্ডারের জন্য প্রাইম ডেলিভারি উপলব্ধ নেই। আপনার শিপিং বিকল্পগুলি আপডেট করা হয়েছে।"
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "অনলাইন স্টোরে নেভিগেট করুন"
+        }
+      },
+      "tooltip": {
+        "accessibility_label_context": "%{context} সম্পর্কে আরও তথ্য",
+        "additional_payment_methods": "অতিরিক্ত পেমেন্ট পদ্ধতি"
       }
+    },
+    "pagination": {
+      "previous": "পূর্ববর্তী",
+      "next": "পরবর্তী"
+    },
+    "links": {
+      "powered_by_shopify": "Shopify দ্বারা চালিত",
+      "learn_more": "আরও জানুন"
+    },
+    "feed": {
+      "more": "আরও"
+    },
+    "attributes": {
+      "email": "ইমেইল",
+      "password": "পাসওয়ার্ড",
+      "password_confirmation": "পাসওয়ার্ড নিশ্চিতকরণ",
+      "first_name": "প্রথম নাম",
+      "last_name": "পদবি",
+      "body": "শরীর",
+      "signature": "জানুন"
+    },
+    "addresses": {
+      "zip_code": "জিপ কোড",
+      "postal_code": "পোস্টাল কোড",
+      "postcode": "পোস্টকোড",
+      "pincode": "পিনকোড",
+      "region": "অঞ্চল",
+      "prefecture": "প্রিফেকচার",
+      "province": "প্রদেশ",
+      "state": "রাজ্য",
+      "state_and_territory": "রাজ্য/অঞ্চল",
+      "county": "কাউন্টি",
+      "emirate": "আমিরাত",
+      "governorate": "গভর্নরেট",
+      "confirm": "আপনি কি নিশ্চিত যে আপনি এই ঠিকানাটি মুছে ফেলতে চান?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "বৈশিষ্ট্যযুক্ত",
+        "best_selling": "সর্বাধিক বিক্রিত",
+        "az": "বর্ণানুক্রমিকভাবে, AZ",
+        "za": "বর্ণানুক্রমিকভাবে, ZA",
+        "price_ascending": "দাম, কম থেকে বেশি",
+        "price_descending": "দাম, বেশি থেকে কম",
+        "date_ascending": "তারিখ, পুরাতন থেকে নতুন",
+        "date_descending": "তারিখ, নতুন থেকে পুরাতন"
+      }
+    },
+    "errors": {
+      "blank": "খালি থাকতে পারে না।",
+      "blocked_address": "এই অবস্থানটি সমর্থিত নয়",
+      "credit_card_session_expired": "ক্রেডিট কার্ড অনুমোদনের মেয়াদ শেষ হয়ে গেছে, দয়া করে আপনার পেমেন্ট তথ্য আবার লিখুন। আপনার কার্ড থেকে কোনও চার্জ নেওয়া হয়নি।",
+      "empty": "খালি থাকতে পারে না।",
+      "invalid_email": "একটি বৈধ ইমেল ঠিকানা হতে হবে",
+      "discount_disabled": "এই ছাড়টি বন্ধ করা হয়েছে।",
+      "discount_expired": "এই ছাড় আর বৈধ নয়।",
+      "discount_limit_reached": "এই ছাড়টি ব্যবহারের সীমায় পৌঁছে গেছে।",
+      "discount_not_found": "প্রবেশ করানো কোডের সাথে মিলে যাওয়া বৈধ ছাড় খুঁজে পাওয়া যাচ্ছে না।",
+      "customer_already_used_once_per_customer_discount_notice": "এই ছাড়টি ব্যবহারের সীমায় পৌঁছে গেছে।",
+      "gift_card_already_applied": "আপনার চেকআউটে কোডটি ইতিমধ্যেই প্রয়োগ করা হয়েছে।",
+      "gift_card_code_invalid": "কোডটি অবৈধ।",
+      "gift_card_currency_mismatch": "আপনার গিফট কার্ডটি %{gift_card_currency} ভাষায়। এটি %{checkout_currency} ভাষায় পুনরায় ইস্যু করার জন্য আমাদের সাথে যোগাযোগ করুন।",
+      "gift_card_depleted": "এই উপহার কার্ডে আর কোনও তহবিল অবশিষ্ট নেই।",
+      "gift_card_disabled": "উপহার কার্ড বন্ধ করা আছে",
+      "gift_card_expired": "গিফট কার্ডের মেয়াদ শেষ হয়ে গেছে",
+      "invalid": "অবৈধ"
     }
   },
   "customer_accounts": {
