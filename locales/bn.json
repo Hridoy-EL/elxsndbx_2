@@ -1882,5 +1882,128 @@
       "loading_add_form_accessibility_message": "নতুন ঠিকানা ফর্ম লোড হচ্ছে",
       "loading_edit_form_accessibility_message": "ঠিকানা সম্পাদনা ফর্ম লোড হচ্ছে"
     }
+  },
+  "customer": {
+    "order": {
+      "sku": "SKU সম্পর্কে",
+      "price": "দাম",
+      "quantity": "পরিমাণ",
+      "total": "মোট",
+      "total_refunded": "ফেরত দেওয়া হয়েছে",
+      "fulfilled_at_html": "পূরণ করা হয়েছে {{ date }}",
+      "track_shipment": "চালান ট্র্যাক করুন",
+      "tracking_url": "ট্র্যাকিং লিঙ্ক",
+      "tracking_company": "বাহক",
+      "tracking_number": "ট্র্যাকিং নম্বর",
+      "subtotal": "উপমোট",
+      "total_duties": "কর্তব্য"
+    },
+    "orders": {
+      "title": "অর্ডার ইতিহাস",
+      "order_number": "অর্ডার",
+      "order_number_link": "অর্ডার নম্বর {{ number }}",
+      "date": "তারিখ",
+      "payment_status": "পেমেন্টের অবস্থা",
+      "fulfillment_status": "পূরণের অবস্থা",
+      "total": "মোট",
+      "none": "তুমি এখনও কোন অর্ডার দাওনি।"
+    },
+    "recover_password": {
+      "title": "আপনার পাসওয়ার্ড রিসেট করুন",
+      "subtext": "আপনার পাসওয়ার্ড রিসেট করার জন্য আমরা আপনাকে একটি ইমেল পাঠাবো।",
+      "success": "আপনার পাসওয়ার্ড আপডেট করার জন্য আমরা আপনাকে একটি লিঙ্ক সহ একটি ইমেল পাঠিয়েছি।"
+    },
+    "register": {
+      "title": "অ্যাকাউন্ট তৈরি করুন",
+      "first_name": "প্রথম নাম",
+      "last_name": "পদবি",
+      "email": "ইমেইল",
+      "password": "পাসওয়ার্ড",
+      "submit": "তৈরি করুন"
+    },
+    "reset_password": {
+      "title": "অ্যাকাউন্টের পাসওয়ার্ড রিসেট করুন",
+      "subtext": "একটি নতুন পাসওয়ার্ড লিখুন",
+      "password": "পাসওয়ার্ড",
+      "password_confirm": "পাসওয়ার্ড নিশ্চিত করুন",
+      "submit": "পাসওয়ার্ড রিসেট করুন"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "how_to_use_gift_card": "অনলাইনে গিফট কার্ড কোড অথবা স্টোরে QR কোড ব্যবহার করুন",
+      "title": "{{ shop }} এর জন্য আপনার {{ value }} গিফট কার্ড ব্যালেন্স এখানে!",
+      "subtext": "তোমার গিফট কার্ড",
+      "gift_card_code": "উপহার কার্ড কোড",
+      "shop_link": "অনলাইন স্টোরে যান",
+      "add_to_apple_wallet": "অ্যাপল ওয়ালেটে যোগ করুন",
+      "qr_image_alt": "QR কোড — উপহার কার্ড রিডিম করতে স্ক্যান করুন",
+      "copy_code": "উপহার কার্ড কোড কপি করুন",
+      "expiration_date": "মেয়াদ শেষ {{ expires_on }}",
+      "copy_code_success": "কোডটি সফলভাবে কপি করা হয়েছে",
+      "expired": "মেয়াদোত্তীর্ণ"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "আমি এটা উপহার হিসেবে পাঠাতে চাই।",
+      "expanded": "উপহার কার্ড প্রাপকের ফর্মটি প্রসারিত করা হয়েছে",
+      "collapsed": "উপহার কার্ড প্রাপকের ফর্মটি সঙ্কুচিত করা হয়েছে",
+      "email_label": "প্রাপকের ইমেল",
+      "email_label_optional_for_no_js_behavior": "প্রাপকের ইমেল (ঐচ্ছিক)",
+      "email": "ইমেইল",
+      "name_label": "প্রাপকের নাম (ঐচ্ছিক)",
+      "name": "নাম",
+      "message_label": "বার্তা (ঐচ্ছিক)",
+      "message": "বার্তা",
+      "max_characters": "{{ max_chars }} অক্ষর সর্বোচ্চ",
+      "send_on": "বছর-মাস-দিন",
+      "send_on_label": "পাঠান (ঐচ্ছিক)"
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "নিয়মিত দাম",
+        "sold_out": "বিক্রি হয়ে গেছে",
+        "unavailable": "অনুপলব্ধ",
+        "on_sale": "বিক্রয় ( ছাড় )",
+        "quantity": "পরিমাণ",
+        "add_to_cart": "কার্ট যোগ করুন",
+        "back_to_collection": "{{ title }} এ ফিরে যান",
+        "view_details": "বিস্তারিত দেখুন"
+      }
+    },
+    "article": {
+      "tags": "ট্যাগ:",
+      "all_topics": "সকল বিষয়",
+      "by_author": "{{ author }} দ্বারা",
+      "posted_in": "পোস্ট করা হয়েছে",
+      "read_more": "আরও পড়ুন",
+      "back_to_blog": "{{ title }} এ ফিরে যান"
+    },
+    "comments": {
+      "title": "মতামত দিন",
+      "name": "নাম",
+      "email": "ইমেইল",
+      "message": "বার্তা",
+      "post": "মন্তব্য পোস্ট করুন",
+      "moderated": "অনুগ্রহ করে মনে রাখবেন, মন্তব্য প্রকাশের আগে অনুমোদিত হতে হবে।",
+      "success_moderated": "আপনার মন্তব্য সফলভাবে পোস্ট করা হয়েছে। আমাদের ব্লগটি মডারেট হওয়ায় আমরা কিছুক্ষণের মধ্যেই এটি প্রকাশ করব।",
+      "success": "আপনার মন্তব্য সফলভাবে পোস্ট করা হয়েছে! ধন্যবাদ!",
+      "comments_with_count": {
+        "one": "{{ count }} মন্তব্য",
+        "other": "{{ count }} মন্তব্য"
+      }
+    },
+    "password_page": {
+      "login_form_message": "পাসওয়ার্ড ব্যবহার করে দোকানে প্রবেশ করুন:",
+      "login_form_password_label": "পাসওয়ার্ড",
+      "login_form_password_placeholder": "তোমার পাসওয়ার্ড",
+      "login_form_submit": "প্রবেশ করান",
+      "signup_form_email_label": "ইমেইল",
+      "signup_form_success": "আমরা খোলার ঠিক আগে আপনাকে একটি ইমেল পাঠাবো!",
+      "password_link": "পাসওয়ার্ড ব্যবহার করে লিখুন"
+    }
   }
 }
