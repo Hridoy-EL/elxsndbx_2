@@ -2469,6 +2469,140 @@
       },
       "removeItem": "{{label}} সরান",
       "removeTag": "ট্যাগ সরান"
+    },
+    "date": {
+      "humanize": {
+        "lessThanOneHourAgo": {
+          "other": "{{count}} মিনিট আগে"
+        },
+        "lessThanOneMinuteAgo": "এখনই",
+        "yesterday": "গতকাল {{time}} এ",
+        "today": "আজ {{time}} এ",
+        "tomorrow": "আগামীকাল {{time}} এ"
+      }
+    },
+    "enable_javascript": "আপনার অ্যাকাউন্ট দেখতে, আপনার ব্রাউজার সেটিংসে জাভাস্ক্রিপ্ট সক্ষম করুন অথবা অন্য ব্রাউজার দিয়ে সাইন ইন করুন।",
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "অ্যাকাউন্ট মেনু লুকান",
+        "label": "হিসাব",
+        "show_accessibility_label": "অ্যাকাউন্ট মেনু দেখান",
+        "nav_accessibility_label": "অ্যাকাউন্ট নেভিগেশন",
+        "open_menu_accessibility_label": "অ্যাকাউন্ট নেভিগেশন খুলুন",
+        "close_menu_accessibility_label": "অ্যাকাউন্ট নেভিগেশন বন্ধ করুন",
+        "loading_message": "অ্যাকাউন্ট নেভিগেশন লোড হচ্ছে"
+      },
+      "action_menu_accessibility_label": "আরও পদক্ষেপ",
+      "close_menu_accessibility_label": "প্রধান নেভিগেশন বন্ধ করুন",
+      "contact_email_subject": "{{shopName}} অনলাইন স্টোর থেকে যোগাযোগ করুন",
+      "contact_link": "যোগাযোগের তথ্য",
+      "delete_confirmation": {
+        "cancel": "বাতিল করুন",
+        "delete": "মুছে ফেলুন"
+      },
+      "dismiss_toast": "খারিজ করুন",
+      "document_title": "{{sectionName}} - {{shopName}} - অ্যাকাউন্ট",
+      "go_to_store_link": "দোকানে যান",
+      "loading_message": "লোড হচ্ছে",
+      "loading_policy_content_accessibility_label": "নীতির কন্টেন্ট লোড হচ্ছে",
+      "log_out_link": "সাইন আউট করুন",
+      "logout_overlay_label": "সাইন আউট করা হচ্ছে...",
+      "nav_label_accessibility_label": "প্রধান নেভিগেশন",
+      "navigation_accessibility_message": "আপনি {{sectionName}} এ নেভিগেট করেছেন",
+      "open_menu_accessibility_label": "প্রধান নেভিগেশন খুলুন",
+      "orders_link_label": "অর্ডার",
+      "shop_logo_accessibility_label": "{{shopName}} লোগো",
+      "subscriptions_link_label": "সাবস্ক্রিপশন",
+      "settings_link": "সেটিংস",
+      "country_switcher_toast_message": "দেশটি {{countryName}} তে পরিবর্তন করা হয়েছে",
+      "switch_country": "দেশ পরিবর্তন করুন",
+      "no_countries_found": "কোন দেশ পাওয়া যায়নি",
+      "location_switcher_toast_message": "লোকেশনটি {{locationName}} এ স্যুইচ করা হয়েছে",
+      "switch_location": "অবস্থান পরিবর্তন করুন",
+      "no_locations_found": "কোনও অবস্থান পাওয়া যায়নি",
+      "try_new_search": "নতুন অনুসন্ধান করে দেখুন",
+      "view_details": "বিস্তারিত দেখুন",
+      "company_location": "কোম্পানির অবস্থান",
+      "search": "অনুসন্ধান করুন",
+      "skip_to_content": "কন্টেন্টে চলে যান"
+    },
+    "announcement_bar": {
+      "expand_label": "ঘোষণা বারটি প্রসারিত করুন",
+      "collapse_label": "ঘোষণা বারটি সঙ্কুচিত করুন",
+      "close_label": "ঘোষণা বার বন্ধ করুন"
+    },
+    "account_information": {
+      "loading_accessibility_message": "অ্যাকাউন্টের তথ্য লোড হচ্ছে",
+      "loading_finished_accessibility_message": "অ্যাকাউন্টের তথ্য লোড হয়েছে",
+      "profile_card": {
+        "cancel": "বাতিল করুন",
+        "cancel_accessibility_label": "প্রোফাইল সম্পাদনা বাতিল করুন",
+        "edit": "সম্পাদনা",
+        "edit_accessibility_label": "প্রোফাইল সম্পাদনা করুন",
+        "email_help_text": "ইমেল এডিট করা যাবে না",
+        "editable_email_help_text": "এই ইমেলটি সাইন-ইন এবং অর্ডার আপডেটের জন্য ব্যবহৃত হয়।",
+        "first_name": "প্রথম নাম",
+        "last_name": "পদবি",
+        "email": "ইমেইল",
+        "no_name_provided_accessibility_label": "কোনও নাম যোগ করা হয়নি",
+        "phone_number_help_text": "ফোন নম্বর সম্পাদনা করা যাবে না",
+        "save": "সংরক্ষণ করুন",
+        "save_accessibility_label": "প্রোফাইল সংরক্ষণ করুন",
+        "title": "প্রোফাইলের",
+        "errors": {
+          "name_too_long": "{{fieldName}} অনেক লম্বা (সর্বোচ্চ ২৫৫ অক্ষর)",
+          "name_cannot_contain_url": "{{fieldName}} তে URL থাকতে পারে না।",
+          "name_cannot_contain_html_tags": "{{fieldName}} HTML ট্যাগ থাকতে পারে না।",
+          "email_cant_be_blank": "ইমেল খালি রাখা যাবে না।",
+          "invalid_email_format": "একটি বৈধ ইমেল ঠিকানা লিখুন"
+        }
+      },
+      "verify_new_email_modal": {
+        "title": "ইমেল যাচাই করুন",
+        "description": "{{email}} এ পাঠানো কোডটি লিখুন।",
+        "one_time_password_label": "৬-সংখ্যার কোড",
+        "email_resend_button": "কোড পুনরায় পাঠান",
+        "email_resend_button_accessibility_label": "যাচাইকরণ কোড পুনরায় পাঠান",
+        "verify_button": "যাচাই করুন",
+        "verify_button_accessibility_label": "এককালীন পাসওয়ার্ড যাচাই করুন",
+        "cancel_button": "বাতিল করুন",
+        "cancel_button_accessibility_label": "ইমেল সম্পাদনা বাতিল করুন",
+        "email_resend_button_success_toast_message": "যাচাইকরণ কোড পাঠানো হয়েছে",
+        "email_resend_button_error_banner_message": "যাচাইকরণ কোড পাঠানো যায়নি"
+      },
+      "email_update_success_modal": {
+        "title": "ইমেল যাচাই করুন",
+        "description": "ইমেল সফলভাবে আপডেট করা হয়েছে। লগইনে পুনঃনির্দেশিত করা হচ্ছে।"
+      },
+      "profile_update_confirmation_message": "প্রোফাইল আপডেট করা হয়েছে",
+      "email_update_confirmation_message": "ইমেলটি {{email}} এ আপডেট করা হয়েছে",
+      "title": "প্রোফাইলের",
+      "people": {
+        "pagination": {
+          "load_more": "আরও লোড করুন",
+          "load_more_accessibility_label": "আরও লোক লোড করুন",
+          "loading_accessibility_label": "লোকেদের লোড করা হচ্ছে"
+        }
+      },
+      "add_button": "যোগ করুন"
+    },
+    "orders": {
+      "list_layout_accessibility_label": "লেআউট বিকল্পগুলি",
+      "list_title": "অর্ডার",
+      "list_title_with_pending_orders": "আদেশ:",
+      "list_title_confirmed_orders_accessibility_label": "অর্ডার: নিশ্চিত করা হয়েছে",
+      "list_title_pending_orders_accessibility_label": "অর্ডার: মুলতুবি",
+      "switch_order_type_pending_orders_accessibility_label": "অর্ডারের ধরণ পরিবর্তন করুন, বর্তমানে মুলতুবি থাকা অর্ডারগুলি দেখছেন",
+      "switch_order_type_confirmed_orders_accessibility_label": "অর্ডারের ধরণ পরিবর্তন করুন, বর্তমানে নিশ্চিত অর্ডারগুলি দেখছেন",
+      "order_list": {
+        "column_headers": {
+          "order": "অর্ডার",
+          "total": "মোট",
+          "actions_accessibility_label": "কর্ম",
+          "products_accessibility_label": "পণ্য"
+        },
+        "delivered": "বিতরণ করা হয়েছে {{date}}"
+      }
     }
   },
   "customer": {
