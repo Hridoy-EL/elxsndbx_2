@@ -2332,7 +2332,143 @@
       "adjusted_total": "মোট পরিমাণ সামঞ্জস্য করা হয়েছে",
       "due_on_date": "শেষ তারিখ {{date}}",
       "due_on_fulfillment": "পূরণের জন্য বকেয়া",
-      "due_on_receipt": "প্রাপ্তির সময় বকেয়া"
+      "due_on_receipt": "প্রাপ্তির সময় বকেয়া",
+      "shipment_timeline": {
+        "expand_events_accessibility_label": "অর্ডার চালানের বিবরণ দেখান",
+        "hide_events_label": "বিবরণ লুকান",
+        "hide_events_accessibility_label": "অর্ডার চালানের বিবরণ লুকান"
+      },
+      "addresses_section_title": "বিলিং এবং শিপিং",
+      "order_details": "অর্ডারের বিবরণ",
+      "order_details_skeleton_accessibility_label": "সমস্ত অর্ডারের বিবরণ দেখতে সাইন ইন করুন।",
+      "billing_address": "বিলিং ঠিকানা",
+      "card_ending_with": "{{lastDigits}} দিয়ে শেষ হচ্ছে",
+      "contact": "যোগাযোগ",
+      "contact_information": "যোগাযোগের তথ্য",
+      "company": "কোম্পানির",
+      "company_and_location": "কোম্পানি এবং অবস্থান",
+      "fully_refunded_label": "ফেরত দেওয়া হয়েছে",
+      "group_title_label": "এর অংশ: {{groupTitle}}",
+      "group_title_label_with_parent": "এর জন্য: {{groupTitle}}",
+      "view_controls": {
+        "gallery": "গ্যালারি",
+        "list": "তালিকা"
+      },
+      "grouped_view_components": {
+        "expand_line_items": "{{count}} টি আইটেম দেখান",
+        "collapse_line_items": "{{count}} টি আইটেম লুকান",
+        "line_item_summary_list_accessibility_label": "{{productTitle}} বান্ডেলের আইটেমগুলি"
+      },
+      "discount": "ছাড়",
+      "hide_items": "আইটেম লুকান",
+      "loading": "অর্ডারের বিবরণ লোড হচ্ছে",
+      "loading_finished_accessibility_message": "অর্ডারের বিবরণ লোড করা হয়েছে।",
+      "location": "স্থান",
+      "image_gallery": {
+        "next": "পরবর্তী আইটেমগুলি দেখান",
+        "previous": "পূর্ববর্তী আইটেমগুলি দেখান",
+        "load_more_items": {
+          "one": "আরও {{count}} টি আইটেম লোড করুন",
+          "other": "আরও {{count}} টি আইটেম লোড করুন"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "অর্ডারের সারাংশ দেখান",
+        "closed": "অর্ডারের সারাংশ লুকান"
+      },
+      "no_data": "কোনটিই নয়",
+      "no_data_provided_accessibility_label": "{{fieldName}} খালি আছে",
+      "not_applicable": "নিষিদ্ধ",
+      "paid_amount": "পরিশোধিত",
+      "partially_refunded_label": "আংশিকভাবে ফেরত দেওয়া হয়েছে",
+      "payment": {
+        "status_in_review": "পর্যালোচনার পরে পেমেন্ট প্রদেয়",
+        "status_unpaid": "{{date}} তারিখে পেমেন্ট বাকি আছে",
+        "title": "পেমেন্ট",
+        "payment_type": {
+          "gift_card": "উপহার কার্ড",
+          "store_credit": "স্টোর ক্রেডিট",
+          "money_order": "মানি অর্ডার",
+          "cash_on_delivery": "ক্যাশ অন ডেলিভারি (সিওডি)",
+          "bank_deposit": "ব্যাংক আমানত",
+          "manual": "ম্যানুয়াল"
+        },
+        "card_payment_details": "{{lastDigits}} দিয়ে শেষ - {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "{{lastDigits}} দিয়ে শেষ - {{formattedTransactionAmount}}",
+        "store_credit_payment_details": "স্টোর ক্রেডিট - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "শপ পে কিস্তির মাধ্যমে পেমেন্ট করা হয়েছে",
+          "view_schedule": "সময়সূচী দেখুন"
+        },
+        "manual_payment_methods": {
+          "money_order": "মানি অর্ডার - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "ক্যাশ অন ডেলিভারি (COD) - {{formattedTransactionAmount}}",
+          "bank_deposit": "ব্যাংক আমানত - {{formattedTransactionAmount}}",
+          "manual": "ম্যানুয়াল - {{formattedTransactionAmount}}"
+        },
+        "transactions": {
+          "show_all": "সব দেখাও",
+          "show_less": "কম দেখান",
+          "details": "বিস্তারিত",
+          "payment_details": "পেমেন্টের বিবরণ"
+        },
+        "emv_details": {
+          "auth": "লেখক:",
+          "aid": "সাহায্য:",
+          "source": "উৎস:"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "শপ পে কিস্তির মাধ্যমে পরিশোধ করা হয়েছে",
+        "description": "শপ অ্যাপে রিমাইন্ডারের মাধ্যমে আপনার পেমেন্টের সময়সূচী সম্পর্কে অবগত থাকুন।",
+        "payment_reminders_button": "পেমেন্ট রিমাইন্ডার পান",
+        "desktop_qr_code_content": {
+          "title": "রিমাইন্ডারের জন্য স্ক্যান করুন",
+          "description": "Shop এর মাধ্যমে আপনার কিস্তির রিমাইন্ডার পান।"
+        }
+      },
+      "refunded_amount": "ফেরত দেওয়া হয়েছে",
+      "request_return_failed": "আপনার অনুরোধ প্রক্রিয়াকরণে একটি সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।",
+      "login_card": {
+        "resend_link_and_login": "আপনার অর্ডারের বিবরণ দেখতে, সাইন ইন করুন অথবা চেকআউটের সময় ব্যবহৃত ইমেল বা ফোন নম্বরে একটি নতুন লিঙ্ক পাঠান।",
+        "resend_link_only": "আপনার অর্ডারের বিবরণ দেখতে, চেকআউটের সময় ব্যবহৃত ইমেল বা ফোন নম্বরে একটি নতুন লিঙ্ক পাঠান।",
+        "log_in": "প্রবেশ কর",
+        "resend_link": "নতুন লিঙ্ক পাঠান",
+        "link_expired": "লিঙ্কের মেয়াদ শেষ হয়ে গেছে"
+      },
+      "remaining_amount": "অবশিষ্ট",
+      "marketing_section_title": "খবর এবং অফার",
+      "marketing_description": "আপনি মার্কেটিং ইমেল পাবেন। আপনি যেকোনো সময় সদস্যতা ত্যাগ করতে পারেন।",
+      "marketing_checkbox_label": "খবর এবং অফার সম্পর্কে আমাকে ইমেল করুন",
+      "marketing_checkmark_label": "আপনি ইমেল সংবাদ এবং অফার পেতে সাবস্ক্রাইব করেছেন।",
+      "returns": {
+        "expand_events_label": "বিস্তারিত দেখান",
+        "hide_events_label": "বিবরণ লুকান",
+        "ineligible_return_message": "এই অর্ডারের কোনও আইটেম ফেরত দেওয়ার যোগ্য নয়।",
+        "ineligible_return_message_when_returned": "এই অর্ডারের কোনও অতিরিক্ত আইটেম ফেরত দেওয়ার যোগ্য নয়।",
+        "print_shipping_label": "শিপিং লেবেল প্রিন্ট করুন",
+        "return_and_refund_modal_header": "ফেরত নীতি",
+        "tracking_number": "ট্র্যাকিং নম্বর:",
+        "exchange_header": "আইটেম বিনিময় করুন",
+        "exchange_subheader": "ফেরত দেওয়া শেষ হলে অর্ডারে এক্সচেঞ্জ আইটেম যোগ করা হবে।"
+      },
+      "shipping": {
+        "address": "পাঠানোর ঠিকানা",
+        "address_map_marker": "পাঠানোর ঠিকানা",
+        "method": "শিপিং পদ্ধতি",
+        "summary": "পরিবহন",
+        "free": "বিনামূল্যে",
+        "free_shipping_discount": "বিনামূল্যে পরিবহন",
+        "one_time": "এককালীন শিপিং",
+        "subscription": "সাবস্ক্রিপশন শিপিং"
+      },
+      "pickup": {
+        "pickup": "পিকআপ",
+        "pickup_location": "পিকআপের অবস্থান",
+        "pickup_point": "পিকআপ পয়েন্ট"
+      },
+      "show_items": "আইটেম দেখান",
+      "show_order_summary": "অর্ডারের সারাংশ দেখান"
     },
     "addresses": {
       "add_button": "ঠিকানা যোগ করুন",
