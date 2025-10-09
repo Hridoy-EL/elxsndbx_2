@@ -1,0 +1,290 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "shopify": {
+    "sentence": {
+      "two_words_connector": " এবং ",
+      "last_word_connector": ", এবং "
+    },
+    "checkout": {
+      "address_management": {
+        "confirm_address_deletion": "আপনি কি নিশ্চিত যে আপনি {{address}} ঠিকানাটি মুছে ফেলতে চান?"
+      },
+      "general": {
+        "page_title": "চেকআউট",
+        "error_page_title": "ত্রুটি",
+        "skip_to_content": "কন্টেন্টে চলে যান",
+        "breadcrumb": "ব্রেডক্রাম্ব",
+        "continue_button_label": "চালিয়ে যান",
+        "complete_purchase_button_label": "অর্ডার সম্পূর্ণ করুন",
+        "pay_now_button_label": "এখনই পেমেন্ট করুন",
+        "authenticate_purchase_button_label": "পেমেন্ট প্রমাণীকরণ করুন",
+        "edit_link_label": "সম্পাদনা",
+        "all_rights_reserved": "সর্বস্বত্ব সংরক্ষিত %{shop_name}",
+        "print_policies_link_label": "ছাপা",
+        "cart": "ঝুরি",
+        "close_modal_label": "বন্ধ করা",
+        "close_notice_label": "বন্ধ করা",
+        "expand_notice_label": "আরও দেখুন",
+        "continue_to_shipping_method": "শিপিং চালিয়ে যান",
+        "continue_to_payment_method": "পেমেন্ট চালিয়ে যান",
+        "continue_to_review": "অর্ডার পর্যালোচনা করুন",
+        "back_to_cart": "কার্টে ফিরে যান",
+        "back_to_contact_information": "তথ্যে ফিরে যান",
+        "back_to_shipping_method": "শিপিংয়ে ফিরে যান",
+        "back_to_payment_method": "পেমেন্টে ফিরে যান",
+        "choose_shipping_method": "একটি শিপিং পদ্ধতি বেছে নিন",
+        "choose_payment_method": "একটি পেমেন্ট পদ্ধতি বেছে নিন",
+        "choose_billing_address": "একটি বিলিং ঠিকানা বেছে নিন",
+        "contact_us_html": "আরও তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন",
+        "autocomplete_title": "পরামর্শ",
+        "autocomplete_single_item": "১টি আইটেম উপলব্ধ",
+        "autocomplete_multi_item": "{{number}} টি আইটেম উপলব্ধ",
+        "autocomplete_close": "পরামর্শ বন্ধ করুন",
+        "forwarding_indicator": {
+          "new_window": "একটি নতুন উইন্ডোতে খুলবে।",
+          "external": "বাহ্যিক ওয়েবসাইট খোলে।",
+          "external_and_new_window": "একটি নতুন উইন্ডোতে বাহ্যিক ওয়েবসাইট খোলে।"
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - চেকআউট"
+        },
+        "tooltip_accessibility_label": "অধিক তথ্য",
+        "qr_code": "QR কোড",
+        "errors": {
+          "only_empty_terms_accepted": "এই নীতি শুধুমাত্র খালি শর্তাবলী গ্রহণ করে।",
+          "session_identifier_not_unique_error": "আপনার অর্ডারে কিছু সমস্যা হয়েছে, অনুগ্রহ করে আবার চেক আউট করার চেষ্টা করুন।",
+          "line_item_limit_reached": "লাইন আইটেমের সর্বাধিক সংখ্যক সীমায় পৌঁছে গেছে।",
+          "session_is_already_finished": "এই চেকআউট সেশনটি ইতিমধ্যেই চূড়ান্ত করা হয়েছে।",
+          "merchandise": {
+            "only_value_constraint": "পণ্যদ্রব্য ইনপুটে শুধুমাত্র সঠিক মান অনুমোদিত।",
+            "merchandise_not_found": "পণ্যটি পাওয়া যায়নি।",
+            "merchandise_variant_not_found": "পণ্যের ধরণ খুঁজে পাওয়া যায়নি।",
+            "merchandise_not_applicable": "পণ্যের ধরণ কেনা যাবে না।",
+            "mixed_currencies": "চেকআউটে বিভিন্ন মুদ্রার লাইন আইটেম রয়েছে।",
+            "bundle_products_not_supported_for_b2b": "এই লোকেশনের জন্য B2B অর্ডারে বান্ডিল করা আইটেম যোগ করা যাবে না।",
+            "gift_card_quantity_mismatch": "গিফট কার্ড কোড নির্দিষ্ট করার সময়, লাইন আইটেমের পরিমাণ এবং গিফট কার্ড কোডের সংখ্যা অবশ্যই মিলতে হবে।",
+            "gift_card_not_supported": "এই চেকআউটে উপহার কার্ড সমর্থিত নয়।",
+            "gift_card_not_unique": "এই চেকআউটে {{code}} কোড সহ উপহার কার্ড একাধিকবার দেখা গেছে। তুলনা করার আগে কোডগুলি ফর্ম্যাট করা হয়েছে।",
+            "gift_card_used": "গিফট কার্ড কোড {{code}} ইতিমধ্যেই একটি গিফট কার্ডে বরাদ্দ করা আছে। তুলনা করার আগে কোডগুলি ফর্ম্যাট করা হয়।",
+            "gift_card_invalid": "উপহার কার্ড কোড {{code}} অবৈধ।",
+            "gift_card_code_changed": "ফর্ম্যাটিং নিয়ম মেনে গিফট কার্ড কোড {{proposed_code}} কে {{formatted_code}} এ পরিবর্তন করা হয়েছে।",
+            "gift_card_with_attributes_not_supported": "এই চেকআউটে কাস্টম অ্যাট্রিবিউট সহ উপহার কার্ড সমর্থিত নয়।",
+            "gift_card_with_components_not_supported": "এই চেকআউটে উপাদান সহ উপহার কার্ড সমর্থিত নয়।",
+            "selling_plan_mismatch": "সাবস্ক্রিপশনটি আপডেট করা হয়েছে।",
+            "selling_plan_not_supported": "সাবস্ক্রিপশন সমর্থিত নয়।",
+            "selling_plan_not_supported_b2b": "B2B চেকআউটের জন্য সাবস্ক্রিপশন সমর্থিত নয়।",
+            "price_mismatch": "এই পণ্যের জন্য পূর্বে প্রস্তাবিত মূল্য অবৈধ ছিল এবং আপডেট করা হয়েছে।",
+            "inventory_not_found": "এই পণ্যের জন্য কোনও মজুদ পাওয়া যায়নি।",
+            "product_not_published": "পণ্যটি প্রকাশিত হয়নি।",
+            "product_not_published_in_buyer_location": "পণ্যটি ক্রেতার অবস্থানে প্রকাশিত হয় না।",
+            "duplicated_stable_id": "এই মার্চেন্ডাইজ লাইনের স্টেবল-আইডি অন্য লাইনের মতোই।",
+            "minimum_quantity_not_met": "কিছু জিনিসের পরিমাণ ন্যূনতম প্রয়োজন পূরণ করে না।",
+            "maximum_quantity_exceeded": "কিছু জিনিসের পরিমাণ সর্বোচ্চ অনুমোদিত পরিমাণের চেয়ে বেশি।",
+            "quantity_increment_not_met": "কিছু জিনিসের পরিমাণ অর্ডারের সীমা পূরণ করে না।",
+            "quantity_rules_not_met": "কিছু জিনিসের পরিমাণ অর্ডারের সীমা পূরণ করে না।",
+            "bundle_requires_components": "এই বান্ডিল পণ্যের কোনও উপাদান নেই।",
+            "title_too_long": "পণ্যের শিরোনাম অনেক লম্বা।",
+            "title_empty": "পণ্যের নাম খালি।"
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "কোম্পানির পরিচিতির কোম্পানিতে প্রবেশাধিকার নেই।",
+            "customer_account_required": "চালিয়ে যেতে আপনাকে সাইন ইন করতে হবে।",
+            "company_location_required": "গ্রাহককে চালিয়ে যাওয়ার জন্য একটি কোম্পানির অবস্থান বেছে নিতে হবে।",
+            "company_purchase_permission_required": "গ্রাহকের কোম্পানির অর্ডার দেওয়ার অনুমতি নেই।",
+            "personal_order_not_allowed": "এই দোকানে ব্যক্তিগত অর্ডার গ্রহণযোগ্য নয়।",
+            "lost_access_to_company": "গ্রাহক যেকোনো কোম্পানিতে প্রবেশাধিকার হারিয়েছেন।",
+            "contact_info_does_not_match_customer_account": "আপনার সাইন ইন করা অ্যাকাউন্টের সাথে যোগাযোগের তথ্য মিলতে হবে।",
+            "phone_number_does_not_match_expected_pattern": "নির্দিষ্ট ফোন নম্বরটি প্রত্যাশিত প্যাটার্নের সাথে মেলে না।",
+            "email_required": "সাবস্ক্রিপশন ব্যবহার করে পণ্য ক্রয় করার সময় একটি ইমেল প্রয়োজন।",
+            "email_domain_is_invalid": "এই নির্দিষ্ট ডোমেনটি সমাধান করা যাবে না।",
+            "missing_contact_method": "একটি বৈধ যোগাযোগ পদ্ধতি অনুপস্থিত।",
+            "checkout_completion_target_is_missing": "চেকআউট সমাপ্তির লক্ষ্যমাত্রা অনুপস্থিত।",
+            "invalid_customer_profile": "একটি অবৈধ গ্রাহক প্রোফাইল প্রদান করা হয়েছে।",
+            "customer_profile_access_restricted": "চেকআউটের গ্রাহক প্রোফাইল অ্যাক্সেস করার অনুমতি নেই।",
+            "checkout_completion_target_is_invalid_proc": "চেকআউট সমাপ্তির লক্ষ্য অবৈধ।",
+            "buyer_identity_presentment_currency_does_not_match": "আপনার অর্ডার প্রক্রিয়াকরণে একটি সমস্যা হয়েছে। কয়েক মিনিটের মধ্যে আবার চেষ্টা করুন।"
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "কার্টে শুধুমাত্র একটি ডেলিভারি লাইন থাকতে হবে।",
+            "wrong_number_of_delivery_lines": "প্রতিটি পণ্যদ্রব্যের জন্য একটি ডেলিভারি লাইন নির্দিষ্ট করতে হবে।",
+            "external_delivery_promise_error": "একটি বহিরাগত ডেলিভারি প্রতিশ্রুতি আনার ত্রুটি।",
+            "options_instructions_invalid": "নির্দিষ্ট নির্দেশাবলী প্রত্যাশিত প্যাটার্নের সাথে মেলে না।",
+            "destination_address_required": "চালিয়ে যাওয়ার জন্য একটি গন্তব্য ঠিকানা প্রয়োজন।",
+            "pickup_points_unavailable": "পিকআপ পয়েন্ট বর্তমানে অনুপলব্ধ।",
+            "local_pickup_delivery_line_detail_changed": "চলমান রাখতে হলে বর্তমান স্থানীয় পিকআপ ডেলিভারি কৌশল পরিবর্তন করতে হবে।",
+            "selected_pickup_option_no_longer_available": "পূর্বে নির্বাচিত পিকআপ বিকল্পটি আর উপলব্ধ নেই।",
+            "local_pickup_no_delivery_strategy_available": "স্থানীয়ভাবে পিকআপ ডেলিভারির কোনও কৌশল পাওয়া যায়নি।",
+            "origin_location_id_required": "যখন RETAIL ডেলিভারি পদ্ধতির অনুরোধ করা হয় তখন একটি অরিজিন লোকেশন আইডি প্রয়োজন।",
+            "invalid_origin_location_id": "মূল অবস্থান আইডির সাথে মেলে এমন কোনও অবস্থান খুঁজে পাওয়া যায়নি।"
+          }
+        }
+      },
+      "stock": {
+        "unpurchasable_product": {
+          "message": "এই আইটেমগুলি B2B অর্ডারের জন্য উপলব্ধ নয়।",
+          "status_column_header": "পাওয়া যায় না"
+        },
+        "unpurchasable_product_generic": {
+          "title": "ক্রয়যোগ্য নয় এমন পণ্য",
+          "header": "আপনার কার্ট থেকে কিছু আইটেম সরানো হয়েছে",
+          "message": "এই জিনিসপত্র পাওয়া যায় না।",
+          "status_column_header": "পাওয়া যায় না"
+        },
+        "unfulfillable_product": {
+          "title": "ডেলিভারি পাওয়া যাচ্ছে না",
+          "message": {
+            "one": "এই আইটেমটির জন্য %{delivery_method} আর উপলব্ধ নেই।",
+            "other": "এই আইটেমগুলির জন্য %{delivery_method} আর উপলব্ধ নেই।"
+          },
+          "default_message": {
+            "one": "এই আইটেমের জন্য নির্বাচিত ডেলিভারি পদ্ধতি আর উপলব্ধ নেই।",
+            "other": "এই আইটেমগুলির জন্য নির্বাচিত ডেলিভারি পদ্ধতি আর উপলব্ধ নেই।"
+          }
+        },
+        "unshippable_product": {
+          "title": "ডেলিভারি নেই",
+          "header": {
+            "one": "%{count}টি আইটেমের জন্য কোনও ডেলিভারি উপলব্ধ নেই।",
+            "other": "%{count}টি আইটেমের জন্য কোনও ডেলিভারি উপলব্ধ নেই"
+          },
+          "message": {
+            "one": "আপনার ঠিকানায় ডেলিভারির কোনও পদ্ধতি উপলব্ধ না থাকায় এই আইটেমটি আপনার কার্ট থেকে সরিয়ে দেওয়া হবে।",
+            "other": "আপনার ঠিকানায় ডেলিভারির কোনও পদ্ধতি উপলব্ধ না থাকায় এই আইটেমগুলি আপনার কার্ট থেকে সরিয়ে দেওয়া হবে।"
+          },
+          "status_column_header": "ডেলিভারি নেই"
+        },
+        "price_update": {
+          "title": "দাম আপডেট",
+          "description": "এই আইটেমগুলির দাম পরিবর্তিত হয়েছে এবং আপনার কার্টে আপডেট করা হয়েছে।",
+          "updated_price": "আপডেট করা দাম"
+        },
+        "price_and_quantity_update": {
+          "title": "দাম এবং পরিমাণ আপডেট",
+          "description": "এই আইটেমগুলির দাম এবং উপলব্ধ পরিমাণ পরিবর্তিত হয়েছে এবং আপনার কার্টে আপডেট করা হয়েছে।"
+        },
+        "out_of_stock": {
+          "description": "এই আইটেমগুলি আর উপলব্ধ নেই এবং আপনার কার্ট থেকে সরানো হয়েছে।",
+          "items_unavailable": "কিছু আইটেম আর উপলব্ধ নেই এবং আপনার কার্ট থেকে সরিয়ে দেওয়া হয়েছে।"
+        },
+        "out_of_stock_in_context_label": "এই পণ্যটি আপনার দেশ/অঞ্চলে উপলব্ধ নয়।"
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "অনুপলব্ধ পণ্য",
+          "other": "অনুপলব্ধ পণ্য"
+        },
+        "products_not_available": {
+          "one": "এই পণ্যটি আপনার কার্ট থেকে সরিয়ে ফেলা হবে কারণ এটি আপনার দেশ/অঞ্চলে উপলব্ধ নয়।",
+          "other": "এই পণ্যগুলি আপনার কার্ট থেকে সরিয়ে ফেলা হবে কারণ এগুলি আপনার দেশ/অঞ্চলে উপলব্ধ নয়।"
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "এই পণ্যটি আপনার দেশ/অঞ্চলে উপলব্ধ নয়।",
+          "other": "এই পণ্যগুলি আপনার দেশ/অঞ্চলে উপলব্ধ নয়।"
+        },
+        "unavailable_label": "অনুপলব্ধ"
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "এই পণ্যটি %{location_name} এ ডেলিভারির জন্য উপলব্ধ নয়।",
+          "some_products_other": "এই পণ্যগুলি %{location_name} এ ডেলিভারির জন্য উপলব্ধ নয়।",
+          "all_products_one": "আপনার কার্টের পণ্যটি %{location_name} এ ডেলিভারির জন্য উপলব্ধ নয়।",
+          "all_products_other": "আপনার কার্টের পণ্যগুলি %{location_name} এ ডেলিভারির জন্য উপলব্ধ নয়।"
+        },
+        "missing_country_fallback": "তোমার দেশ",
+        "indeterminate_location_fallback": "তোমার অবস্থান",
+        "cart_updated": "আপনার কার্ট আপডেট করা হয়েছে।",
+        "change_address_only": "চালিয়ে যেতে ডেলিভারির ঠিকানা পরিবর্তন করুন।",
+        "change_address_or_remove": "ডেলিভারির ঠিকানা পরিবর্তন করুন অথবা %{remove_action}।",
+        "remove_items_action": {
+          "one": "অনুপলব্ধ আইটেমটি সরান",
+          "other": "অনুপলব্ধ আইটেমগুলি সরান"
+        },
+        "empty_cart_action": "খালি কার্ট এবং দোকানে ফিরে যান",
+        "unavailable_line_item": "%{পণ্যের_নাম} / %{ভেরিয়েন্ট_লেবেল}"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "%{count}টি আইটেমের জন্য কোনও ডেলিভারি উপলব্ধ নেই।",
+            "other": "%{count}টি আইটেমের জন্য কোনও ডেলিভারি উপলব্ধ নেই"
+          },
+          "message": {
+            "one": "আপনার ঠিকানায় ডেলিভারির কোনও পদ্ধতি উপলব্ধ না থাকায় এই আইটেমটি আপনার কার্ট থেকে সরিয়ে দেওয়া হবে।",
+            "other": "আপনার ঠিকানায় ডেলিভারির কোনও পদ্ধতি উপলব্ধ না থাকায় এই আইটেমগুলি আপনার কার্ট থেকে সরিয়ে দেওয়া হবে।"
+          },
+          "label": "ডেলিভারি নেই"
+        }
+      },
+      "order_summary": {
+        "title": "অর্ডারের সারাংশ",
+        "group_title_label": "\"%{group_title}\" এর অংশ",
+        "for_add_on": "এর জন্য: %{group_title}",
+        "from_shop_heading": "%{shop_name} থেকে",
+        "from_other_stores_heading": "অন্যান্য দোকান থেকে",
+        "number_items": {
+          "one": "%{গণনা} আইটেম",
+          "other": "%{count}টি আইটেম"
+        },
+        "view_all_items": {
+          "one": "%{count} আইটেমটি দেখুন",
+          "other": "সমস্ত %{count} টি আইটেম দেখুন"
+        },
+        "more_items_modal": {
+          "search_item": "অনুসন্ধান করুন",
+          "clear_search": "অনুসন্ধান সাফ করুন",
+          "empty_results": "\"%{searchText}\" এর জন্য কোন ফলাফল পাওয়া যায়নি। বানান পরীক্ষা করুন অথবা ভিন্ন কোন শব্দ বা বাক্যাংশ ব্যবহার করুন।",
+          "number_items_shown": "%{totalNumber}টি আইটেমের মধ্যে %{shownNumber}"
+        },
+        "order_name_label": "অর্ডার %{name}",
+        "shopping_cart_label": "বাজারের ব্যাগ",
+        "discount_title": "ছাড়",
+        "discount_title_stacking": {
+          "one": "ছাড়",
+          "other": "ছাড়"
+        },
+        "discount_order_stacking": {
+          "one": "অর্ডার ডিসকাউন্ট",
+          "other": "ছাড় অর্ডার করুন"
+        },
+        "discount_label": "ছাড় কোড",
+        "discount_not_found": "প্রবেশ করানো কোডের সাথে মিলে যাওয়া বৈধ ছাড় খুঁজে পাওয়া যাচ্ছে না।",
+        "discount_placeholder": "ছাড় কোড",
+        "discount_code_applied": "ছাড় কোড প্রয়োগ করা হয়েছে",
+        "discount_code_allocations_mismatch": "আপনার <strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোড পরিবর্তন করা হয়েছে। আপনার কার্টটি পর্যালোচনা করে আবার চেষ্টা করুন।",
+        "order_discounts_apply_to_local_shop": "অর্ডার ডিসকাউন্ট শুধুমাত্র %{shop_name} থেকে আসা আইটেমের ক্ষেত্রে প্রযোজ্য",
+        "gift_card_applied": "উপহার কার্ড প্রয়োগ করা হয়েছে",
+        "enter_shipping_address": "শিপিং ঠিকানা লিখুন",
+        "gift_card_title": "উপহার কার্ড",
+        "gift_card_label": "উপহার কার্ড",
+        "gift_card_placeholder": "উপহার কার্ড",
+        "gift_card_and_discount_title": "ডিসকাউন্ট কোড অথবা গিফট কার্ড",
+        "gift_card_and_discount_label": "ডিসকাউন্ট কোড অথবা গিফট কার্ড",
+        "gift_card_and_discount_placeholder": "ডিসকাউন্ট কোড অথবা গিফট কার্ড",
+        "gift_cards_apply_to_local_shop": "উপহার কার্ড শুধুমাত্র %{shop_name} থেকে আসা আইটেমের ক্ষেত্রে প্রযোজ্য।",
+        "add_discount_or_gift_card": "একটি ডিসকাউন্ট কোড বা উপহার কার্ড যোগ করুন",
+        "remove_gift_card_label": "উপহার কার্ড সাফ করুন",
+        "remove_discount_label": "ছাড় সরান",
+        "return_restocking_fee_label": "পুনঃমজুদ ফি",
+        "return_shipping_fee_label": "ফেরত পাঠানো",
+        "free_shipping_discount_label": "বিনামূল্যে পরিবহন",
+        "applied_free_shipping_discount_label": "প্রয়োগ করা হয়েছে",
+        "apply_discount_button_label": "প্রয়োগ করুন",
+        "applied_discount_message": "মোট অর্ডার মূল্যে %{amount} ছাড়",
+        "discount_has_been_applied": "ছাড় প্রয়োগ করা হয়েছে",
+        "discount_has_been_removed": "ছাড় সরানো হয়েছে",
+        "gift_card_has_been_applied": "উপহার কার্ড প্রয়োগ করা হয়েছে",
+        "gift_card_has_been_removed": "উপহার কার্ডটি সরানো হয়েছে",
+        "gift_card_subscriptions_notice": "উপহার কার্ডগুলি শুধুমাত্র আপনার প্রথম পেমেন্টের ক্ষেত্রে প্রযোজ্য হবে",
+        "discount_already_applied": "এই অর্ডারে একটি ছাড় প্রযোজ্য হয়েছে। আপনি আর একটি ছাড় যোগ করতে পারবেন না।"
+      }
+    }
+  }
+}
