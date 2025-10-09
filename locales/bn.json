@@ -290,7 +290,9 @@
           "due_on_fulfillment_next": "পূরণের জন্য বকেয়া",
           "due_on_receipt": "প্রাপ্তির সময় মোট বকেয়া",
           "due_later_checkout_to_draft": "পরে মোট বকেয়া",
-          "total_paid": "মোট প্রদত্ত"
+          "total_paid": "মোট প্রদত্ত",
+          "due_today": "আজ মোট বকেয়া",
+          "due_today_next": "আজ শেষ"
         },
         "maximum_discount_code_limit_reached": "আপনি ছাড় কোডের সর্বাধিক সংখ্যায় পৌঁছে গেছেন। <strong style=\"text-transform:uppercase\">%{code}</strong> ব্যবহার করতে একটি বিদ্যমান কোড সরান।",
         "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> এখন কাজ করছে না। সাহায্যের জন্য আমাদের সাথে যোগাযোগ করুন।",
@@ -325,7 +327,123 @@
             "other": "%{count}টি আইটেম"
           }
         },
-        "alternative_payment_currency_total": "%{amount_due} হিসেবে চার্জ করা হয়েছে"
+        "alternative_payment_currency_total": "%{amount_due} হিসেবে চার্জ করা হয়েছে",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোড আপনার কার্টের আইটেমগুলির জন্য বৈধ নয়।",
+        "discount_requires_customer_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোড প্রয়োগ করতে আপনার শিপিং তথ্য লিখুন।",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোডটি এখন আপনার কাছে উপলব্ধ নয়।",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোডের জন্য যোগ্য গ্রাহকের প্রয়োজন",
+        "shipping_information_does_not_meet_discount_requirements_notice": "আপনার শিপিং ঠিকানার জন্য <strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোড উপলব্ধ নেই।",
+        "customer_already_used_once_per_customer_discount_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> ডিসকাউন্ট কোডটি ইতিমধ্যেই ব্যবহার করা হয়েছে।",
+        "subtotal_label": "উপমোট",
+        "subtotal_label_with_quantity": {
+          "one": "উপ-মোট · %{count}টি আইটেম",
+          "other": "উপ-মোট · %{count}টি আইটেম"
+        },
+        "shipping_label": "পরিবহন",
+        "pickup_label": "দোকান থেকে পিকআপ",
+        "no_pickup_location": "কোনও পিকআপ লোকেশন উপলব্ধ নেই।",
+        "pickup_unavailable_banner_title": {
+          "one": "আপনার আইটেমের জন্য কোনও দোকান উপলব্ধ নেই",
+          "other": "আপনার আইটেমের জন্য কোনও দোকান নেই"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "ঠিকানায় পাঠান",
+          "ship_to_address_instead_html": "পরিবর্তে %{লিঙ্ক}"
+        },
+        "tip_label": "টিপ",
+        "unconfirmed_label": "নিশ্চিত নয়",
+        "calculating_shipping": "গণনা করা হচ্ছে...",
+        "calculating": "গণনা করা হচ্ছে...",
+        "shipping_default_value": "পরবর্তী ধাপে গণনা করা হবে",
+        "shipping_discount_title": "শিপিং ডিসকাউন্ট",
+        "shipping_pending_message": "এখনও উপলব্ধ নয়",
+        "shipping_policy_link": "পরিবহন খরচ",
+        "taxes_label": "কর",
+        "estimated_taxes_label": "আনুমানিক কর",
+        "estimated_taxes_label_short": "আনুমানিক",
+        "information_estimated_taxes_label": "কর (আনুমানিক)",
+        "estimated_taxes_finalization_tooltip_content": "আপনার অর্ডার দেওয়ার পর চূড়ান্ত কর এবং মোট পরিমাণ ইমেল বা টেক্সটের মাধ্যমে নিশ্চিত করা হবে।",
+        "order_total_label": "মোট অর্ডার",
+        "price_before_discount_aria_text": "আসল দাম",
+        "price_after_discount_aria_text": "ছাড় দেওয়া দাম",
+        "discount_code_aria_text": "ছাড় কোড",
+        "total_savings": "মোট সঞ্চয়",
+        "total_label": "মোট",
+        "total_due_label": "মোট বকেয়া",
+        "total_paid_label": "মোট প্রদত্ত",
+        "total_price_label": "মোট দাম",
+        "total_outstanding_label": "পরিশোধের পরিমাণ",
+        "deposit_label": "জমা",
+        "total_due_today_label": "আজ মোট বকেয়া",
+        "total_due_later_label": "পরে মোট বকেয়া",
+        "partial_total_label": "মোট",
+        "free_total_label": "বিনামূল্যে",
+        "free_shipping_total_label": "বিনামূল্যে",
+        "paid_label": "পরিশোধিত",
+        "payment_due_label": "পেমেন্ট বাকি আছে",
+        "vat_label_html": "করের মধ্যে %{amount} অন্তর্ভুক্ত",
+        "duties_included_label": "মোট মূল্যে কর এবং শুল্ক অন্তর্ভুক্ত। ডেলিভারিতে কোনও অতিরিক্ত চার্জ নেই।",
+        "discount_and_gift_card_savings_notice": "ছাড়ের ক্ষেত্রে %{discount_amount} এবং উপহার কার্ডের ক্ষেত্রে %{gift_card_amount} এর পরে",
+        "discount_savings_notice": "%{discount_amount} ছাড়ের পরে",
+        "gift_card_savings_notice": "গিফট কার্ডে %{gift_card_amount} এর পরে",
+        "cost_table_title": "খরচের সারাংশ",
+        "cost_table_item_column_header": "আইটেম",
+        "cost_table_value_column_header": "মূল্য",
+        "description_label": "বিবরণ",
+        "price_label": "দাম",
+        "price_per_item": {
+          "accessibility_label": "প্রতি আইটেমের জন্য %{মূল্য}",
+          "label": "%{দাম}/ea"
+        },
+        "quantity_label": "পরিমাণ",
+        "product_change_label": "পরিবর্তন",
+        "product_image_label": "পণ্যের ছবি",
+        "product_image_quantity_label": "পরিমাণ",
+        "scroll_order_summary": "আরও আইটেমের জন্য স্ক্রোল করুন",
+        "expand_order_summary_short": "দেখান",
+        "collapse_order_summary_short": "লুকান",
+        "expand_order_summary": "অর্ডারের সারাংশ দেখান",
+        "collapse_order_summary": "অর্ডারের সারাংশ লুকান",
+        "original_price": "আসল দাম",
+        "sale_price": "বিক্রয় মূল্য",
+        "total_updated_label": "মোট মূল্য আপডেট করা হয়েছে:",
+        "order_total_updated_label": "মোট আপডেট করা হয়েছে",
+        "total_already_paid_label": "পরিশোধিত",
+        "unit_price": {
+          "accessible_separator": "প্রতি",
+          "content_html": "%{মূল্য}%{অ্যাক্সেসিবল_সেপারেটর}%{প্রতি_ইউনিট}",
+          "per_item": {
+            "single": "%{মূল্য} প্রতিটি",
+            "one": "%{গণনা} আইটেমের জন্য %{মূল্য}",
+            "other": "%{গণনা}টি আইটেমের জন্য %{মূল্য}"
+          },
+          "per_unit": {
+            "single": "%{দাম}/%{ইউনিট}",
+            "plural": "%{মূল্য}/%{গণনা}%{ইউনিট}"
+          }
+        },
+        "gift_card_ending": "%{last_characters} দিয়ে শেষ হওয়া উপহার কার্ড",
+        "estimated_tax_label": "আনুমানিক কর",
+        "multiple_shipping_lines_label": "মোট শিপিং খরচ",
+        "recurring_subtotal_label": "পুনরাবৃত্ত উপ-সমষ্টি",
+        "recurring_total_label": "পুনরাবৃত্ত মোট",
+        "recurring_total_tooltip": "শিপিং, কর, শুল্ক, বা প্রযোজ্য কোনও ছাড় অন্তর্ভুক্ত নয়।",
+        "confirmation_number_label": "নিশ্চিতকরণ #%{নিশ্চিতকরণ_সংখ্যা}",
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}</strong> আপনার বিদ্যমান ছাড়ের সাথে ব্যবহার করা যাবে না।",
+        "percent_off_shipping": "শিপিংয়ে %{percent}% ছাড়",
+        "amount_off_shipping": "শিপিংয়ে %{amount} ছাড়",
+        "deferred_payment_info": {
+          "title": "%{amount_due} এর পেমেন্ট %{due_at} তারিখে বাকি আছে।",
+          "description_html": "আপনার অর্ডার সম্পর্কে কোনও প্রশ্নের জন্য, %{contact_us}.",
+          "paid_today": "আজ মোট পরিশোধিত অর্থ",
+          "paid_today_next": "আজ পেমেন্ট করা হয়েছে",
+          "due_on_fulfillment_title": "পূরণের পর %{amount_due} পেমেন্ট করতে হবে",
+          "due_on_receipt_title": "%{amount_due} পেমেন্ট প্রাপ্তির সময় দিতে হবে"
+        },
+        "deferred_balance_info": {
+          "title": "{{amount_due}} এর বাকি অংশ {{due_at}} তারিখে পরিশোধ করতে হবে।",
+          "due_on_fulfillment_title": "{{amount_due}} বাকি থাকা টাকা পূরণের সময় পরিশোধ করতে হবে"
+        }
       },
       "payment": {
         "clear": "পরিষ্কার",
