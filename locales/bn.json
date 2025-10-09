@@ -706,6 +706,150 @@
           "tax_credential_tr": "তুর্কিয়ে কুমহুরিয়েতি কিমলিক নুমারাসি/কেডিভি",
           "shipping_credential_tr": "তুর্কিয়ে কুমহুরিয়েতি কিমলিক নুমারাসি/কেডিভি"
         }
+      },
+      "thank_you": {
+        "picked_up_description_html": "আপনার অর্ডার %{date} তারিখে %{location_name} এ তোলা হয়েছে।",
+        "contact_us": "আমাদের সাথে যোগাযোগ করুন",
+        "contact_us_lowercase": "যোগাযোগ করুন",
+        "contact_us_html": "সাহায্যের প্রয়োজন? %{contact_us}",
+        "updated_time": "%{time_ago} আগে আপডেট করা হয়েছে",
+        "failure": "ডেলিভারি করা হয়নি",
+        "failed_title": "আপনার অর্ডার ডেলিভার করা যায়নি",
+        "failed_contact_merchant": "ডেলিভারির ব্যবস্থা করতে %{company} এর সাথে যোগাযোগ করুন।",
+        "failed_contact_merchant_no_company": "ডেলিভারির ব্যবস্থা করতে আমাদের সাথে যোগাযোগ করুন।",
+        "non_shippable_title": "আপনার অর্ডার সম্পূর্ণ হয়েছে।",
+        "let_us_know": "আমাদের জানান",
+        "login_title": "সমস্ত অর্ডারের বিবরণ দেখতে সাইন ইন করুন",
+        "login_description": "আপনি ইমেলের মাধ্যমে প্রাপ্ত রসিদে আপনার অর্ডার নম্বরটি খুঁজে পেতে পারেন।",
+        "login_description_phone": "আপনি টেক্সট মেসেজের মাধ্যমে প্রাপ্ত রসিদে আপনার অর্ডার নম্বরটি খুঁজে পেতে পারেন।",
+        "login_not_customer_html": "%{name} না? তুমি %{link} করতে পারো",
+        "login_reorder_link_text": {
+          "one": "এই পণ্যটিও কিনুন",
+          "other": "এই পণ্যগুলিও কিনুন"
+        },
+        "customer_information_hidden_fields_message": "সমস্ত গ্রাহক তথ্য দেখতে সাইন ইন করুন।",
+        "cancelled_title": "আপনার অর্ডার বাতিল করা হয়েছে।",
+        "cancelled_description": "আপনার অর্ডার %{date} তারিখে বাতিল করা হয়েছে। আপনার যদি কোনও প্রশ্ন থাকে তবে আমাদের সাথে যোগাযোগ করুন।",
+        "order_number_label": "অর্ডার নম্বর",
+        "customer_validation_error": "একটি বৈধ ইমেল ঠিকানা বা অর্ডার নম্বর লিখুন।",
+        "customer_validation_error_phone": "একটি বৈধ ফোন নম্বর বা অর্ডার নম্বর লিখুন।",
+        "login": "প্রবেশ কর",
+        "unfulfilled_items_title": "শিপিংয়ের জন্য প্রস্তুতি নিচ্ছে",
+        "unfulfilled_items_description": "আমরা বর্তমানে এই জিনিসগুলি শিপিংয়ের জন্য প্রস্তুত করছি।",
+        "marker": {
+          "current": "বর্তমান চালানের অবস্থান",
+          "shipping": "পাঠানোর ঠিকানা"
+        },
+        "pick_up_in_store_marker": {
+          "current": "বর্তমান চালানের অবস্থান",
+          "shipping": "পিকআপের অবস্থান"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "এই চালানের আইটেমগুলি",
+          "unfulfilled_table_title": "পণ্য পরিবহনের জন্য প্রস্তুত করা হচ্ছে",
+          "product_image_label": "পণ্যের ছবি",
+          "description_label": "বিবরণ",
+          "quantity_label": "পরিমাণ"
+        },
+        "order_updates_description_missing": "আপনি শিপিং আপডেট পাচ্ছেন না।",
+        "order_updates_subscribe_to_email_notifications": "ইমেলের মাধ্যমে শিপিং আপডেট পান",
+        "order_updates_subscribe_to_email_or_phone_notifications": "ইমেল বা টেক্সটের মাধ্যমে শিপিং আপডেট পান",
+        "order_updates_subscribe_to_phone_notifications": "টেক্সট করে শিপিং সংক্রান্ত আপডেট পান",
+        "order_updates_submit_subscription": "জমা দিন",
+        "track_shipment": "চালান ট্র্যাক করুন",
+        "other_options": "অন্যান্য বিকল্প",
+        "delivery_information_label": "ডেলিভারি তথ্য:",
+        "gift_card_sent_confirmation": "উপহার কার্ড পাঠানো হয়েছে",
+        "qr_code": {
+          "send_link_to_phone": "অথবা আপনার ফোনে একটি লিঙ্ক পাঠান",
+          "title": "আপনার ফোনে ট্র্যাক করুন"
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "আপনার ফোন দিয়ে স্ক্যান করুন"
+          },
+          "sms": {
+            "title": "অথবা আপনার ফোনে একটি লিঙ্ক পাঠান"
+          }
+        },
+        "view_business_customer_account": "অ্যাকাউন্ট দেখুন",
+        "breadcrumbs_submitted": "জমা দেওয়া হয়েছে",
+        "breadcrumbs_in_review": "পর্যালোচনায়",
+        "breadcrumbs_confirmed": "নিশ্চিত করা হয়েছে",
+        "missing_shipping_address_banner": {
+          "title": "অর্ডারটির কোনও শিপিং ঠিকানা নেই",
+          "text_html": "আপনার ঠিকানা যোগ করতে %{contact_us}",
+          "contact_us": "আমাদের সাথে যোগাযোগ করুন"
+        },
+        "first_payment_complete": "প্রথম পেমেন্ট সম্পন্ন হয়েছে",
+        "in_store_purchase": "দোকানে কেনাকাটা",
+        "company_location_section_title": "কোম্পানি এবং অবস্থান",
+        "thank_you_ready_for_picked_up": "আপনার অর্ডার %{address} এ তোলা হয়েছে।",
+        "ready_for_delivery": "ডেলিভারির জন্য প্রস্তুত",
+        "order_updates_subscribe_to_email_notifications_failed": "আপডেটের জন্য আমরা এই ইমেলটি সংরক্ষণ করতে পারছি না। অনুগ্রহ করে আবার চেষ্টা করুন অথবা অন্য একটি ইমেল ব্যবহার করুন।",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "আপনার লেখা ইমেলটি ইতিমধ্যেই বিদ্যমান।",
+        "subscriptions_management": {
+          "title": "সাবস্ক্রিপশন",
+          "description": "আপনার সাবস্ক্রিপশন দেখতে এবং পরিচালনা করতে আপনার অ্যাকাউন্টে যান।",
+          "button_label": "আপনার সাবস্ক্রিপশন পরিচালনা করুন"
+        },
+        "manage_order_label": "আপনার অর্ডার পরিচালনা করুন",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "কয়েক মিনিটের মধ্যে আপনার উপহার কার্ডের সাথে একটি টেক্সট বার্তা পাবেন।",
+          "other": "কয়েক মিনিটের মধ্যে আপনার উপহার কার্ড সহ একটি টেক্সট বার্তা পাবেন।"
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "কয়েক মিনিটের মধ্যে আপনার উপহার কার্ড সহ একটি ইমেল পাবেন।",
+          "other": "কয়েক মিনিটের মধ্যে আপনার উপহার কার্ড সহ একটি ইমেল পাবেন।"
+        },
+        "gift_card_email_title": {
+          "one": "উপহার কার্ড ইমেলের মাধ্যমে পাঠানো হয়েছে",
+          "other": "উপহার কার্ডগুলি ইমেলের মাধ্যমে পাঠানো হয়েছিল"
+        },
+        "gift_card_text_title": {
+          "one": "উপহার কার্ডটি টেক্সট মেসেজের মাধ্যমে পাঠানো হয়েছে",
+          "other": "উপহার কার্ডগুলি টেক্সট মেসেজের মাধ্যমে পাঠানো হয়েছিল"
+        },
+        "resend_gift_cards_by_email": "ইমেল পুনরায় পাঠান",
+        "resend_gift_cards_by_text": "টেক্সট মেসেজ আবার পাঠান",
+        "gift_card_resent_confirmation": {
+          "one": "উপহার কার্ডটি আবার পাঠানো হয়েছে।",
+          "other": "উপহার কার্ডগুলি আবার পাঠানো হয়েছিল।"
+        },
+        "gift_card_resend_failure": {
+          "one": "আপনার উপহার কার্ডটি পুনরায় পাঠানোর সময় সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা আমাদের সাথে যোগাযোগ করুন।",
+          "other": "আপনার উপহার কার্ডগুলি পুনরায় পাঠানোর সময় একটি সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা আমাদের সাথে যোগাযোগ করুন।"
+        },
+        "vat_invoices": {
+          "title": "ভ্যাট ইনভয়েস"
+        },
+        "verify_shop_account_title": "আপনার দোকান অ্যাকাউন্ট যাচাই করুন",
+        "verify_shop_account_message": "আপনার তথ্য Shop-এ সংরক্ষিত হয়েছে, লক্ষ লক্ষ দোকানে স্বয়ংক্রিয়ভাবে এটি ব্যবহার করতে আপনার অ্যাকাউন্ট যাচাই করুন।",
+        "verify_shop_account_cta": "আপনার অ্যাকাউন্ট যাচাই করুন",
+        "verify_shop_account_confirmation": "চেকআউটের বিবরণ সংরক্ষণ করা হয়েছে",
+        "announcement": {
+          "close": "বন্ধ করা",
+          "expand": "বিস্তৃত করুন",
+          "collapse": "সঙ্কুচিত করুন"
+        }
+      },
+      "vaulted": {
+        "change_button": "পরিবর্তন"
+      },
+      "review": {
+        "title": "পর্যালোচনা",
+        "review_title": "আপনার অর্ডার সম্পূর্ণ করুন",
+        "review_and_confirm_title": "পর্যালোচনা করুন এবং নিশ্চিত করুন",
+        "checkout_as_guest": "অতিথি হিসেবে চেক আউট করুন",
+        "account_more_actions": "এই অ্যাকাউন্টের জন্য আরও অ্যাকশন",
+        "checkout_a_different_way": "অন্যভাবে দেখুন",
+        "blocks": {
+          "contact_method_title": "যোগাযোগ",
+          "billing_address_title": "বিলিং",
+          "shipping_address_title": "পাঠান",
+          "shipping_method_title": "শিপিং পদ্ধতি",
+          "payment_method_title": "পেমেন্ট পদ্ধতি"
+        }
       }
     }
   },
