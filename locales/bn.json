@@ -283,7 +283,49 @@
         "gift_card_has_been_applied": "উপহার কার্ড প্রয়োগ করা হয়েছে",
         "gift_card_has_been_removed": "উপহার কার্ডটি সরানো হয়েছে",
         "gift_card_subscriptions_notice": "উপহার কার্ডগুলি শুধুমাত্র আপনার প্রথম পেমেন্টের ক্ষেত্রে প্রযোজ্য হবে",
-        "discount_already_applied": "এই অর্ডারে একটি ছাড় প্রযোজ্য হয়েছে। আপনি আর একটি ছাড় যোগ করতে পারবেন না।"
+        "discount_already_applied": "এই অর্ডারে একটি ছাড় প্রযোজ্য হয়েছে। আপনি আর একটি ছাড় যোগ করতে পারবেন না।",
+        "payment_terms_totals": {
+          "due_later": "মোট বকেয়া %{due_at}",
+          "due_on_fulfillment": "পূরণের সময় মোট বকেয়া",
+          "due_on_fulfillment_next": "পূরণের জন্য বকেয়া",
+          "due_on_receipt": "প্রাপ্তির সময় মোট বকেয়া",
+          "due_later_checkout_to_draft": "পরে মোট বকেয়া",
+          "total_paid": "মোট প্রদত্ত"
+        },
+        "maximum_discount_code_limit_reached": "আপনি ছাড় কোডের সর্বাধিক সংখ্যায় পৌঁছে গেছেন। <strong style=\"text-transform:uppercase\">%{code}</strong> ব্যবহার করতে একটি বিদ্যমান কোড সরান।",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> এখন কাজ করছে না। সাহায্যের জন্য আমাদের সাথে যোগাযোগ করুন।",
+        "due_on_fulfillment": "পূরণের জন্য বকেয়া",
+        "gift_card_masked": "•••• %{শেষ_অক্ষর}",
+        "subscriptions": "সাবস্ক্রিপশন",
+        "duties_label": "কর্তব্য",
+        "duties_and_taxes_label": "কর্তব্য এবং কর",
+        "error_duties_tooltip": "এই অর্ডারটি অন্য দেশ থেকে পাঠানো হচ্ছে, তাই ডেলিভারির সময় শুল্ক এবং কর ধার্য করা হতে পারে।",
+        "may_be_charged_on_delivery": "ডেলিভারির সময় চার্জ করা হতে পারে",
+        "total_updated_label_with_price": "আপডেট করা মোট দাম: %{totalPrice}",
+        "updated_shipping_method": "আপডেট করা শিপিং পদ্ধতি: %{shipping_method}",
+        "recurring_payments": "পুনরাবৃত্ত পেমেন্ট",
+        "recurring_total_multiple_label": "এই অর্ডারে একাধিক আইটেমের জন্য পুনরাবৃত্তিমূলক চার্জ প্রযোজ্য।",
+        "deferred_total_due_date_label": "মোট বকেয়া {{date}}",
+        "deferred_total_due_date_label_next": "শেষ তারিখ %{তারিখ}",
+        "full_price": "সম্পূর্ণ মূল্য: %{price}",
+        "custom_discount": "কাস্টম ছাড়",
+        "expand_component_information": {
+          "one": "%{count} আইটেমটি দেখান",
+          "other": "%{count} টি আইটেম দেখান"
+        },
+        "collapse_component_information": {
+          "one": "%{count} আইটেমটি লুকান",
+          "other": "%{count} টি আইটেম লুকান"
+        },
+        "component_quantity_title": "%{পরিমাণ} × %{পণ্যের_শিরোনাম}",
+        "discount_discovery": {
+          "add_code": "ছাড় যোগ করুন",
+          "merchandise_quantity_label": {
+            "one": "%{গণনা} আইটেম",
+            "other": "%{count}টি আইটেম"
+          }
+        },
+        "alternative_payment_currency_total": "%{amount_due} হিসেবে চার্জ করা হয়েছে"
       },
       "payment": {
         "clear": "পরিষ্কার",
@@ -964,6 +1006,106 @@
         "credit_card_number_invalid": "একটি বৈধ কার্ড নম্বর লিখুন",
         "credit_card_expiry_invalid": "একটি বৈধ মেয়াদ শেষ হওয়ার তারিখ লিখুন",
         "credit_card_month_invalid": "একটি বৈধ মেয়াদ শেষ হওয়ার মাস লিখুন"
+      },
+      "shipping": {
+        "title": "পরিবহন",
+        "delivery_title": "ডেলিভারি",
+        "shipping_method_title": "শিপিং পদ্ধতি",
+        "shipping_method_rollup_accessibility_label": "শিপিং পদ্ধতির বিকল্পগুলি",
+        "shipping_method_one_time_purchase_group_title": "এককালীন কেনাকাটা",
+        "shipping_method_first_shipment_group_title": {
+          "one": "প্রথম চালান",
+          "other": "প্রথম চালান"
+        },
+        "shipping_method_subscription_group_title": "সাবস্ক্রিপশন",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "পুনরাবৃত্ত চালান",
+          "other": "পুনরাবৃত্ত চালান"
+        },
+        "subscription_shipping": "সাবস্ক্রিপশন শিপিং",
+        "subscription_local_delivery": "সাবস্ক্রিপশন স্থানীয় ডেলিভারি",
+        "subscription_pickup": "সাবস্ক্রিপশন পিকআপ",
+        "waiting_on_rate_notice": "উপলব্ধ শিপিং রেটগুলি পাওয়া যাচ্ছে...",
+        "waiting_on_pickup_location_notice": "উপলব্ধ পিক-আপ লোকেশনগুলি পাওয়া যাচ্ছে...",
+        "no_rates_for_cart_or_destination_notice": "আপনার কার্ট বা ঠিকানার জন্য কোনও শিপিং পদ্ধতি উপলব্ধ নেই।",
+        "no_pickup_location_notice": "আপনার পণ্যগুলির মধ্যে অন্তত একটি পিক-আপের জন্য উপলব্ধ নেই",
+        "no_rates_for_country_notice": "এই ঠিকানার জন্য কোনও শিপিং রেট পাওয়া যায়নি।",
+        "no_rates_contact_notice": "আরও তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন",
+        "free_rate_label": "বিনামূল্যে",
+        "cheapest_rate_label": "সবচেয়ে সস্তা",
+        "please_enter_your_shipping_information_notice": "আপনার শিপিং তথ্য লিখুন।",
+        "estimated_delivery_date": {
+          "one": "%{count} কার্যদিবস",
+          "other": "%{count} কর্মদিবস"
+        },
+        "estimated_delivery_date_range": "%{সর্বনিম্ন} থেকে %{সর্বোচ্চ} কার্যদিবস",
+        "delivery_date_range": "%{সর্বনিম্ন_সময়}–%{সর্বোচ্চ_সময়}",
+        "estimated_delivery_time": "আনুমানিক ডেলিভারি %{সময়}",
+        "estimated_delivery_time_range": "আনুমানিক ডেলিভারি %{min_time}–%{max_time}",
+        "delivery_today": "একই দিনে ডেলিভারি %{time}",
+        "delivery_tomorrow": "পরের দিন ডেলিভারি %{time}",
+        "two_day_delivery": "২ দিনের ডেলিভারি %{সময়}",
+        "delivery": "ডেলিভারি %{সময়}",
+        "arrives_time": "%{time} এ পৌঁছায়",
+        "arrives_time_range": "%{min_time}–%{max_time} এ পৌঁছাবে",
+        "estimated_time": "আনুমানিক %{সময়}",
+        "estimated_time_range": "আনুমানিক %{min_time}–%{max_time}",
+        "default_description": "১ কর্মদিবসের মধ্যে পাঠানো হবে",
+        "unbranded_default_description": "পাঠানোর জন্য প্রস্তুত",
+        "shipping_line_phone_label": "মোবাইল ফোন নম্বর (প্রয়োজনীয়)",
+        "shipping_line_phone": "আপনার কুরিয়ার আপনার সাথে যোগাযোগ করার জন্য এই নম্বরটি ব্যবহার করতে পারে।",
+        "shipping_line_delivery_phone_label": "মোবাইল ফোন নম্বর",
+        "shipping_line_delivery_phone": "আপনার ডেলিভারি সম্পর্কে আপডেটের জন্য আপনার সাথে যোগাযোগ করা হতে পারে।",
+        "optional_shipping_line_delivery_instructions_label": "ডেলিভারি নির্দেশাবলী (ঐচ্ছিক)",
+        "shipping_line_delivery_instructions": "দরজার কোড বা ড্রপ-অফ নির্দেশাবলীর মতো প্রয়োজনীয় তথ্য লিখুন।",
+        "other_method": {
+          "zero": "অন্য কোনও পদ্ধতি উপলব্ধ নেই",
+          "one": "%{count} অন্যান্য পদ্ধতি এখানে উপলব্ধ",
+          "other": "%{count} অন্যান্য পদ্ধতি উপলব্ধ থেকে শুরু করে"
+        },
+        "shipping_rate_discounted_amount": "ছিল: %{original_amount}। এখন: %{amount}",
+        "local_delivery": "স্থানীয় ডেলিভারি",
+        "prime_not_available": {
+          "default": "আপনার অর্ডারের জন্য প্রাইম ডেলিভারি উপলব্ধ নেই। আপনার শিপিং বিকল্পগুলি আপডেট করা হয়েছে।"
+        },
+        "subscription_delivery_description": {
+          "free_shipping_cycles": {
+            "one": "%{count} বেশি ডেলিভারির জন্য বিনামূল্যে শিপিং",
+            "other": "আরও %{count} ডেলিভারির জন্য বিনামূল্যে শিপিং"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "%{count} ডেলিভারির জন্য বিনামূল্যে শিপিং",
+            "other": "%{count} ডেলিভারির জন্য বিনামূল্যে শিপিং"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "%{count} বেশি ডেলিভারির জন্য বিনামূল্যে শিপিং, তারপর %{recurring_order_shipping_price}",
+            "other": "%{count} বেশি ডেলিভারির জন্য বিনামূল্যে শিপিং, তারপর %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "%{count} ডেলিভারির জন্য বিনামূল্যে শিপিং, তারপর %{recurring_order_shipping_price}",
+            "other": "%{count} ডেলিভারির জন্য বিনামূল্যে শিপিং, তারপর %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "%{shipping_price} এর জন্য %{count} বেশি ডেলিভারি",
+            "other": "প্রতিটি %{shipping_price} এর জন্য %{count} টি বেশি ডেলিভারি"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{shipping_price} এর জন্য %{count} ডেলিভারি",
+            "other": "প্রতিটি %{shipping_price} এর জন্য %{count} টি বেশি ডেলিভারি"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "প্রথম %{cycle} এর জন্য বিনামূল্যে শিপিং, তারপরে %{recurring_order_shipping_price}",
+            "other": "প্রথম %{cycle} এর জন্য বিনামূল্যে শিপিং, তারপরে %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "%{count} বেশি ডেলিভারির জন্য %{shipping_price}",
+            "other": "%{count}টি ডেলিভারির জন্য %{shipping_price} (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{count} ডেলিভারির জন্য %{shipping_price}",
+            "other": "%{count} ডেলিভারির জন্য %{শিপিং_প্রাইস} (%{per_delivery_cost})"
+          }
+        }
       }
     }
   },
@@ -1099,6 +1241,130 @@
           "text": "ক্রেডিট এবং ডেবিট কার্ড পেমেন্ট এখনই উপলব্ধ নয়।"
         }
       }
+    },
+    "order_details": {
+      "hide_order_summary": "অর্ডারের সারাংশ লুকান",
+      "subtitle": "নিশ্চিত {{date}}",
+      "subtotal": "উপমোট",
+      "summary_list_title_accessibility_label": "অর্ডার আইটেম",
+      "summary_title": "অর্ডারের সারাংশ",
+      "summary_totals_title_accessibility_label": "মোট অর্ডারের পরিমাণ",
+      "shop_order_tracking": {
+        "download_shop_to_track": "প্যাকেজ ট্র্যাক করার জন্য দোকান ডাউনলোড করুন",
+        "track_order_with_shop": "দোকানের মাধ্যমে অর্ডার ট্র্যাক করুন",
+        "title_header": "আপনার ফোন দিয়ে স্ক্যান করুন",
+        "real_time_delivery_updates": "আপনার অর্ডার পাঠানোর পর শপ আপনাকে রিয়েল-টাইম ডেলিভারি আপডেট পাঠাবে।"
+      },
+      "edit_summary": {
+        "added": "যোগ করা হয়েছে",
+        "added_with_quantity": "{{quantity}} যোগ করা হয়েছে",
+        "removed": "সরানো হয়েছে",
+        "removed_with_quantity": "{{quantity}} সরানো হয়েছে",
+        "updated_at": "আপনার অর্ডারটি {{date}} তারিখে আপডেট করা হয়েছে।",
+        "returned": "ফিরে এসেছে",
+        "returned_with_quantities": "{ {{total}} এর মধ্যে {{delta}} ফেরত দেওয়া হয়েছে",
+        "removed_with_quantities": "{ {{total}} {{delta}} সরানো হয়েছে",
+        "return_line_item_removed": "রিটার্ন থেকে সরানো হয়েছে",
+        "return_line_item_removed_with_quantities": "রিটার্ন থেকে {{delta}} সরানো হয়েছে"
+      },
+      "shop_pay": {
+        "order_completed_with": "অর্ডার সম্পন্ন হয়েছে এর সাথে",
+        "learn_more": "আরও জানুন"
+      },
+      "taxes": "কর",
+      "taxes_included": "করের মধ্যে {{amount}} অন্তর্ভুক্ত",
+      "duties_and_taxes_included": "মোট মূল্যে শুল্ক এবং কর অন্তর্ভুক্ত। ডেলিভারিতে কোনও অতিরিক্ত চার্জ নেই।",
+      "duties": "কর্তব্য",
+      "ok_duties_tooltip": "এই অর্ডারটি অন্য দেশ থেকে পাঠানো হচ্ছে, তাই আপনার অর্ডারের মোট মূল্যের সাথে শুল্ক যোগ করা হয়েছে।",
+      "error_duties_tooltip": "এই অর্ডারটি অন্য দেশ থেকে পাঠানো হচ্ছে, তাই ডেলিভারির সময় শুল্ক এবং কর ধার্য করা হতে পারে।",
+      "zero_duties_tooltip": "এই অর্ডারটি অন্য দেশ থেকে পাঠানো হচ্ছে। এই মূল্যের অর্ডারের উপর কোনও শুল্ক প্রযোজ্য নয়।",
+      "tip": "টিপ",
+      "title": "অর্ডার {{name}}",
+      "total": "মোট",
+      "unit_price": "{{price}} /ea",
+      "pagination": {
+        "load_more": "আরও লোড করুন",
+        "load_more_accessibility_label": "আরও আইটেম লোড করুন",
+        "loading_accessibility_label": "আইটেম লোড হচ্ছে"
+      },
+      "login_to_view_all_order_details": "সমস্ত অর্ডারের বিবরণ দেখতে সাইন ইন করুন।",
+      "log_in": "প্রবেশ কর",
+      "logged_in_account_no_permission_to_order": "আপনি {{email}} হিসেবে সাইন ইন করেছেন। এই অ্যাকাউন্টের এই অর্ডার পরিচালনা করার অনুমতি নেই।",
+      "log_in_to_a_different_account": "অন্য একটি অ্যাকাউন্টে সাইন ইন করুন",
+      "fees": {
+        "restocking_fee": "পুনঃমজুদ ফি",
+        "return_shipping_fee": "ফেরত পাঠানো"
+      },
+      "vat_invoices": {
+        "title": "ভ্যাট ইনভয়েস"
+      },
+      "link_sent": "লিঙ্ক পাঠানো হয়েছে",
+      "cash_rounding": "নগদ রাউন্ডিং",
+      "adjusted_payment": "সামঞ্জস্যপূর্ণ পেমেন্ট",
+      "adjusted_total": "মোট পরিমাণ সামঞ্জস্য করা হয়েছে",
+      "due_on_date": "শেষ তারিখ {{date}}",
+      "due_on_fulfillment": "পূরণের জন্য বকেয়া",
+      "due_on_receipt": "প্রাপ্তির সময় বকেয়া"
+    },
+    "addresses": {
+      "add_button": "ঠিকানা যোগ করুন",
+      "add_button_text": "যোগ করুন",
+      "add_button_accessibility_label": "ঠিকানা যোগ করুন",
+      "back_button": "পিছনে",
+      "back_button_accessibility_label": "সম্পাদনা ঠিকানায় ফিরে যান {{address}}",
+      "add_address_banner": "চেকআউটের সময় ব্যবহার করার জন্য ঠিকানা যোগ করুন",
+      "no_addresses_banner": "কোনও ঠিকানা যোগ করা হয়নি",
+      "address_deleted_notification": "ঠিকানা মুছে ফেলা হয়েছে",
+      "cancel_adding_address_accessibility_label": "ঠিকানা যোগ করা বাতিল করুন",
+      "cancel_deletion_button": "বাতিল করুন",
+      "cancel_deletion_button_accessibility_label": "{{address}} মুছে ফেলা বাতিল করুন",
+      "default_address": {
+        "title": "ডিফল্ট ঠিকানা",
+        "title_accessibility_label": "ডিফল্ট ঠিকানা: {{address}}"
+      },
+      "delete_button": "মুছে ফেলুন",
+      "delete_button_accessibility_label": "{{address}} মুছে ফেলুন",
+      "delete_confirmation_button": "ঠিকানা মুছুন",
+      "delete_confirmation_button_accessibility_label": "{{address}} মুছে ফেলুন",
+      "delete_confirmation_message": "ঠিকানা মুছে ফেলবেন? বিদ্যমান অর্ডারগুলি প্রভাবিত হবে না।",
+      "delete_confirmation_title": "ঠিকানা মুছে ফেলবেন?",
+      "delete_confirmation_description": "বিদ্যমান অর্ডারগুলি প্রভাবিত হয় না।",
+      "edit_button": "সম্পাদনা",
+      "edit_button_accessibility_label": "{{address}} সম্পাদনা করুন",
+      "edit_section_accessibility_label": "{{address}} সম্পাদনা করুন",
+      "edit_modal_title": {
+        "default": "ঠিকানা সম্পাদনা করুন",
+        "billing": "বিলিং ঠিকানা সম্পাদনা করুন",
+        "shipping": "শিপিং ঠিকানা সম্পাদনা করুন"
+      },
+      "loading_accessibility_message": "ঠিকানা লোড হচ্ছে",
+      "loading_addresses_accessibility_message": "ঠিকানা লোড হচ্ছে",
+      "loading_billing_accessibility_message": "বিলিং ঠিকানা লোড হচ্ছে",
+      "loading_finished_accessibility_message": "ঠিকানার নতুন পৃষ্ঠা লোড হয়েছে।",
+      "loading_shipping_accessibility_message": "শিপিং ঠিকানা লোড হচ্ছে",
+      "pagination": {
+        "load_more": "আরও লোড করুন",
+        "load_more_accessibility_label": "আরও ঠিকানা লোড করুন"
+      },
+      "save_new_address_accessibility_label": "ঠিকানা সংরক্ষণ করুন",
+      "title": "ঠিকানা",
+      "billing_address_dropdown_placeholder": "বিলিং ঠিকানা"
+    },
+    "address_form": {
+      "attention": "মনোযোগ",
+      "attention_company": "কোম্পানি/মনোযোগ",
+      "attention_help_text": "একজন ব্যক্তি বা বিভাগের নাম",
+      "auto_complete_close_accessibility_label": "পরামর্শ বন্ধ করুন",
+      "auto_complete_title": "পরামর্শ",
+      "billing_address": "বিলিং ঠিকানা হিসেবে ব্যবহার করুন",
+      "cancel": "বাতিল করুন",
+      "cancel_accessibility_label": "{{address}} ঠিকানা সম্পাদনা বাতিল করুন",
+      "creation_success_notification": "ঠিকানা যোগ করা হয়েছে",
+      "default_address": "এটি আমার ডিফল্ট ঠিকানা।",
+      "default_address_creation_success_notification": "ডিফল্ট ঠিকানা যোগ করা হয়েছে",
+      "default_address_update_success_notification": "ডিফল্ট ঠিকানা আপডেট করা হয়েছে",
+      "loading_add_form_accessibility_message": "নতুন ঠিকানা ফর্ম লোড হচ্ছে",
+      "loading_edit_form_accessibility_message": "ঠিকানা সম্পাদনা ফর্ম লোড হচ্ছে"
     }
   }
 }
