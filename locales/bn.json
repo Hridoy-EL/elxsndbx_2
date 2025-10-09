@@ -2871,7 +2871,20 @@
         "other": "{{count}} টি আইটেম উপলব্ধ"
       },
       "removeItem": "{{label}} সরান",
-      "removeTag": "ট্যাগ সরান"
+      "removeTag": "ট্যাগ সরান",
+      "month": {
+        "one": "মাস",
+        "other": "মাস"
+      },
+      "mapClusterTitle": {
+        "one": "{{number}} মার্কার ক্লাস্টার",
+        "other": "{{number}} মার্কারগুলির ক্লাস্টার"
+      },
+      "expandSheet": "বিস্তৃত করুন",
+      "qrCode": "QR কোড",
+      "addFile": "ফাইল যোগ করুন",
+      "dropzoneInvalidFileType": "ফাইলের ধরণ সমর্থিত নয়",
+      "dropzoneDraggedOver": "আপলোড করার জন্য ফাইলটি ফেলে দিন"
     },
     "date": {
       "humanize": {
@@ -3273,6 +3286,119 @@
           }
         }
       }
+    },
+    "profile_preview_bar": {
+      "customize_button": "কাস্টমাইজ করুন",
+      "hide_bar": "বার লুকান",
+      "navigate_to_admin": "অ্যাডমিনে নেভিগেট করুন",
+      "close_preview": "প্রিভিউ বন্ধ করুন",
+      "previewing": "আপনি প্রিভিউ দেখছেন:",
+      "saved_at": "{{ {{time}} {{date}} }} সংরক্ষিত",
+      "viewing": "আপনি দেখছেন:",
+      "not_available": "প্রোফাইল ডেটা উপলব্ধ নেই",
+      "actions_button": "কর্ম"
+    },
+    "active_inspector": {
+      "extension": {
+        "select": "{{extensionName}} নামের এক্সটেনশনটি নির্বাচন করুন।",
+        "unselect": "{{extensionName}} নামের এক্সটেনশনটি অনির্বাচন করুন।",
+        "move_down": "এক্সটেনশনটিকে পরবর্তী অবস্থানে সরান",
+        "move_up": "এক্সটেনশনটিকে পূর্ববর্তী অবস্থানে সরান",
+        "remove": "এক্সটেনশন সরান",
+        "move_down_tooltip": "পরবর্তী অবস্থানে যান",
+        "move_up_tooltip": "আগের অবস্থানে যান",
+        "remove_tooltip": "অপসারণ"
+      }
+    },
+    "editor": {
+      "link_new_tab_confirmation": "এই লিঙ্কটি এডিটরের ভেতরে খোলা যাবে না। এটি একটি নতুন উইন্ডোতে খোলা হবে ( {{resolved_to_link}} } )। চালিয়ে যেতে ঠিক আছে ক্লিক করুন।"
+    },
+    "settings": {
+      "title": "সেটিংস",
+      "loading_accessibility_message": "সেটিংস পৃষ্ঠা লোড হচ্ছে",
+      "log_out_everywhere": {
+        "title": "সব জায়গা থেকে সাইন আউট করুন",
+        "description": "যদি আপনার কোনও ডিভাইস হারিয়ে যায় বা আপনার নিরাপত্তা সংক্রান্ত উদ্বেগ থাকে, তাহলে আপনার অ্যাকাউন্টের নিরাপত্তা নিশ্চিত করতে সর্বত্র লগ আউট করুন।",
+        "button": "সব জায়গা থেকে সাইন আউট করুন",
+        "warning_message": "এই ডিভাইস থেকেও আপনাকে সাইন আউট করা হবে।"
+      }
+    },
+    "shop_ads": {
+      "title": "শপ থেকে এক্সক্লুসিভ অফার",
+      "subtitle": "সীমিত সময়ের জন্য উপলব্ধ",
+      "button": "দোকানে ঘুরে দেখুন",
+      "previous_button": "পূর্ববর্তী",
+      "next_button": "পরবর্তী"
+    },
+    "knowledge_base": {
+      "self_serve_returns": {
+        "enabled": "গ্রাহকরা নিজেরাই রিটার্নের অনুরোধ এবং পরিচালনা করতে পারবেন।",
+        "disabled": "ফেরতের অনুরোধ করতে গ্রাহকদের অবশ্যই ব্যবসায়ীর সাথে যোগাযোগ করতে হবে।"
+      }
+    },
+    "subscriptions": {
+      "update_payment_instrument": {
+        "title": "পেমেন্ট পদ্ধতি পরিবর্তন করুন",
+        "loading": "পেমেন্ট পদ্ধতি লোড হচ্ছে",
+        "no_payment_methods_available": "কোনও পেমেন্ট পদ্ধতি উপলব্ধ নেই",
+        "select_new_payment_method": "একটি নতুন পেমেন্ট পদ্ধতি নির্বাচন করুন",
+        "current_method": "বর্তমান",
+        "cancel": "বাতিল করুন",
+        "save": "সংরক্ষণ করুন",
+        "success": "পেমেন্ট পদ্ধতি আপডেট করা হয়েছে",
+        "use_new_payment_method": "+ নতুন পেমেন্ট পদ্ধতি ব্যবহার করুন"
+      },
+      "subscription_contracts": {
+        "title": "পুনরাবৃত্ত অর্ডারের জন্য পেমেন্ট পদ্ধতি ব্যবহার করুন",
+        "more_items": {
+          "one": "এবং আরও {{count}} টি পণ্য",
+          "other": "এবং আরও {{count}} টি পণ্য"
+        },
+        "product_count": {
+          "one": "{{count}} পণ্য",
+          "other": "{{count}} টি পণ্য"
+        },
+        "contracts_update_failed": "কিছু সাবস্ক্রিপশন চুক্তি আপডেট করা যায়নি",
+        "subscription_contracts_updated": "{{total}} সাবস্ক্রিপশনের মধ্যে {{succeeded}} আপডেট করা হয়েছে",
+        "product_details": "পণ্যের বিবরণ",
+        "load_more": "আরও লোড করুন"
+      },
+      "updating_contracts": {
+        "one": "{{count}} সাবস্ক্রিপশন চুক্তি আপডেট করা হচ্ছে...",
+        "other": "{{count}} সাবস্ক্রিপশন চুক্তি আপডেট করা হচ্ছে..."
+      },
+      "contracts_updated": {
+        "one": "{{count}} সাবস্ক্রিপশন চুক্তি সফলভাবে আপডেট করা হয়েছে",
+        "other": "{{count}} সাবস্ক্রিপশন চুক্তি সফলভাবে আপডেট করা হয়েছে"
+      },
+      "contracts_update_failed": "কিছু সাবস্ক্রিপশন চুক্তি আপডেট করা যায়নি"
+    },
+    "sign_in": {
+      "brand_logo_alt_text": "%{shop_name} লোগো",
+      "processing": "প্রক্রিয়াজাতকরণ হচ্ছে...",
+      "step_one": {
+        "page_title": "সাইন ইন করুন - %{shop_name}",
+        "heading": "প্রবেশ কর",
+        "subheading": "আপনার ইমেল ঠিকানা লিখুন এবং আমরা আপনাকে একটি যাচাইকরণ কোড পাঠাবো।",
+        "subheading_with_sign_in_options": "আপনি কীভাবে সাইন ইন করতে চান তা বেছে নিন",
+        "input_field_label": "ইমেইল",
+        "button": "চালিয়ে যান",
+        "or": "অথবা"
+      },
+      "step_two": {
+        "page_title": "কোড লিখুন - %{shop_name}",
+        "heading": "কোড লিখুন",
+        "subheading": "%{email} এ পাঠানো হয়েছে",
+        "restart_link": "অন্য একটি ইমেল ঠিকানা দিয়ে সাইন ইন করুন",
+        "input_field_label": "৬-সংখ্যার কোড",
+        "button": "জমা দিন"
+      },
+      "error": {
+        "invalid": {
+          "invalid_email": "একটি বৈধ ইমেল ঠিকানা লিখুন",
+          "invalid_code": "সঠিক ৬-সংখ্যার কোডটি লিখুন"
+        }
+      }
     }
   },
   "customer": {
@@ -3665,5 +3791,35 @@
   "onboarding": {
     "product_title": "পণ্যের শিরোনামের উদাহরণ",
     "collection_title": "আপনার সংগ্রহের নাম"
+  },
+  "sections": {
+    "announcements": {
+      "previous_announcement": "পূর্ববর্তী ঘোষণা",
+      "next_announcement": "পরবর্তী ঘোষণা",
+      "carousel": "ক্যারোজেল",
+      "announcement": "ঘোষণা",
+      "announcement_bar": "ঘোষণা বার"
+    },
+    "header": {
+      "announcement": "ঘোষণা",
+      "menu": "মেনু",
+      "cart_count": {
+        "one": "{{ count }} আইটেম",
+        "other": "{{ count }} আইটেম"
+      }
+    },
+    "cart": {
+      "title": "আপনার কার্ট",
+      "caption": "কার্ট আইটেম",
+      "remove_title": "{{ title }} সরান",
+      "estimated_total": "আনুমানিক মোট",
+      "new_estimated_total": "নতুন আনুমানিক মোট",
+      "note": "বিশেষ নির্দেশাবলী অর্ডার করুন",
+      "checkout": "চেক আউট",
+      "empty": "তোমার কার্ট খালি।",
+      "cart_error": "আপনার কার্ট আপডেট করার সময় একটি ত্রুটি হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।",
+      "cart_quantity_error_html": "আপনি আপনার কার্টে এই আইটেমটির শুধুমাত্র {{ quantity }} যোগ করতে পারবেন।",
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "শুল্ক এবং কর অন্তর্ভুক্ত। ছাড় এবং <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">শিপিং</a> চেকআউটের সময় গণনা করা হয়।"
+    }
   }
 }
