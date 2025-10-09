@@ -2596,7 +2596,8 @@
       "shipment_timeline": {
         "expand_events_accessibility_label": "অর্ডার চালানের বিবরণ দেখান",
         "hide_events_label": "বিবরণ লুকান",
-        "hide_events_accessibility_label": "অর্ডার চালানের বিবরণ লুকান"
+        "hide_events_accessibility_label": "অর্ডার চালানের বিবরণ লুকান",
+        "expand_events_label": "বিস্তারিত দেখান"
       },
       "addresses_section_title": "বিলিং এবং শিপিং",
       "order_details": "অর্ডারের বিবরণ",
@@ -2788,7 +2789,13 @@
       "default_address_creation_success_notification": "ডিফল্ট ঠিকানা যোগ করা হয়েছে",
       "default_address_update_success_notification": "ডিফল্ট ঠিকানা আপডেট করা হয়েছে",
       "loading_add_form_accessibility_message": "নতুন ঠিকানা ফর্ম লোড হচ্ছে",
-      "loading_edit_form_accessibility_message": "ঠিকানা সম্পাদনা ফর্ম লোড হচ্ছে"
+      "loading_edit_form_accessibility_message": "ঠিকানা সম্পাদনা ফর্ম লোড হচ্ছে",
+      "loading_form_accessibility_message": "ঠিকানা ফর্ম লোড হচ্ছে",
+      "loading_finished_accessibility_message": "ঠিকানা ফর্ম লোড হয়েছে।",
+      "save": "সংরক্ষণ করুন",
+      "save_accessibility_label": "ঠিকানা সংরক্ষণ করুন {{address}}",
+      "section_title_accessibility_label": "ঠিকানা যোগ করুন",
+      "update_success_notification": "ঠিকানা আপডেট করা হয়েছে"
     },
     "payment_method_brands": {
       "visa": "ভিসা",
@@ -2998,6 +3005,273 @@
           "products_accessibility_label": "পণ্য"
         },
         "delivered": "বিতরণ করা হয়েছে {{date}}"
+      },
+      "order_status": {
+        "confirmed_label": "নিশ্চিত করা হয়েছে",
+        "confirmed_title": "আপনার অর্ডার নিশ্চিত করা হয়েছে।",
+        "confirmed_description_pickup": "আপনার অর্ডার পিকআপের জন্য প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "confirmed_description_digital": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "confirmed_description_gift_card_text": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি টেক্সট পাবেন।",
+        "complete_label": "সম্পূর্ণ",
+        "delivered_label": "বিতরণ করা হয়েছে",
+        "delivered_description_gift_card": {
+          "one": "গিফট কার্ডটি ইমেলের মাধ্যমে পাঠানো হয়েছে।",
+          "other": "উপহার কার্ডগুলি ইমেলের মাধ্যমে পাঠানো হয়েছিল।"
+        },
+        "delivered_description_gift_card_text": {
+          "one": "উপহার কার্ডটি টেক্সটের মাধ্যমে পাঠানো হয়েছে।",
+          "other": "উপহার কার্ডগুলি টেক্সটের মাধ্যমে পাঠানো হয়েছিল।"
+        },
+        "gift_card_label": {
+          "one": "উপহার কার্ড",
+          "other": "উপহার কার্ড"
+        },
+        "gift_card_resend_button": {
+          "one": "উপহার কার্ড আবার পাঠান",
+          "other": "উপহার কার্ড আবার পাঠান"
+        },
+        "gift_resend_success": {
+          "one": "উপহার কার্ডটি আবার পাঠানো হয়েছে",
+          "other": "উপহার কার্ডগুলি আবার পাঠানো হয়েছে"
+        },
+        "gift_resend_failure": {
+          "one": "আপনার উপহার কার্ডটি পুনরায় পাঠানোর সময় সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা আমাদের সাথে যোগাযোগ করুন।",
+          "other": "আপনার উপহার কার্ডগুলি পুনরায় পাঠানোর সময় একটি সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা আমাদের সাথে যোগাযোগ করুন।"
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "উপহার কার্ডটি একটি পৃথক ইমেলে পাঠানো হবে।",
+          "other": "প্রতিটি উপহার কার্ড একটি পৃথক ইমেলে পাঠানো হবে।"
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "উপহার কার্ডটি আলাদা টেক্সটে পাঠানো হবে।",
+          "other": "প্রতিটি উপহার কার্ড আলাদা টেক্সটে পাঠানো হবে।"
+        },
+        "status_timestamp": "আপডেট করা হয়েছে {{date}}",
+        "estimated_delivery": "প্রত্যাশিত {{date}}",
+        "expected_by": "{{date}} প্রত্যাশিত",
+        "was_expected_by": "{{date}} মধ্যে প্রত্যাশিত ছিল",
+        "delivered": "পৌঁছেছে {{date}}",
+        "buy_with_prime_logo_accessibility_label": "অ্যামাজন বাই উইথ প্রাইম লোগো",
+        "in_review_label": "পর্যালোচনায়",
+        "in_review_title": "আপনার অর্ডার পর্যালোচনা করা হচ্ছে।",
+        "last_updated": "সর্বশেষ আপডেট {{date}}",
+        "multiple_shipments_label": "একাধিক চালান",
+        "multiple_statuses_label": "একাধিক অর্ডার স্ট্যাটাস",
+        "no_tracking_number": "এই চালানের জন্য কোন ট্র্যাকিং নম্বর নেই।",
+        "tracking_number": {
+          "one": "ট্র্যাকিং নম্বর",
+          "other": "ট্র্যাকিং নম্বর"
+        },
+        "on_its_way_label": "পথে",
+        "out_for_delivery_label": "ডেলিভারির জন্য বাইরে",
+        "resume_tracking": "ট্র্যাকিং পুনরায় শুরু করুন",
+        "submitted_label": "জমা দেওয়া হয়েছে",
+        "submitted_description": "অর্ডার এবং পেমেন্টের বিবরণ পর্যালোচনা করুন।",
+        "there_was_a_problem_label": "একটা সমস্যা ছিল।",
+        "track_shipment": "চালান ট্র্যাক করুন",
+        "request_return": "ফেরতের অনুরোধ করুন",
+        "view_order_for_details": "বিস্তারিত জানার জন্য অর্ডার দেখুন",
+        "external_promise_manage_button_label": {
+          "buy_with_prime": "Amazon-এ পরিচালনা করুন"
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Amazon দিয়ে পরিচালনা করুন",
+            "new_window_disclaimer": "(একটি নতুন উইন্ডো খোলে)"
+          }
+        },
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": "ডেলিভারি নিশ্চিত করেছেন",
+            "external_promise_brand_label": "ডেলিভারি",
+            "not_delivered_by_label": "{{date}} এর পরে বিতরণ করা হয়েছে",
+            "delivery_guarantee_expired_label": "ডেলিভারি গ্যারান্টির মেয়াদ শেষ হয়ে গেছে",
+            "modal_accessibility_button_label": "ডেলিভারি প্রতিশ্রুতির বিবরণ",
+            "download_shop_app_button_label": "ট্র্যাক করতে দোকান ডাউনলোড করুন",
+            "track_with_shop_button_label": "দোকানের সাথে ট্র্যাক করুন",
+            "claim_shop_cash_button_label": "দোকানের নগদ দাবি করুন"
+          },
+          "details_modal": {
+            "title": "ডেলিভারি গ্যারান্টি",
+            "active_delivery_guarantee_label": "{{date}} মধ্যে ডেলিভারি",
+            "expired_delivery_guarantee_description": "এই অর্ডারের ৩০ দিনের শপ প্রমিজ গ্যারান্টির মেয়াদ শেষ হয়ে গেছে।",
+            "expired_badge_label": "মেয়াদোত্তীর্ণ",
+            "order_includes_guarantees_label": "আপনার অর্ডারে {{deliveryAgreementsCount}} গ্যারান্টি রয়েছে",
+            "order_includes_guarantees_description": "শপ প্রমিজ দ্রুত, নির্ভরযোগ্য ডেলিভারির নিশ্চয়তা দেয়। আপনার অর্ডার {{date}} এর পরে আসলে শপ ক্যাশ দাবি করুন।",
+            "delivered_after_label": "{{date}} এর পরে বিতরণ করা হয়েছে",
+            "delivered_after_description": "যেহেতু আপনার অর্ডার দেরিতে পৌঁছেছে, আপনি {{amount}} শপ ক্যাশ দাবি করার যোগ্য।",
+            "claimed_shop_cash_description": "যেহেতু এই অর্ডারটি দেরিতে এসেছে, আপনি {{amount}} Shop Cash দাবি করেছেন।",
+            "eligible_to_claim_shop_cash_description": "যেহেতু আপনার অর্ডার দেরিতে পৌঁছেছে, আপনি {{amount}} শপ ক্যাশ দাবি করার যোগ্য।",
+            "learn_more_button_label": "আরও জানুন",
+            "claim_shop_cash_button_label": "দোকানের নগদ দাবি করুন",
+            "view_balance_in_shop_button_label": "দোকানে ব্যালেন্স দেখুন",
+            "scan_to_claim_shop_cash_label": "{{amount}} দাবি করতে স্ক্যান করুন নগদ টাকা কিনুন"
+          }
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "ডেলিভারি সমর্থন করেছেন",
+            "mixed_brands_label": "ডেলিভারি নিশ্চিত",
+            "not_delivered_by_label": "{{date}} এর মধ্যে ডেলিভারি করা হয়নি",
+            "modal_accessibility_button_label": "ডেলিভারি প্রতিশ্রুতির বিবরণ"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "আপনার দোকানের নগদ দাবি করুন",
+            "no_shop_app_label": "শপ ক্যাশ দাবি করতে {{appDownloadLink}}",
+            "download_shop_app_label": "দোকান ডাউনলোড করুন"
+          },
+          "details_modal": {
+            "title": "ডেলিভারি সমর্থন করেছেন",
+            "modal_accessiblity_label": "ডেলিভারি প্রতিশ্রুতির বিবরণ",
+            "delivery_guarantee_label": "ডেলিভারি গ্যারান্টি",
+            "delivery_by_label": "{{date}} মধ্যে ডেলিভারি",
+            "delivery_guaranteed_by_label": "{{date}} মধ্যে ডেলিভারি নিশ্চিত",
+            "shop_cash_claim": {
+              "may_be_eligible_label": "শপ প্রমিজ দ্রুত এবং নির্ভরযোগ্য ডেলিভারির নিশ্চয়তা দেয়। আপনার অর্ডার দেরিতে পৌঁছালে শপ ক্যাশ দাবি করুন।",
+              "may_be_eligible_not_authorized_label": "এই অর্ডারটি দেরিতে আসার কারণে আপনি শপ ক্যাশ দাবি করার যোগ্য হতে পারেন। বিস্তারিত দেখতে সাইন ইন করুন।",
+              "redeemed_label": "এই অর্ডারটি দেরিতে আসার কারণে আপনি ইতিমধ্যেই Shop Cash দাবি করেছেন।",
+              "expired_label": "৩০ দিনের গ্যারান্টির মেয়াদ শেষ হয়ে যাওয়ায় এই অর্ডারটি বিলম্বিত ডেলিভারির দাবির জন্য যোগ্য নয়।",
+              "no_shop_cash_label": "এই অর্ডারটি দেরিতে ডেলিভারি দাবির জন্য যোগ্য নয় কারণ এটি Shop Pay-এর মাধ্যমে পরিশোধ করা হয়নি।",
+              "no_longer_guaranteed_label": "এই আইটেমগুলির আর ডেলিভারি গ্যারান্টি নেই।",
+              "claim_shop_cash_title": "শপ ক্যাশে {{amount}} দাবি করতে স্ক্যান করুন।",
+              "claim_shop_cash_description": "আপনি শপ অ্যাপে ভবিষ্যতের কেনাকাটায় আপনার শপ ক্যাশ ব্যবহার করতে পারেন।"
+            }
+          }
+        }
+      },
+      "status_mark_as_delivered": "ডেলিভারি করা হয়েছে হিসেবে চিহ্নিত করুন",
+      "fulfillment_status_title": "পূরণের অবস্থা: {{status}}",
+      "buy_again": "আবার কিনুন",
+      "buy_again_accessibility_label": "{{orderId}} অর্ডারের জন্য আবার কিনুন",
+      "manage": "পরিচালনা করুন",
+      "manage_accessiblity_label": "অর্ডার পরিচালনা করুন {{orderId}}",
+      "group_title_label": "এর অংশ: {{groupTitle}}",
+      "group_title_label_with_parent": "এর জন্য: {{groupTitle}}"
+    },
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "কোম্পানির নাম",
+        "company_card_section_accessibility_label": "কোম্পানির"
+      },
+      "locations": {
+        "contact_email": "ইমেইল",
+        "contact_list_title": "মানুষ",
+        "contact_name": "নাম",
+        "contact_permissions": "অনুমতিসমূহ",
+        "contact_phone_number": "ফোন নম্বর",
+        "location_picker_label": "অবস্থানের নাম",
+        "location_picker_accessibility_label": "অবস্থানের নাম: {{locationName}}",
+        "net_payment_terms_description": "{{name}} : {{numberOfDays}} দিনের মধ্যে পেমেন্ট বাকি",
+        "deposit_percentage": "{{percentage}} জমা",
+        "own_role_contact_name": "তুমি",
+        "pagination": {
+          "load_more": "আরও লোড করুন",
+          "load_more_accessibility_label": "আরও লোকেশন লোড করুন"
+        },
+        "payment_details_title": "পেমেন্টের বিবরণ",
+        "payment_terms": "পরিশোধের শর্তাবলী",
+        "permissions_label": "আপনার অনুমতিগুলি",
+        "permissions_title": "অনুমতিসমূহ",
+        "section_title": "স্থান",
+        "shipping_address_required": "অর্ডার দেওয়া শুরু করতে এই স্থানে একটি শিপিং ঠিকানা যোগ করুন।",
+        "staff_and_permissions_title": "কর্মী এবং অনুমতি",
+        "tax_details_title": "করের বিবরণ",
+        "tax_id": "ট্যাক্স আইডি",
+        "tax_exemptions": "কর ছাড়",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} আরও",
+        "multiple_tax_exemptions_and": "এবং",
+        "tax_exemptions_modal_close": "বন্ধ করা",
+        "taxes_none": "কোনটিই নয়",
+        "tax_exemption_not_applicable": "নিষিদ্ধ",
+        "tax_exemptions_modal_button_accessibility_label": "সমস্ত কর ছাড় দেখুন"
+      },
+      "location_selection": {
+        "continue_to_store": "সঞ্চয় করা চালিয়ে যান",
+        "description": "যদি আপনার কার্টে ইতিমধ্যেই জিনিসপত্র থাকে, তাহলে স্থান পরিবর্তন করলে কার্টের দাম এবং পরিমাণে প্রভাব পড়তে পারে।",
+        "description_switch_later": "আপনি পরে যেকোনো সময় পরিবর্তন করতে পারবেন",
+        "list_accessibility_label": "অবস্থানের তালিকা",
+        "list_item_without_address_accessibility_label": "{{name}} : কোন ঠিকানা নেই",
+        "list_loading_accessibility_message": "অবস্থানের তালিকা লোড হচ্ছে",
+        "list_loading_address_accessibility_message": "{{locationName}} এর ঠিকানা লোড হচ্ছে",
+        "list_loading_finished_accessibility_message": "অবস্থানের তালিকা লোড করা হয়েছে",
+        "loading_store_accessibility_message": "দোকানে যাচ্ছি।",
+        "no_location_title": "শুধুমাত্র ব্যক্তিগত অর্ডার",
+        "no_location_description": "আপনার আর {{company}} এর জন্য অর্ডার দেওয়ার অনুমতি নেই। আপনি এখনও ব্যক্তিগত অর্ডার দিতে পারেন।",
+        "no_locations_found": "কোনও অবস্থান পাওয়া যায়নি",
+        "search": "অবস্থান অনুসন্ধান করুন",
+        "search_location_title": "একটি অবস্থান নির্বাচন করুন",
+        "selection_cancel_button": "বাতিল করুন",
+        "selection_confirmation_button": "অবস্থান বেছে নিন",
+        "selection_continue_button": "চালিয়ে যান",
+        "title": "আপনি কোন জায়গার জন্য কিনছেন?",
+        "title_choose_location": "একটি অবস্থান নির্বাচন করুন",
+        "clear_search": "অনুসন্ধান সাফ করুন",
+        "try_new_search": "নতুন অনুসন্ধান করে দেখুন"
+      },
+      "addresses": {
+        "add_billing_address_button": "বিলিং ঠিকানা যোগ করুন",
+        "add_billing_address_section_accessibility_label": "বিলিং ঠিকানা যোগ করুন",
+        "add_shipping_address_button": "শিপিং ঠিকানা যোগ করুন",
+        "add_shipping_address_section_accessibility_label": "শিপিং ঠিকানা যোগ করুন",
+        "billing_address_card_title": "বিলিং ঠিকানা",
+        "cancel_adding_billing_address_accessibility_label": "বিলিং ঠিকানা যোগ করা বাতিল করুন",
+        "cancel_adding_shipping_address_accessibility_label": "শিপিং ঠিকানা যোগ করা বাতিল করুন",
+        "save_new_billing_address_accessibility_label": "বিলিং ঠিকানা সংরক্ষণ করুন",
+        "save_new_shipping_address_accessibility_label": "শিপিং ঠিকানা সংরক্ষণ করুন",
+        "shipping_address_card_title": "পাঠানোর ঠিকানা"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "সব লুকান",
+          "show_all": "সব দেখাও",
+          "hide_all_accessibility_label": "পর্যালোচনাধীন সমস্ত অর্ডার লুকান",
+          "show_all_accessibility_label": "পর্যালোচনা করা সমস্ত অর্ডার দেখান",
+          "show_all_orders_in_review": "পর্যালোচনা করা সমস্ত অর্ডার দেখান",
+          "show_less_orders_in_review": "পর্যালোচনায় কম অর্ডার দেখান",
+          "title": "মুলতুবি",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "আপনার কোনও মুলতুবি অর্ডার নেই",
+            "pending_orders": {
+              "one": "আপনার {{count}} অর্ডার পেন্ডিং আছে।",
+              "other": "আপনার {{count}} অর্ডার বাকি আছে।"
+            },
+            "more_than_pagination_length": "আপনার কাছে {{count}} এরও বেশি অর্ডার পেন্ডিং আছে।"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}} +",
+          "pagination": {
+            "nav_accessibility_label": "অর্ডার ইন রিভিউ নেভিগেশন বোতাম"
+          }
+        },
+        "order_list_column_headers_location": "স্থান",
+        "order_list_column_headers_contact": "যোগাযোগ",
+        "order_list_column_headers_status": "অবস্থা",
+        "removed_company_contact_tooltip": "কোম্পানি থেকে অপসারণ করা হয়েছে"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "{{draftOrderName}} অর্ডার থেকে {{date}} নিশ্চিত করা হয়েছে",
+        "loading": "অর্ডারের বিবরণ লোড হচ্ছে",
+        "loading_finished_accessibility_message": "অর্ডারের বিবরণ লোড করা হয়েছে।",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "আপনার পেমেন্ট {{count}} দিন দেরিতে শেষ হয়েছে।",
+              "other": "আপনার পেমেন্ট {{count}} দিন দেরিতে শেষ হয়েছে।"
+            },
+            "banner_due": {
+              "one": "আপনার পেমেন্ট {{count}} দিনের মধ্যে শেষ হবে।",
+              "other": "আপনার পেমেন্ট {{count}} দিনের মধ্যে শেষ হবে।"
+            },
+            "banner_due_today": "আপনার পেমেন্ট আজই শেষ।",
+            "title": "পেমেন্ট বাকি আছে",
+            "title_with_date": "পেমেন্টের শেষ তারিখ {{date}}",
+            "title_due_on_receipt": "পেমেন্ট এখনও বাকি নেই",
+            "title_due_on_fulfillment": "পূরণের পর পরিশোধযোগ্য অর্থ",
+            "description_overdue": "তোমার পেমেন্ট দেরিতে হয়েছে।",
+            "description_partially_paid": "এই অর্ডারের আংশিক অর্থ প্রদান করা হয়েছে। আপনার বাকি টাকা আছে।",
+            "description_authorized": "আপনার পেমেন্ট পদ্ধতির জন্য নির্ধারিত তারিখে চার্জ করা হবে, অথবা আপনি এখনই পেমেন্ট করতে পারেন।",
+            "description_waiting_for_manual_payment": "এই অর্ডারের একটি পেমেন্ট বাকি আছে। পেমেন্ট পাওয়ার পর ব্যালেন্স আপডেট করা হবে।"
+          }
+        }
       }
     }
   },
