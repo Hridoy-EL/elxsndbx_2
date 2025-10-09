@@ -425,7 +425,85 @@
         "alternative_payment_currency_total_manual_payment_notice": "দ্রষ্টব্য: রূপান্তরিত মোট পরিমাণ হল %{amount_due}।",
         "waiting_on_taxes_message": "যদি আপনার কর পরবর্তী কয়েক সেকেন্ডের মধ্যে গণনা না হয়, তাহলে পৃষ্ঠাটি রিফ্রেশ করুন।",
         "waiting_on_taxes_notice": "কর গণনা করা হচ্ছে",
-        "payment_method": "পেমেন্ট পদ্ধতি"
+        "payment_method": "পেমেন্ট পদ্ধতি",
+        "network_card_payment_options": "একটি কার্ড নেটওয়ার্ক বেছে নিন",
+        "network_card_persistence_description": "নির্বাচিত নেটওয়ার্কটি ভবিষ্যতের লেনদেনের জন্য আপনার পেমেন্ট পদ্ধতিতে সংরক্ষণ করা হবে।",
+        "amazon_payments_label": "অ্যামাজন পে",
+        "amazon_payments_login_hint": "আপনাকে Amazon-এ সাইন ইন করতে বলা হবে।",
+        "amazon_payments_logout": "Amazon Pay থেকে সাইন আউট করুন",
+        "amazon_payments_failed_mfa_challenge": "নির্বাচিত পেমেন্ট পদ্ধতি ব্যবহার করা যায়নি। অন্য একটি পদ্ধতি নির্বাচন করুন অথবা আপনার ব্যাঙ্ক বা কার্ড প্রদানকারীর সাথে যোগাযোগ করুন।",
+        "amazon_payments_abandoned_mfa_challenge": "আপনার পেমেন্ট সম্পূর্ণ করা যায়নি। অন্য একটি পেমেন্ট পদ্ধতি ব্যবহার করে দেখুন অথবা আপনার ব্যাঙ্ক বা কার্ড ইস্যুকারীর সাথে যোগাযোগ করুন।",
+        "amazon_payments_could_not_enqueue_authorize": "আপনার পেমেন্ট প্রক্রিয়া করার সময় একটি সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা অন্য একটি পেমেন্ট পদ্ধতি ব্যবহার করুন।",
+        "title": "পেমেন্ট",
+        "amount_left_to_pay_label": "পরিশোধের বাকি:",
+        "discount_button_action_label": "ডিসকাউন্ট কোড প্রয়োগ করুন",
+        "discount_show_more_warnings": {
+          "one": "আরও %{count} দেখান",
+          "other": "আরও %{count} দেখান"
+        },
+        "gift_card_code_label": "উপহার কার্ড কোড",
+        "apply_gift_card_button_label": "প্রয়োগ করুন",
+        "gift_card_balance_label": "ব্যালেন্স:",
+        "supported_card_brands_more_label": "এবং আরও অনেক কিছু…",
+        "detected_card_brand": "সনাক্ত করা কার্ড ব্র্যান্ড: {brand}",
+        "credit_card_vaulting_sign_in_banner_title": "আপনার ক্রেডিট কার্ড সংরক্ষণ করুন",
+        "credit_card_vaulting_sign_in_banner_info": "ভবিষ্যতের কেনাকাটার জন্য আপনার ক্রেডিট কার্ড সংরক্ষণ করতে লগ ইন করুন অথবা একটি অ্যাকাউন্ট তৈরি করুন।",
+        "credit_card_vaulting_sign_in_banner_button_label": "লগ ইন করুন",
+        "ftd_vault_credit_card_label": "দ্রুত চেকআউটের জন্য এই ক্রেডিট কার্ডটি আমার অ্যাকাউন্টে সংরক্ষণ করুন।",
+        "card_number_label": "কার্ড নম্বর",
+        "card_number_placeholder": "কার্ড নম্বর",
+        "card_pay_with": "এর মাধ্যমে অর্থ প্রদান করুন:",
+        "card_security_notice": "সমস্ত লেনদেন নিরাপদ এবং এনক্রিপ্ট করা।",
+        "card_security_vault_notice": "ভবিষ্যতের পেমেন্টের জন্য আমাদের আপনার বিবরণ প্রয়োজন। সমস্ত লেনদেন নিরাপদ এবং এনক্রিপ্ট করা।",
+        "card_information_notice": "সমস্ত লেনদেন নিরাপদ এবং এনক্রিপ্ট করা হয়। ক্রেডিট কার্ডের তথ্য কখনও সংরক্ষণ করা হয় না।",
+        "name_on_card_label": "কার্ডে নাম",
+        "name_on_card_placeholder": "কার্ডে নাম",
+        "card_nickname_label": "ডাকনাম (ঐচ্ছিক)",
+        "card_expired": "মেয়াদোত্তীর্ণ",
+        "card_expiry_label": "মেয়াদ শেষ হওয়ার তারিখ (মাস / বছর)",
+        "card_expiry_placeholder": "মেয়াদ শেষ হওয়ার তারিখ (মাস / বছর)",
+        "credit_card_start_month": "শুরুর মাস",
+        "credit_card_start_year": "শুরুর বছর",
+        "delete_customer_mandate_modal_title": "এই পেমেন্ট কার্ডটি সরাবেন?",
+        "delete_customer_mandate_modal_body": "আপনি যদি এই কার্ডটি সরিয়ে দেন, তাহলে পেমেন্টের জন্য এটি ব্যবহার করার আগে আপনাকে এটি আবার যোগ করতে হবে।",
+        "delete_customer_mandate_modal_confirm": "কার্ড সরান",
+        "delete_customer_mandate_modal_cancel": "বাতিল করুন",
+        "card_verification_value_label": "নিরাপত্তা কোড",
+        "card_verification_value_placeholder": "নিরাপত্তা কোড",
+        "card_verification_confirm": "যাচাইকরণের জন্য, আপনার কার্ডের নিরাপত্তা কোডটি লিখুন।",
+        "card_expiry_date_explanation": "কার্ডের মেয়াদ শেষ হওয়ার তারিখ ফরম্যাটে: মাস, মাস, বছর, বছর",
+        "card_expiration_month_label": "মেয়াদ শেষ হওয়ার মাস",
+        "card_expiration_year_label": "মেয়াদ শেষ হওয়ার বছর",
+        "card_verification_value_explanation": "৩-সংখ্যার নিরাপত্তা কোড সাধারণত আপনার কার্ডের পিছনে পাওয়া যায়। আমেরিকান এক্সপ্রেস কার্ডের সামনের দিকে ৪-সংখ্যার একটি কোড থাকে।",
+        "card_verification_value_explanation_amex": "আপনার কার্ডের সামনের দিকে ৪-সংখ্যার নিরাপত্তা কোড",
+        "card_verification_value_explanation_other": "আপনার কার্ডের পিছনে ৩-সংখ্যার নিরাপত্তা কোড",
+        "card_start_label": "ইস্যু তারিখ (মাস / বছর)",
+        "card_start_placeholder": "ইস্যু তারিখ (মাস / বছর)",
+        "card_issue_number_label": "ইস্যু নম্বর",
+        "card_issue_number_placeholder": "ইস্যু নম্বর",
+        "card_change_label": "পরিবর্তন",
+        "card_update_label": "কার্ড আপডেট করুন",
+        "paypal_disconnect": "সংযোগ বিচ্ছিন্ন করুন",
+        "ends_with_label": "%{last_digits} দিয়ে শেষ হচ্ছে",
+        "masked_digits_label": "•••• %{শেষ_অঙ্ক}",
+        "payment_method_saved": "পেমেন্ট পদ্ধতি সংরক্ষণ করা হয়েছে",
+        "card_vaulted_company_location": "এই লোকেশনের জন্য কার্ডটি সংরক্ষিত হয়েছে",
+        "expiry_long": "(মেয়াদ শেষ হবে %{month}/%{year})",
+        "expiry_short": "(মেয়াদ %{মাস}/%{বছর})",
+        "crypto_payment_method": {
+          "description": "বেস নেটওয়ার্কে আপনার ওয়ালেটের সাথে নিরাপদে সংযোগ করুন",
+          "tooltip": "আপনার ওয়ালেট ব্যালেন্স এবং ঠিকানা শেয়ার করা হবে না এবং শুধুমাত্র অনুরোধকৃত পরিমাণ কেটে নেওয়া যাবে।"
+        },
+        "crypto_modal": {
+          "header": "%{shop_name} %{total_price} USDC প্রদান করুন",
+          "error": {
+            "refresh": "রিফ্রেশ করুন",
+            "close": "বন্ধ",
+            "sandbox_error": "কিছু সমস্যা হয়েছে।",
+            "web_component_error": "এই পৃষ্ঠাটি লোড করার সময় একটি সমস্যা হয়েছে।"
+          }
+        },
+        "saved_by_payment_method": "%{payment_method} দ্বারা সংরক্ষিত"
       },
       "subscriptions": {
         "recurring_totals_with_policies": {
@@ -594,6 +672,174 @@
         },
         "payment_method_not_available_with_payment_terms": "আপনার নির্বাচিত পেমেন্ট পদ্ধতিটি আর উপলব্ধ নেই কারণ এই অর্ডারের জন্য পেমেন্ট এখন {{paymentTerms}} শর্তাবলীতে করা হচ্ছে।",
         "payment_method_not_available_with_fulfillment_terms": "আপনার নির্বাচিত পেমেন্ট পদ্ধতিটি আর উপলব্ধ নেই কারণ এই অর্ডারের পেমেন্ট এখন পূরণের পরেই পরিশোধ করতে হবে।"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "shipping_credential_cl": "রুট",
+          "tax_credential_co": "সেডুলা/আইভিএ",
+          "tax_credential_type_co": "টিপো সেডুলা",
+          "shipping_credential_co": "সেডুলা/আইভিএ",
+          "shipping_credential_type_co": "টিপো সেডুলা",
+          "tax_credential_cr": "শনাক্তকরণ নম্বর/RUT",
+          "shipping_credential_cr": "শনাক্তকরণ নম্বর/RUT",
+          "tax_credential_ec": "সিআই/আরইউসি/আইভিএ",
+          "shipping_credential_ec": "সিআই/আরইউসি/আইভিএ",
+          "tax_credential_gt": "এনআইটি/আইভিএ",
+          "shipping_credential_gt": "এনআইটি/আইভিএ",
+          "tax_credential_id": "এনপিডব্লিউপি",
+          "shipping_credential_id": "এনপিডব্লিউপি",
+          "tax_credential_my": "টিআইএন/নিবন্ধন নম্বর",
+          "shipping_credential_my": "টিআইএন/নিবন্ধন নম্বর",
+          "shipping_credential_mx": "আরএফসি",
+          "tax_credential_mx": "আরএফসি",
+          "tax_credential_type_mx": "রেজিমেন ফিসক্যাল",
+          "tax_credential_use_mx": "CFDI ব্যবহার",
+          "tax_credential_py": "সিআই/আরইউসি/আইভিএ",
+          "shipping_credential_py": "সিআই/আরইউসি/আইভিএ",
+          "tax_credential_pe": "ডিএনআই/আরইউসি/সিই",
+          "shipping_credential_pe": "ডিএনআই/আরইউসি/সিই",
+          "tax_credential_pt": "এনআইএফ/আইভিএ",
+          "shipping_credential_pt": "এনআইএফ/আইভিএ",
+          "tax_credential_es": "ডিএনআই/এনআইএফ",
+          "shipping_credential_es": "ডিএনআই/এনআইএফ",
+          "shipping_credential_tw": "জাতীয় পরিচয়পত্র নম্বর/ভ্যাট",
+          "tax_credential_tr": "তুর্কিয়ে কুমহুরিয়েতি কিমলিক নুমারাসি/কেডিভি",
+          "shipping_credential_tr": "তুর্কিয়ে কুমহুরিয়েতি কিমলিক নুমারাসি/কেডিভি"
+        }
+      }
+    }
+  },
+  "customer_accounts": {
+    "payment_methods": {
+      "back_button": "পিছনে",
+      "back_button_accessibility_label": "{{paymentMethodStepTitle}} এ ফিরে যান",
+      "default": "ডিফল্ট",
+      "generic_card": "কার্ড",
+      "expiration_warning_button_accessibility_label": "{{lastDigits}} দিয়ে শেষ হওয়া {{paymentMethodName}} } এর মেয়াদ শেষ হওয়ার সতর্কতা দেখান",
+      "expires_soon": "এই কার্ডের মেয়াদ শীঘ্রই শেষ হচ্ছে।",
+      "expired": "এই কার্ডের মেয়াদ শেষ হয়ে গেছে।",
+      "card_update_consent": "এই পেমেন্ট পদ্ধতিটি ভবিষ্যতের কেনাকাটার জন্য সংরক্ষণ করা হবে।",
+      "card_update_consent_subscriptions": "এই পেমেন্ট পদ্ধতিটি ভবিষ্যতের কেনাকাটার জন্য সংরক্ষণ করা হবে এবং যেকোনো পুনরাবৃত্ত বা বিলম্বিত কেনাকাটার জন্য ব্যবহার করা যেতে পারে।",
+      "digital_wallet_title": "ডিজিটাল ওয়ালেট",
+      "credit_or_debit_card_title": "ক্রেডিট বা ডেবিট কার্ড",
+      "google_pay": {
+        "iframe_title_accessibility_label": "Google Pay পেমেন্ট পদ্ধতি যোগ করুন",
+        "loading_accessibility_message": "Google Pay লোড হচ্ছে",
+        "loading": "Google Pay লোড হচ্ছে",
+        "errors": {
+          "generic": "Google Pay-তে সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা অন্য কোনও পেমেন্ট পদ্ধতি ব্যবহার করুন।",
+          "missing_billing_address": "Google Pay-এর একটি বিলিং ঠিকানা প্রয়োজন। অনুগ্রহ করে আপনার অ্যাকাউন্টে একটি ঠিকানা যোগ করুন।"
+        }
+      },
+      "pay_pal": {
+        "iframe_title_accessibility_label": "PayPal পেমেন্ট পদ্ধতি যোগ করুন",
+        "loading_accessibility_message": "পেপ্যাল ​​লোড হচ্ছে"
+      },
+      "apple_pay": {
+        "loading": "অ্যাপল পে লোড হচ্ছে",
+        "errors": {
+          "generic": "Apple Pay-তে সমস্যা হয়েছে। আবার চেষ্টা করুন অথবা অন্য কোনও পেমেন্ট পদ্ধতি ব্যবহার করুন।",
+          "not_available": "এই ডিভাইসে Apple Pay উপলব্ধ নেই।",
+          "missing_billing_address": "Apple Pay-এর জন্য একটি বিলিং ঠিকানা প্রয়োজন। অনুগ্রহ করে আপনার অ্যাকাউন্টে একটি ঠিকানা যোগ করুন।"
+        }
+      },
+      "store_credit": {
+        "label": "স্টোর ক্রেডিট",
+        "accesibility_label": "স্টোর ক্রেডিট - {{formattedBalance}}",
+        "expirable_amounts_button": "মেয়াদোত্তীর্ণ পরিমাণ দেখুন",
+        "expirable_amounts_label": "মেয়াদোত্তীর্ণ পরিমাণ",
+        "details_modal": {
+          "title": "মেয়াদোত্তীর্ণ স্টোর ক্রেডিট",
+          "balance_label": "ভারসাম্য",
+          "expiration_date_label": "মেয়াদ শেষ হওয়ার তারিখ",
+          "amount_label": "পরিমাণ",
+          "date_label": "তারিখ",
+          "event_label": "ইভেন্ট",
+          "events": {
+            "adjustment": "সমন্বয়",
+            "order_payment": "অর্ডার পেমেন্ট",
+            "order_refund": "অর্ডার রিফান্ড",
+            "payment_failure": "পেমেন্ট ব্যর্থতা",
+            "payment_returned": "পেমেন্ট ফেরত দেওয়া হয়েছে",
+            "order_cancellation": "অর্ডার বাতিলকরণ",
+            "tax_finalization": "কর চূড়ান্তকরণ"
+          },
+          "expirable_balance_info": "আপনার কিছু ব্যালেন্স ভবিষ্যতের কোনও তারিখে শেষ হয়ে যাবে।",
+          "expirable_amount_label": "মোট মেয়াদোত্তীর্ণ পরিমাণ",
+          "expirable_amounts_info": "আগে মেয়াদ শেষ হওয়া রাশিগুলি চেকআউটের সময় প্রথমে প্রয়োগ করা হয়",
+          "expirable_amounts_button": "দৃশ্য",
+          "expired_amounts_button": "মেয়াদোত্তীর্ণ পরিমাণ দেখুন",
+          "pagination": {
+            "load_more_label": "আরও লোড করুন",
+            "load_more_accessibility_label": "আরও মেয়াদোত্তীর্ণ পরিমাণ লোড করুন"
+          }
+        }
+      },
+      "payment_details": {
+        "title": "পেমেন্ট পদ্ধতির বিবরণ",
+        "credit_card_details_accessibility_label": "{{lastDigits}} দিয়ে শেষ হচ্ছে",
+        "billing_title": "বিলিং ঠিকানা",
+        "card_info_title": "কার্ডের তথ্য",
+        "payment_method_expiring_on": "{{expiryDate}} তারিখে মেয়াদ শেষ হচ্ছে",
+        "payment_method_expired_on": "{{expiryDate}} তারিখে মেয়াদ শেষ হয়ে গেছে",
+        "preauthorized_payments": "পূর্ব-অনুমোদিত পেমেন্ট",
+        "close_payment_modal": "বন্ধ করা",
+        "close_payment_modal_accessibility_label": "পেমেন্ট পদ্ধতির বিবরণ মোডাল বন্ধ করুন",
+        "payment_method_not_found_error": "পেমেন্ট পদ্ধতি খুঁজে পাওয়া যাচ্ছে না",
+        "payment_details_loading": "পেমেন্ট পদ্ধতির বিবরণ লোড হচ্ছে",
+        "pre_authorized_payments": "পূর্ব-অনুমোদিত পেমেন্ট",
+        "total_amount_of_subscription_line_items_left": "এবং {{total}} আরও",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "মোট {{totalItems}} টি আইটেম, {{totalItemsToDisplay}} টি আইটেম প্রদর্শন করছে।",
+        "next_payment_due": "পরবর্তী পেমেন্ট {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "সম্পাদনা",
+        "edit_payment_method_button_accessibility_label": "{{lastDigits}} দিয়ে শেষ হওয়া পেমেন্ট পদ্ধতি সম্পাদনা করুন",
+        "loading_shop_pay": "শপ পে লোড হচ্ছে",
+        "invalid_payment_method": "অবৈধ পেমেন্ট পদ্ধতি",
+        "invalid_payment_method_message": "আসন্ন অর্ডারগুলি পেতে একটি নতুন ক্রেডিট কার্ড ব্যবহার করুন।",
+        "replace_payment_method": "পেমেন্ট পদ্ধতি পরিবর্তন করুন",
+        "checkout_card_banner": "এই পেমেন্ট পদ্ধতিটি শুধুমাত্র পূর্ব-অনুমোদিত পেমেন্টের জন্য ব্যবহার করা যেতে পারে। আপনি যদি এই দোকানে সাইন ইন করে থাকেন তবে চেকআউটের সময় এটি প্রদর্শিত হবে না। ",
+        "default_checkbox": "ডিফল্ট হিসেবে সেট করুন",
+        "default_checkbox_accessibility_label": "এই পেমেন্ট পদ্ধতিটি ডিফল্ট হিসেবে সেট করুন",
+        "replace_payment_method_button": "প্রতিস্থাপন করুন"
+      },
+      "edit_payment_method": {
+        "title": "পেমেন্ট পদ্ধতি সম্পাদনা করুন",
+        "save_payment_method_button": "সংরক্ষণ করুন",
+        "cancel_edit_payment_method_button": "বাতিল করুন",
+        "payment_method_updated_toast": "পেমেন্ট পদ্ধতি আপডেট করা হয়েছে",
+        "billing_address": "বিলিং ঠিকানা",
+        "billing_address_add_new": "নতুন যোগ করুন",
+        "billing_address_choose_from_list": "তালিকা থেকে বেছে নিন",
+        "future_purchases_notice": "এই পেমেন্ট পদ্ধতিটি ভবিষ্যতের কেনাকাটার জন্য সংরক্ষণ করা হবে।",
+        "generic_error": "আপডেট করার সময় একটি সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।"
+      },
+      "card_fields": {
+        "card_number_label": "কার্ড নম্বর",
+        "card_number_placeholder": "কার্ড নম্বর",
+        "name_on_card_label": "কার্ডে নাম",
+        "name_on_card_placeholder": "কার্ডে নাম",
+        "card_expiry_label": "মেয়াদ শেষ হওয়ার তারিখ (মাস / বছর)",
+        "card_expiry_placeholder": "মেয়াদ শেষ হওয়ার তারিখ (মাস / বছর)",
+        "card_verification_value_label": "নিরাপত্তা কোড",
+        "card_verification_value_placeholder": "নিরাপত্তা কোড",
+        "card_start_label": "ইস্যু তারিখ (মাস / বছর)",
+        "card_start_placeholder": "ইস্যু তারিখ (মাস / বছর)",
+        "tooltip": {
+          "tooltip_accessibility_label": "অধিক তথ্য",
+          "card_verification_value_explanation_amex": "আপনার কার্ডের সামনের দিকে ৪-সংখ্যার নিরাপত্তা কোড",
+          "card_verification_value_explanation_other": "আপনার কার্ডের পিছনে ৩-সংখ্যার নিরাপত্তা কোড",
+          "card_verification_value_explanation": "৩-সংখ্যার নিরাপত্তা কোড সাধারণত আপনার কার্ডের পিছনে পাওয়া যায়। আমেরিকান এক্সপ্রেস কার্ডের সামনের দিকে ৪-সংখ্যার একটি কোড থাকে।",
+          "card_security_notice": "সমস্ত লেনদেন নিরাপদ এবং এনক্রিপ্ট করা।"
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "আপনার কার্ডে ঠিক যেভাবে লেখা আছে ঠিক সেভাবেই আপনার নাম লিখুন।",
+          "credit_card_number_invalid": "একটি বৈধ কার্ড নম্বর লিখুন",
+          "credit_card_expiry_invalid": "একটি বৈধ কার্ডের মেয়াদ শেষ হওয়ার তারিখ লিখুন",
+          "credit_card_verification_value_blank": "আপনার কার্ডে CVV অথবা নিরাপত্তা কোড লিখুন।"
+        },
+        "unavailable": {
+          "text": "ক্রেডিট এবং ডেবিট কার্ড পেমেন্ট এখনই উপলব্ধ নয়।"
+        }
       }
     }
   }
