@@ -154,11 +154,6 @@
         "disabled": false,
         "settings": {}
       },
-      "15793722029700688858": {
-        "type": "shopify://apps/elx-cbc-test/blocks/elx_chatbot_script/0c183ccd-888b-4593-89b6-f50ac0057003",
-        "disabled": true,
-        "settings": {}
-      },
       "pagefly-page-builder": {
         "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
@@ -166,7 +161,7 @@
       },
       "10969126820523750069": {
         "type": "shopify://apps/elx-chatbot/blocks/elx_chatbot_script/9c8b8a5a-afbd-41ba-ac8a-6111fbd35423",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     },
