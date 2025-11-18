@@ -1,6 +1,515 @@
+{% doc %}
+  @prompt
+    Copy contents from the block 'Comparison Table' to the section. Keep editable column headers for two columns ('Us' and 'Others'). The section should have repeatable blocks named 'Row' that merchants can add unlimited times. Each Row block should have settings for: feature text/name, a checkbox toggle for the 'Us' column (when checked shows green checkmark, unchecked shows gray X), and a checkbox toggle for the 'Others' column (when checked shows green checkmark, unchecked shows gray X). Include clean table styling with proper spacing and borders between rows. Do not pre-populate any rows.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-comparison-table-{{ ai_gen_id }} {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 40px 20px;
+  }
+
+  .ai-comparison-table__wrapper-{{ ai_gen_id }} {
+    min-width: 300px;
+    border: 1px solid {{ block.settings.border_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-comparison-table__header-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: {{ block.settings.header_bg_color }};
+    border-bottom: 2px solid {{ block.settings.border_color }};
+  }
+
+  .ai-comparison-table__header-cell-{{ ai_gen_id }} {
+    padding: 20px 16px;
+    text-align: center;
+    font-weight: 600;
+    font-size: {{ block.settings.header_font_size }}px;
+    color: {{ block.settings.header_text_color }};
+  }
+
+  .ai-comparison-table__header-cell-{{ ai_gen_id }}:first-child {
+    text-align: left;
+  }
+
+  .ai-comparison-table__body-{{ ai_gen_id }} {
+    background-color: {{ block.settings.body_bg_color }};
+  }
+
+  .ai-comparison-table__row-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid {{ block.settings.border_color }};
+  }
+
+  .ai-comparison-table__row-{{ ai_gen_id }}:last-child {
+    border-bottom: none;
+  }
+
+  .ai-comparison-table__cell-{{ ai_gen_id }} {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: {{ block.settings.body_text_color }};
+    font-size: {{ block.settings.body_font_size }}px;
+  }
+
+  .ai-comparison-table__cell-{{ ai_gen_id }}:first-child {
+    justify-content: flex-start;
+    font-weight: 500;
+  }
+
+  .ai-comparison-table__icon-{{ ai_gen_id }} {
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    flex-shrink: 0;
+  }
+
+  .ai-comparison-table__icon-{{ ai_gen_id }}--check {
+    color: {{ block.settings.check_color }};
+  }
+
+  .ai-comparison-table__icon-{{ ai_gen_id }}--x {
+    color: {{ block.settings.x_color }};
+  }
+
+  .ai-comparison-table__empty-state-{{ ai_gen_id }} {
+    padding: 40px 20px;
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    border-top: 1px solid {{ block.settings.border_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-comparison-table__header-cell-{{ ai_gen_id }},
+    .ai-comparison-table__cell-{{ ai_gen_id }} {
+      padding: 12px 8px;
+      font-size: 14px;
+    }
+
+    .ai-comparison-table__icon-{{ ai_gen_id }} {
+      width: {{ block.settings.icon_size | times: 0.8 }}px;
+      height: {{ block.settings.icon_size | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-comparison-table-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-comparison-table__wrapper-{{ ai_gen_id }}">
+    <div class="ai-comparison-table__header-{{ ai_gen_id }}">
+      <div class="ai-comparison-table__header-cell-{{ ai_gen_id }}">
+        {{ block.settings.feature_header }}
+      </div>
+      <div class="ai-comparison-table__header-cell-{{ ai_gen_id }}">
+        {{ block.settings.us_header }}
+      </div>
+      <div class="ai-comparison-table__header-cell-{{ ai_gen_id }}">
+        {{ block.settings.others_header }}
+      </div>
+    </div>
+
+    <div class="ai-comparison-table__body-{{ ai_gen_id }}">
+      {% assign has_rows = false %}
+      
+      {% for i in (1..10) %}
+        {% assign feature_key = 'feature_' | append: i %}
+        {% assign us_key = 'us_' | append: i %}
+        {% assign others_key = 'others_' | append: i %}
+        
+        {% assign feature_name = block.settings[feature_key] %}
+        {% assign us_has = block.settings[us_key] %}
+        {% assign others_has = block.settings[others_key] %}
+        
+        {% if feature_name != blank %}
+          {% assign has_rows = true %}
+          <div class="ai-comparison-table__row-{{ ai_gen_id }}">
+            <div class="ai-comparison-table__cell-{{ ai_gen_id }}">
+              {{ feature_name }}
+            </div>
+            <div class="ai-comparison-table__cell-{{ ai_gen_id }}">
+              {% if us_has %}
+                <svg class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__icon-{{ ai_gen_id }}--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              {% else %}
+                <svg class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__icon-{{ ai_gen_id }}--x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              {% endif %}
+            </div>
+            <div class="ai-comparison-table__cell-{{ ai_gen_id }}">
+              {% if others_has %}
+                <svg class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__icon-{{ ai_gen_id }}--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              {% else %}
+                <svg class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__icon-{{ ai_gen_id }}--x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+      
+      {% unless has_rows %}
+        <div class="ai-comparison-table__empty-state-{{ ai_gen_id }}">
+          Add feature rows to start building your comparison table
+        </div>
+      {% endunless %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Comparison table",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Table headers"
+    },
+    {
+      "type": "text",
+      "id": "feature_header",
+      "label": "Feature column header",
+      "default": "Features"
+    },
+    {
+      "type": "text",
+      "id": "us_header",
+      "label": "Us column header",
+      "default": "Us"
+    },
+    {
+      "type": "text",
+      "id": "others_header",
+      "label": "Others column header",
+      "default": "Others"
+    },
+    {
+      "type": "header",
+      "content": "Row 1"
+    },
+    {
+      "type": "text",
+      "id": "feature_1",
+      "label": "Feature name"
+    },
+    {
+      "type": "checkbox",
+      "id": "us_1",
+      "label": "Us has this feature",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "others_1",
+      "label": "Others have this feature",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Row 2"
+    },
+    {
+      "type": "text",
+      "id": "feature_2",
+      "label": "Feature name"
+    },
+    {
+      "type": "checkbox",
+      "id": "us_2",
+      "label": "Us has this feature",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "others_2",
+      "label": "Others have this feature",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Row 3"
+    },
+    {
+      "type": "text",
+      "id": "feature_3",
+      "label": "Feature name"
+    },
+    {
+      "type": "checkbox",
+      "id": "us_3",
+      "label": "Us has this feature",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "others_3",
+      "label": "Others have this feature",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Row 4"
+    },
+    {
+      "type": "text",
+      "id": "feature_4",
+      "label": "Feature name"
+    },
+    {
+      "type": "checkbox",
+      "id": "us_4",
+      "label": "Us has this feature",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "others_4",
+      "label": "Others have this feature",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Row 5"
+    },
+    {
+      "type": "text",
+      "id": "feature_5",
+      "label": "Feature name"
+    },
+    {
+      "type": "checkbox",
+      "id": "us_5",
+      "label": "Us has this feature",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "others_5",
+      "label": "Others have this feature",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Row 6"
+    },
+    {
+      "type": "text",
+      "id": "feature_6",
+      "label": "Feature name"
+    },
+    {
+      "type": "checkbox",
+      "id": "us_6",
+      "label": "Us has this feature",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "others_6",
+      "label": "Others have this feature",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Row 7"
+    },
+    {
+      "type": "text",
+      "id": "feature_7",
+      "label": "Feature name"
+    },
+    {
+      "type": "checkbox",
+      "id": "us_7",
+      "label": "Us has this feature",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "others_7",
+      "label": "Others have this feature",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Row 8"
+    },
+    {
+      "type": "text",
+      "id": "feature_8",
+      "label": "Feature name"
+    },
+    {
+      "type": "checkbox",
+      "id": "us_8",
+      "label": "Us has this feature",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "others_8",
+      "label": "Others have this feature",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Row 9"
+    },
+    {
+      "type": "text",
+      "id": "feature_9",
+      "label": "Feature name"
+    },
+    {
+      "type": "checkbox",
+      "id": "us_9",
+      "label": "Us has this feature",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "others_9",
+      "label": "Others have this feature",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Row 10"
+    },
+    {
+      "type": "text",
+      "id": "feature_10",
+      "label": "Feature name"
+    },
+    {
+      "type": "checkbox",
+      "id": "us_10",
+      "label": "Us has this feature",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "others_10",
+      "label": "Others have this feature",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Header style"
+    },
+    {
+      "type": "color",
+      "id": "header_bg_color",
+      "label": "Background color",
+      "default": "#f3f3f3"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "Text color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "header_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Body style"
+    },
+    {
+      "type": "color",
+      "id": "body_bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "body_text_color",
+      "label": "Text color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "body_font_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Icons"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Icon size",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "check_color",
+      "label": "Checkmark color",
+      "default": "#008060"
+    },
+    {
+      "type": "color",
+      "id": "x_color",
+      "label": "X mark color",
+      "default": "#999999"
+    },
+    {
+      "type": "header",
+      "content": "Table style"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison table"
+    }
+  ]
+}
 {% endschema %}
