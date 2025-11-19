@@ -73,7 +73,8 @@
           {% liquid
             assign has_subscriptions = product.metafields.custom.has_subscriptions 
             if has_subscriptions
-              assign subscription_product_id = product.metafields.custom.subscription_product.title
+              assign subscription_product = product.metafields.custom.subscription_product
+              assign subscription_product_title = product.metafields.custom.subscription_product.title
             endif
           %}
           
@@ -89,7 +90,8 @@
               disabled
             {% endif %}
             onclick="if ({{ has_subscriptions }}) {
-              console.log({{ subscription_product_id }})
+              console.log({{ subscription_product }})
+              console.log({{ subscription_product_title }})
               console.log(11111)
             }"
           >
