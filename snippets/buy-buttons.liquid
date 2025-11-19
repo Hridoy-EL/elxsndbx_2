@@ -70,7 +70,7 @@
               assign quantity_rule_soldout = true
             endif
           -%}
-          {% assign has_metafields = product.metafields %}
+          {% assign has_metafields = product.metafields.has_subscriptions %}
           <button
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
