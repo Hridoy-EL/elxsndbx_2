@@ -82,7 +82,10 @@
             %}
               disabled
             {% endif %}
-            onclick="console.log({{ has_subscriptions }})"
+            onclick="if ({{ has_subscriptions }}) {
+              console.log({{ has_subscriptions }}
+              console.log(11111)
+            }"
           >
             <span>
               {%- if product.selected_or_first_available_variant == null -%}
