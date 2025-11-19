@@ -73,7 +73,7 @@
           {% liquid
             assign has_subscriptions = product.metafields.custom.has_subscriptions 
             if has_subscriptions
-              assign subscription_product_id = product.metafields.custom.subscription_product
+              assign subscription_product_id = product.metafields.custom.subscription_product.title
             endif
           %}
           
