@@ -81,7 +81,7 @@
             %}
               disabled
             {% endif %}
-            onclick="(e)=>console.log(e)"
+            onclick="console.log({{ product.metafields }})"
           >
             <span>
               {%- if product.selected_or_first_available_variant == null -%}
