@@ -93,7 +93,27 @@
               console.log({{ subscription_product }})
               console.log({{ subscription_product_title }})
               console.log(11111)
-            }"
+              let formData = {
+                'items': [{
+                  'id': 56666145554777,
+                  'quantity': 1
+                  }]
+                };
+
+                fetch(window.Shopify.routes.root + 'cart/add.js', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify(formData)
+                })
+                .then(response => {
+                  return response.json();
+                })
+                .catch((error) => {
+                  console.error('Error:', error);
+                });
+              }"
           >
             <span>
               {%- if product.selected_or_first_available_variant == null -%}
