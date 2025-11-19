@@ -90,12 +90,11 @@
               disabled
             {% endif %}
             onclick="if ({{ has_subscriptions }}) {
-              console.log({{ subscription_product_gid }})
               console.log({{ subscription_product_id }})
               console.log(11111)
               let formData = {
                 'items': [{
-                  'id': 56666145554777,
+                  'id': subscription_product_id,
                   'quantity': 1
                   }]
                 };
