@@ -73,8 +73,8 @@
           {% liquid
             assign has_subscriptions = product.metafields.custom.has_subscriptions 
             if has_subscriptions
-              assign subscription_product = product.metafields.custom.subscription_product
-              assign subscription_product_title = product.metafields.custom.subscription_product.title
+              assign subscription_product_gid = product.metafields.custom.subscription_product
+              assign subscription_product_id = subscription_product_gid | split: '/' | last | plus: 0
             endif
           %}
           
@@ -90,8 +90,8 @@
               disabled
             {% endif %}
             onclick="if ({{ has_subscriptions }}) {
-              console.log({{ subscription_product }})
-              console.log({{ subscription_product_title }})
+              console.log({{ subscription_product_gid }})
+              console.log({{ subscription_product_id }})
               console.log(11111)
               let formData = {
                 'items': [{
