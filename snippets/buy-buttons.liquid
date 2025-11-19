@@ -70,7 +70,7 @@
               assign quantity_rule_soldout = true
             endif
           -%}
-          {% assign get_meta = "123" %}
+          {% assign has_metafields = {{ product.metafields }} %}
           <button
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
@@ -82,7 +82,7 @@
             %}
               disabled
             {% endif %}
-            onclick="console.log({{ get_meta }})"
+            onclick="console.log({{ has_metafields }})"
           >
             <span>
               {%- if product.selected_or_first_available_variant == null -%}
