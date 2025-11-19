@@ -94,7 +94,7 @@
               console.log(11111)
               let formData = {
                 'items': [{
-                  'id': subscription_product_id,
+                  'id': {{ subscription_product_id }},
                   'quantity': 1
                   }]
                 };
@@ -108,7 +108,6 @@
                 })
                 .then(response => {
                   window.location.href = window.Shopify.routes.root + 'cart'
-                  return response.json();
                 })
                 .catch((error) => {
                   console.error('Error:', error);
