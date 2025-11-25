@@ -15,7 +15,7 @@
         "custom_liquid_wg8KTj": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<span style=\"border:2px solid black; padding:5px; border-radius: 5px;font-size:20px\" id=\"giveawayEntries\">\n🎟️ Entries: {{ product.price |round | divided_by: 10 }}\n</span>"
+            "custom_liquid": "<span style=\"border:2px solid black; padding:5px; border-radius: 5px;font-size:20px\" id=\"giveawayEntries\">\n🎟️ Entries: {{ product.price |round | divided_by: 5 }}\n</span>"
           }
         },
         "vendor": {
