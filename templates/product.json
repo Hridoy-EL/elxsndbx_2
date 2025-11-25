@@ -72,6 +72,12 @@
             "subscription_policy_url": "",
             "product": "{{product}}"
           }
+        },
+        "super_subscriptions_product_block_y4afrk": {
+          "type": "shopify://apps/super-subscriptions/blocks/product-block/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
+          "settings": {
+            "product": "{{product}}"
+          }
         }
       },
       "block_order": [
@@ -84,7 +90,8 @@
         "buy_buttons",
         "description",
         "share",
-        "subscriptions_app_block_HP8WML"
+        "subscriptions_app_block_HP8WML",
+        "super_subscriptions_product_block_y4afrk"
       ],
       "settings": {
         "enable_sticky_info": true,
