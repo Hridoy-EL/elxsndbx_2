@@ -176,6 +176,11 @@
           "border_radius": 0,
           "subscription_policy_url": ""
         }
+      },
+      "12667515807971001941": {
+        "type": "shopify://apps/giveaway-ninja/blocks/giveawayninja-script/498850fa-d293-4016-a504-191077bf99d7",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
