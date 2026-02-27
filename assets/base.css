@@ -3598,3 +3598,8 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+#forms_inline_8nxicL {
+  background-color: red !important;
+  padding: 20px; /* optional: adds some spacing */
+}
