@@ -8,3 +8,7 @@ form {
 [data-forms-id="forms-root-890607"] {
     background-color: pink;
 }
+[data-forms-id="forms-root-890607"] ._formFieldset_cit2d_82 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
