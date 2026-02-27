@@ -1266,3 +1266,17 @@ class BulkAdd extends HTMLElement {
 if (!customElements.get('bulk-add')) {
   customElements.define('bulk-add', BulkAdd);
 }
+
+
+console.log(11111)
+document.addEventListener('DOMContentLoaded', () => {
+  const shopifyEmbedForm = document.querySelector('shopify-forms-embed#app-embed');
+  if (shopifyEmbedForm && shopifyEmbedForm.shadowRoot) {
+    const style = document.createElement('style');
+    style.textContent = ':host { background-color: aliceblue !important; }';
+    shopifyEmbedForm.shadowRoot.appendChild(style);
+  }
+  else {
+    console.warn('shopify-forms-embed#app-embed not found.');
+  }
+});
