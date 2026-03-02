@@ -8,9 +8,12 @@
  * ------------------------------------------------------------
  */
 {
-  "markets": {
-    "bangladesh": {
-      "parent": "@default"
-    }
-  }
+  "context": {
+    "market": "bangladesh"
+  },
+  "parent": "page.menu.json",
+  "sections": {},
+  "order": [
+    "main"
+  ]
 }
