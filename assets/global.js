@@ -1302,6 +1302,9 @@ customElements.whenDefined('shopify-forms-embed').then(() => {
       [class^="_birthdayText"] {
         display: none;
       }
+      [class^="_selectContainer"] {
+        grid-column: 1 / -1;
+      }
     `;
 
     el.shadowRoot.appendChild(style);
