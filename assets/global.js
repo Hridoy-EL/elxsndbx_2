@@ -1268,7 +1268,7 @@ if (!customElements.get('bulk-add')) {
 }
 
 
-console.log(11111, window.ShopifyForms)
+console.log(11111)
 document.addEventListener('DOMContentLoaded', () => {
   const shopifyEmbedForm = document.querySelector('shopify-forms-embed#app-embed');
   if (shopifyEmbedForm && shopifyEmbedForm.shadowRoot) {
@@ -1281,34 +1281,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-console.log(22222, window.ShopifyForms)
+console.log(22222)
+customElements.whenDefined('shopify-forms-embed').then(() => {
+  const waitForShadow = () => {
+    const el = document.querySelector('shopify-forms-embed#app-embed');
 
-function injectStyles() {
-  const shopifyEmbedForm = document.querySelector('shopify-forms-embed#app-embed');
+    if (!el) return requestAnimationFrame(waitForShadow);
 
-  if (shopifyEmbedForm && shopifyEmbedForm.shadowRoot) {
-    console.log(333333, window.ShopifyForms)
+    if (!el.shadowRoot) {
+      return requestAnimationFrame(waitForShadow);
+    }
+
     const style = document.createElement('style');
     style.textContent = `
-      :host {
-        background-color: aliceblue !important;
+      form {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 12px !important;
       }
     `;
-    shopifyEmbedForm.shadowRoot.appendChild(style);
 
-    return true;
-  }
+    el.shadowRoot.appendChild(style);
+  };
 
-  return false;
-}
-
-const observer = new MutationObserver(() => {
-  if (injectStyles()) {
-    observer.disconnect(); // stop watching once applied
-  }
-});
-
-observer.observe(document.body, {
-  childList: true,
-  subtree: true
+  waitForShadow();
 });
