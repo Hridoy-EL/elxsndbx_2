@@ -1268,7 +1268,7 @@ if (!customElements.get('bulk-add')) {
 }
 
 
-console.log(11111)
+console.log(11111, window.ShopifyForms)
 document.addEventListener('DOMContentLoaded', () => {
   const shopifyEmbedForm = document.querySelector('shopify-forms-embed#app-embed');
   if (shopifyEmbedForm && shopifyEmbedForm.shadowRoot) {
@@ -1281,13 +1281,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-console.log(22222)
+console.log(22222, window.ShopifyForms)
 
 function injectStyles() {
   const shopifyEmbedForm = document.querySelector('shopify-forms-embed#app-embed');
 
   if (shopifyEmbedForm && shopifyEmbedForm.shadowRoot) {
-    console.log(333333)
+    console.log(333333, window.ShopifyForms)
     const style = document.createElement('style');
     style.textContent = `
       :host {
