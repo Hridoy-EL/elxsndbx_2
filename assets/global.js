@@ -1280,3 +1280,35 @@ document.addEventListener('DOMContentLoaded', () => {
     console.warn('shopify-forms-embed#app-embed not found.');
   }
 });
+
+console.log(22222)
+
+function injectStyles() {
+  const shopifyEmbedForm = document.querySelector('shopify-forms-embed#app-embed');
+
+  if (shopifyEmbedForm && shopifyEmbedForm.shadowRoot) {
+    console.log(333333)
+    const style = document.createElement('style');
+    style.textContent = `
+      :host {
+        background-color: aliceblue !important;
+      }
+    `;
+    shopifyEmbedForm.shadowRoot.appendChild(style);
+
+    return true;
+  }
+
+  return false;
+}
+
+const observer = new MutationObserver(() => {
+  if (injectStyles()) {
+    observer.disconnect(); // stop watching once applied
+  }
+});
+
+observer.observe(document.body, {
+  childList: true,
+  subtree: true
+});
