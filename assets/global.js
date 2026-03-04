@@ -1299,6 +1299,9 @@ customElements.whenDefined('shopify-forms-embed').then(() => {
         grid-template-columns: 1fr 1fr !important;
         gap: 12px !important;
       }
+      [class^="_birthdayText"] {
+        display: none;
+      }
     `;
 
     el.shadowRoot.appendChild(style);
