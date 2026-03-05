@@ -1284,7 +1284,7 @@ document.addEventListener('DOMContentLoaded', () => {
 console.log(22222)
 customElements.whenDefined('shopify-forms-embed').then(() => {
   const waitForShadow = () => {
-    const el = document.querySelector('shopify-forms-embed#app-embed');
+    const el = document.querySelector('[data-forms-id="forms-root-890607"] shopify-forms-embed#app-embed');
 
     if (!el) return requestAnimationFrame(waitForShadow);
 
@@ -1305,7 +1305,11 @@ customElements.whenDefined('shopify-forms-embed').then(() => {
       [class^="_selectContainer"] {
         grid-column: 1 / -1;
       }
+      [class^="_selectContainer"] p {
+        display: none;
+      }
     `;
+    let selectContainerLabel = document.querySelector('[class^="_selectContainer"]')
 
     el.shadowRoot.appendChild(style);
   };
