@@ -12,6 +12,14 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "growave_loyalty_wishlist_block_product_fave_button_CpjhpG": {
+          "type": "shopify://apps/growave-loyalty-wishlist/blocks/block.product.faveButton/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
+          "settings": {
+            "option_button_class": "",
+            "custom_css": "",
+            "shadow_root_options": "null"
+          }
+        },
         "custom_liquid_wg8KTj": {
           "type": "custom_liquid",
           "settings": {
@@ -64,12 +72,14 @@
         "subscriptions_app_block_HP8WML": {
           "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
           "settings": {
+            "widget_style": "card",
+            "widget_style_card_selector": "radio_button",
+            "subscription_policy_url": "",
             "color_text_body": "#6d7175",
             "dividers_color": "#8f8d8d",
-            "bacgkround_color": "#ffffff",
+            "background_color": "#ffffff",
             "border_thickness": 1,
             "border_radius": 0,
-            "subscription_policy_url": "",
             "product": "{{product}}"
           }
         },
@@ -81,6 +91,7 @@
         }
       },
       "block_order": [
+        "growave_loyalty_wishlist_block_product_fave_button_CpjhpG",
         "custom_liquid_wg8KTj",
         "vendor",
         "title",
