@@ -126,6 +126,8 @@
     "show_cart_note": false,
     "cart_drawer_collection": "action-figures",
     "cart_color_scheme": "scheme-1",
+    "swym_advanced_collections_wishlist_enabled": true,
+    "swym_header_icon_enabled": false,
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -203,6 +205,11 @@
         "type": "shopify://apps/swym-relay/blocks/storefront-ui-elements/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
         "disabled": false,
         "settings": {}
+      },
+      "16104204378477132507": {
+        "type": "shopify://apps/madgic-quote-hide-price/blocks/hide-price/7b8c0059-5527-4d13-ba0a-9871e0ee5b16",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
@@ -261,9 +268,7 @@
           "shadow": "#121212"
         }
       }
-    },
-    "swym_advanced_collections_wishlist_enabled": true,
-    "swym_header_icon_enabled": false
+    }
   },
   "presets": {
     "Default": {
