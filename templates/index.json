@@ -15,8 +15,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "Welcome to the sandbox store",
+            "heading_size": "hxl"
           }
         },
         "button": {
