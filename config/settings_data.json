@@ -121,7 +121,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "drawer",
+    "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "action-figures",
@@ -149,11 +149,6 @@
           "home": false
         }
       },
-      "15557474716127144420": {
-        "type": "shopify://apps/kaching-bundles/blocks/app-embed-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
-        "disabled": false,
-        "settings": {}
-      },
       "pagefly-page-builder": {
         "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
@@ -176,11 +171,6 @@
           "border_radius": 0,
           "subscription_policy_url": ""
         }
-      },
-      "12667515807971001941": {
-        "type": "shopify://apps/giveaway-ninja/blocks/giveawayninja-script/498850fa-d293-4016-a504-191077bf99d7",
-        "disabled": false,
-        "settings": {}
       },
       "18363274320096901237": {
         "type": "shopify://apps/super-subscriptions/blocks/app-embed/cad569ae-4964-473f-a22b-e6b9b6c50d6a",
